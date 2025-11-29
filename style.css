@@ -1,0 +1,24 @@
+body { 
+    font-family: 'Sarabun', sans-serif; 
+    background-color: #f3f4f6; 
+}
+
+.card { 
+    transition: all 0.3s ease; 
+}
+
+.card:hover { 
+    transform: translateY(-2px); 
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); 
+}
+
+/* สไตล์สำหรับลูกศรใน Dropdown (Select) */
+select {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+    background-position: right 0.5rem center;
+    background-repeat: no-repeat;
+    background-size: 1.5em 1.5em;
+    padding-right: 2.5rem;
+    -webkit-appearance: none;
+    appearance: none;
+}

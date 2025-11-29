@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>รายการฝึกงาน - ค้นหาและกรองข้อมูล</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="p-6">
+
+    <div class="max-w-6xl mx-auto">
+        <div class="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-8 gap-4">
+            <div class="w-full lg:w-auto">
+                <h1 class="text-3xl font-bold text-gray-800">📋 รายการตำแหน่งงาน (ฝึกงาน)</h1>
+                <p id="status-msg" class="text-gray-500 text-sm mt-1">กำลังโหลดข้อมูล...</p>
+            </div>
+            
+            <div class="flex flex-col sm:flex-row gap-3 w-full lg:w-auto flex-wrap">
+                <div class="relative w-full sm:w-64">
+                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                        <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <input type="text" id="search-input" oninput="applyFilterAndSort()" placeholder="ค้นหาตำแหน่ง หรือ บริษัท..." 
+                        class="w-full border border-gray-300 rounded-lg pl-10 pr-4 py-2 bg-white text-gray-700 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+                </div>
+
+                <div class="flex items-center gap-2 w-full sm:w-auto">
+                    <span class="text-gray-600 font-medium whitespace-nowrap hidden sm:inline">Tags:</span>
+                    <select id="tag-filter" onchange="applyFilterAndSort()" class="w-full sm:w-48 border border-gray-300 rounded-lg px-3 py-2 bg-white text-gray-700 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer">
+                        <option value="all">ทั้งหมด</option>
+                    </select>
+                </div>
+
+                <div class="flex items-center gap-2 w-full sm:w-auto">
+                    <span class="text-gray-600 font-medium whitespace-nowrap hidden sm:inline">เรียง:</span>
+                    <select id="sort-filter" onchange="applyFilterAndSort()" class="w-full sm:w-48 border border-gray-300 rounded-lg px-3 py-2 bg-white text-gray-700 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer">
+                        <option value="salary-desc">💰 เงินเดือน (มาก ➡ น้อย)</option>
+                        <option value="salary-asc">💰 เงินเดือน (น้อย ➡ มาก)</option>
+                        <option value="name-asc">🏢 ชื่อบริษัท (ก ➡ ฮ)</option>
+                        <option value="name-desc">🏢 ชื่อบริษัท (ฮ ➡ ก)</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div id="job-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
