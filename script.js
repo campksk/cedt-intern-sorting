@@ -16,6 +16,7 @@ async function loadJSON() {
         }
 
         populateTagOptions(originalJobList);
+        populateWorkingOptions(originalJobList); // 1. เพิ่มบรรทัดนี้
         applyFilterAndSort();
 
     } catch (error) {
@@ -23,6 +24,26 @@ async function loadJSON() {
         statusMsg.innerHTML = `โหลดข้อมูลไม่สำเร็จ (ต้องเปิดผ่าน Local Server)`;
         statusMsg.className = "text-red-500";
     }
+}
+
+// 2. เพิ่มฟังก์ชันนี้ (สำหรับสร้างตัวเลือกใน Dropdown)
+function populateWorkingOptions(jobs) {
+    const workingSet = new Set();
+    jobs.forEach(job => {
+        if (job.workingCondition) {
+            workingSet.add(job.workingCondition);
+        }
+    });
+
+    const sortedWorking = Array.from(workingSet).sort();
+    const selectElement = document.getElementById('working-filter');
+
+    sortedWorking.forEach(workType => {
+        const option = document.createElement('option');
+        option.value = workType;
+        option.textContent = workType;
+        selectElement.appendChild(option);
+    });
 }
 
 function populateTagOptions(jobs) {
@@ -46,18 +67,27 @@ function populateTagOptions(jobs) {
     });
 }
 
+// 3. แก้ไขฟังก์ชันนี้ (เพิ่ม Logic การกรอง)
 function applyFilterAndSort() {
     const selectedTag = document.getElementById('tag-filter').value;
+    const selectedWorking = document.getElementById('working-filter').value; // รับค่ารูปแบบงาน
     const sortValue = document.getElementById('sort-filter').value;
     const searchText = document.getElementById('search-input').value.trim().toLowerCase();
     const statusMsg = document.getElementById('status-msg');
 
     let filteredList = originalJobList.filter(job => {
+        // เงื่อนไข Tag
         const matchTag = (selectedTag === 'all') || (job.tags && job.tags.some(t => t.tagName === selectedTag));
+        
+        // เงื่อนไข Search
         const title = (job.title || "").toLowerCase();
         const companyName = (job.company?.companyNameTh || "").toLowerCase();
         const matchSearch = title.includes(searchText) || companyName.includes(searchText);
-        return matchTag && matchSearch;
+
+        // เงื่อนไข Working Condition (เพิ่มใหม่)
+        const matchWorking = (selectedWorking === 'all') || (job.workingCondition === selectedWorking);
+
+        return matchTag && matchSearch && matchWorking;
     });
 
     filteredList.sort((a, b) => {
@@ -65,10 +95,14 @@ function applyFilterAndSort() {
         const salaryB = b.compensationAmount || 0;
         const nameA = a.company?.companyNameTh || '';
         const nameB = b.company?.companyNameTh || '';
+        const quotaA = a.quota || 0;
+        const quotaB = b.quota || 0;
 
         switch (sortValue) {
             case 'salary-desc': return salaryB - salaryA;
             case 'salary-asc':  return salaryA - salaryB;
+            case 'quota-desc':  return quotaB - quotaA;
+            case 'quota-asc':   return quotaA - quotaB;
             case 'name-asc':    return nameA.localeCompare(nameB, 'th'); 
             case 'name-desc':   return nameB.localeCompare(nameA, 'th');
             default: return 0;
@@ -101,7 +135,6 @@ function renderJobs(jobs) {
     }
 
     jobs.forEach(job => {
-        // --- ส่วนจัดการเงินเดือน ---
         let compensationHTML = '';
         if (job.compensationAmount && job.compensationAmount > 0) {
             compensationHTML = `<span class="text-lg font-semibold text-gray-900">${formatNumber(job.compensationAmount)}</span> <span class="text-sm text-gray-500 font-light">${job.compensationType?.compensationType}</span>`;
@@ -109,30 +142,22 @@ function renderJobs(jobs) {
             compensationHTML = `<span class="text-gray-400 text-sm font-light">ไม่ระบุเงินเดือน</span>`;
         }
 
-        // --- ส่วนจัดการ Tags (แบบเรียบ) ---
         let tagsHTML = '';
         if (job.tags && job.tags.length > 0) {
             tagsHTML = `<div class="flex flex-wrap gap-2 mt-4">`;
-            job.tags.slice(0, 5).forEach(t => { // โชว์แค่ 5 tag พอ
+            job.tags.slice(0, 5).forEach(t => { 
                 tagsHTML += `<span class="text-xs text-gray-600 bg-gray-100 px-2 py-1 rounded hover:bg-gray-200 transition cursor-default">${t.tagName}</span>`;
             });
             tagsHTML += `</div>`;
         }
 
-        // --- ส่วนจัดการ Meta Data (Quota, Location, Coop) ---
         let metaList = [];
-        
-        // สถานที่
         if (job.workingCondition) metaList.push(job.workingCondition);
-        // Quota
         if (job.quota && job.quota > 0) metaList.push(`รับ ${job.quota} อัตรา`);
-        // สหกิจ (Highlight นิดหน่อย แต่ไม่ตะโกน)
         if (job.openForCooperativeInternship) metaList.push(`<span class="text-black font-medium">สหกิจ</span>`);
 
-        // เอามาต่อกันด้วยจุด (•)
         const metaHTML = metaList.join(' <span class="text-gray-300 mx-2">•</span> ');
 
-        // --- สร้าง HTML การ์ด (Design: Clean & Minimal) ---
         const cardHTML = `
             <div class="group bg-white p-6 rounded-xl border border-transparent shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] hover:shadow-lg hover:border-gray-100 transition duration-300 flex flex-col h-full">
                 
@@ -151,7 +176,6 @@ function renderJobs(jobs) {
 
                 <div class="relative z-10">
                     ${tagsHTML}
-                    <br>
                 </div>
 
                 <div class="mt-auto pt-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-t border-gray-50 mt-6">
