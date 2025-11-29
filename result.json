@@ -3208,7 +3208,7 @@
       "endDate": null,
       "isPublished": true,
       "isAcceptingApplication": true,
-      "inStudentDraftCount": 7,
+      "inStudentDraftCount": 6,
       "isBookmarked": false
     },
     {
@@ -4869,7 +4869,7 @@
       "endDate": null,
       "isPublished": true,
       "isAcceptingApplication": true,
-      "inStudentDraftCount": 3,
+      "inStudentDraftCount": 4,
       "isBookmarked": false
     },
     {
@@ -5396,13 +5396,295 @@
       "isAcceptingApplication": true,
       "inStudentDraftCount": 0,
       "isBookmarked": false
+    },
+    {
+      "openingId": 1355,
+      "sessionId": 4,
+      "company": {
+        "companyId": 84,
+        "companyNameTh": "บริษัท เดอะเรดคาร์บอน จำกัด",
+        "companyNameEn": "The Red Carbon Co., Ltd.",
+        "logoUrl": "https://cedtintern.cp.eng.chula.ac.th/api/common/files/company/logo/ae4e1f5a-98bc-4722-bab4-98689d746ef2?v=1709199484286",
+        "website": "http://www.theredcarbon.com",
+        "facebook": "https://www.facebook.com/theredcarbon",
+        "line": ""
+      },
+      "title": "Software Engineer",
+      "description": "\u003Cp\u003E•Collaborate closely with business teams to develop applications\u003C/p\u003E\u003Cp\u003E•Design user journeys and application flows to enhance usability\u003C/p\u003E\u003Cp\u003E•Write clean, efficient, and maintainable code\u003C/p\u003E\u003Cp\u003E•Deploy and maintain programs to ensure proper functionality\u003C/p\u003E\u003Cp\u003E•Assist the team in resolving customer issues\u003C/p\u003E",
+      "quota": 1,
+      "openForCooperativeInternship": false,
+      "compensationAmount": null,
+      "compensationType": null,
+      "workingCondition": null,
+      "requirements": null,
+      "tags": [
+        {
+          "tagId": 3,
+          "tagName": "Software Engineer"
+        },
+        {
+          "tagId": 14,
+          "tagName": "ReactJS"
+        },
+        {
+          "tagId": 30,
+          "tagName": "nodeJS"
+        },
+        {
+          "tagId": 199,
+          "tagName": "Data-driven Marketing"
+        },
+        {
+          "tagId": 203,
+          "tagName": "CDP"
+        },
+        {
+          "tagId": 204,
+          "tagName": "Customer Data Platform"
+        }
+      ],
+      "officeName": "สำนักงานใหญ่",
+      "officeAddressLine1": "อาคาร AIA Sathorn tower ชั้น 15th floor เลขที่ 11/1 ถนน South Sathorn แขวง Sathorn เขต Yannawa จังหวัด Bangkok  10120 \n  ",
+      "officeAddressLine2": "เข้าออฟฟิศแค่ อังคารกับวันศุกร์ 2 วัน ที่เหลือ WFH",
+      "recruitmentContactChannel": "",
+      "openingDetailContactChannel": "",
+      "startDate": null,
+      "endDate": null,
+      "isPublished": true,
+      "isAcceptingApplication": true,
+      "inStudentDraftCount": 0,
+      "isBookmarked": false
+    },
+    {
+      "openingId": 1369,
+      "sessionId": 4,
+      "company": {
+        "companyId": 165,
+        "companyNameTh": "บริษัท ไทม์ คอนซัลติ้ง จำกัด",
+        "companyNameEn": "TIME Consulting Co., Ltd.",
+        "logoUrl": "https://cedtintern.cp.eng.chula.ac.th/api/common/files/company/logo/d094779c-776f-4ac4-b236-f6d7dcddcd59?v=1764134183855",
+        "website": "https://www.timeconsulting.co.th/",
+        "facebook": "https://www.facebook.com/TIMEConsultingThailand/",
+        "line": ""
+      },
+      "title": "Business Analyst",
+      "description": "\u003Cp\u003E\u003Cstrong\u003Eหน้าที่ความรับผิดชอบหลัก ได้แก่:\u003C/strong\u003E\u003C/p\u003E\u003Col\u003E\u003Cli\u003Eทำการวิจัยและวิเคราะห์ข้อมูล เพื่อสนับสนุนการพัฒนาข้อเสนอแนะสำหรับลูกค้า\u003C/li\u003E\u003Cli\u003Eช่วยจัดทำผลงานโครงการ เช่น งานนำเสนอ รายงานต่าง ๆ และการสื่อสารกับลูกค้า\u003C/li\u003E\u003Cli\u003Eร่วมงานกับทีมโครงการ เพื่อรวบรวมและจัดระเบียบข้อมูล วิเคราะห์ข้อมูล และตีความผลลัพธ์\u003C/li\u003E\u003Cli\u003Eสนับสนุนการดำเนินการตามข้อเสนอแนะและโซลูชั่นสำหรับลูกค้า\u003C/li\u003E\u003Cli\u003Eรับผิดชอบงานเพิ่มเติมและมีส่วนร่วมในโครงการพิเศษตามที่ได้รับมอบหมายจาก Team Lead\u003C/li\u003E\u003C/ol\u003E\u003Cp\u003E\u003Cbr\u003E\u003C/p\u003E",
+      "quota": 1,
+      "openForCooperativeInternship": false,
+      "compensationAmount": 400,
+      "compensationType": {
+        "compensationTypeId": 1,
+        "compensationType": "บาท/วัน"
+      },
+      "workingCondition": "On-Site",
+      "requirements": null,
+      "tags": [],
+      "officeName": "สำนักงานใหญ่",
+      "officeAddressLine1": "อาคาร สามย่านมิตรทาวน์ ออฟฟิศ ทาวเวอร์ โครงการสามย่านมิตรทาวน์ ชั้น 11 ห้อง 1101-1102 เลขที่ 944 ถนน พระราม 4 แขวง ปทุมวัน เขต วังใหม่ จังหวัด กรุงเทพมหานคร  10330 \n  ",
+      "officeAddressLine2": "",
+      "recruitmentContactChannel": "Email: wanwipa.j@timeconsulting.co.th\nเบอร์ 080 959 5654",
+      "openingDetailContactChannel": "Email: wanwipa.j@timeconsulting.co.th\nเบอร์ 080 959 5654",
+      "startDate": null,
+      "endDate": null,
+      "isPublished": true,
+      "isAcceptingApplication": true,
+      "inStudentDraftCount": 0,
+      "isBookmarked": false
+    },
+    {
+      "openingId": 1371,
+      "sessionId": 4,
+      "company": {
+        "companyId": 165,
+        "companyNameTh": "บริษัท ไทม์ คอนซัลติ้ง จำกัด",
+        "companyNameEn": "TIME Consulting Co., Ltd.",
+        "logoUrl": "https://cedtintern.cp.eng.chula.ac.th/api/common/files/company/logo/d094779c-776f-4ac4-b236-f6d7dcddcd59?v=1764134183855",
+        "website": "https://www.timeconsulting.co.th/",
+        "facebook": "https://www.facebook.com/TIMEConsultingThailand/",
+        "line": ""
+      },
+      "title": "Tester",
+      "description": "\u003Cp\u003ETIME Consulting บริษัทที่ปรึกษาด้านกลยุทธ์และการบริหารจัดการชั้นนำของประเทศไทย เปิดรับสมัคร Tester (Part-time/Intern) ที่มีประสบการณ์หรือไม่มีประสบการณ์แต่มีความสนใจเป็นนักทดสอบระบบ ในธุรกิจด้านการเงินและธนาคาร แบบเดี่ยวและแบบทีม สัญญาจ้างชั่วคราว ระยะเวลา 2-3 เดือน&nbsp;\u003C/p\u003E\u003Cp\u003E\u003Cbr\u003E\u003C/p\u003E\u003Cp\u003Eรายละเอียดงาน:\u003C/p\u003E\u003Cul\u003E\u003Cli\u003Eจัดทำแผนการทดสอบ\u003C/li\u003E\u003Cli\u003Eเขียน testcase/test scenario\u003C/li\u003E\u003Cli\u003Eจัดทำ test document บน swagger &amp; MS word\u003C/li\u003E\u003Cli\u003Eทดสอบระบบด้วยตนเอง ในรูปแบบเทสมือ (Manual) หรือ Automate (Script บน postman)\u003C/li\u003E\u003Cli\u003Eทำรายงานผลการทดสอบ พร้อมระบุปัญหาที่พบและความเสี่ยงที่เกิดขึ้น\u003C/li\u003E\u003C/ul\u003E",
+      "quota": 2,
+      "openForCooperativeInternship": false,
+      "compensationAmount": 400,
+      "compensationType": {
+        "compensationTypeId": 1,
+        "compensationType": "บาท/วัน"
+      },
+      "workingCondition": "On-Site",
+      "requirements": "\u003Cp\u003ETIME Consulting บริษัทที่ปรึกษาด้านกลยุทธ์และการบริหารจัดการชั้นนำของประเทศไทย เปิดรับสมัคร Tester (Part-time/Intern) ที่มีประสบการณ์หรือไม่มีประสบการณ์แต่มีความสนใจเป็นนักทดสอบระบบ ในธุรกิจด้านการเงินและธนาคาร แบบเดี่ยวและแบบทีม สัญญาจ้างชั่วคราว ระยะเวลา 2-3 เดือน&nbsp;\u003C/p\u003E",
+      "tags": [],
+      "officeName": "สำนักงานใหญ่",
+      "officeAddressLine1": "อาคาร สามย่านมิตรทาวน์ ออฟฟิศ ทาวเวอร์ โครงการสามย่านมิตรทาวน์ ชั้น 11 ห้อง 1101-1102 เลขที่ 944 ถนน พระราม 4 แขวง ปทุมวัน เขต วังใหม่ จังหวัด กรุงเทพมหานคร  10330 \n  ",
+      "officeAddressLine2": "",
+      "recruitmentContactChannel": "ส่ง CV ของคุณมาที่ 📩 hr@timeconsulting.co.th หรือ wanwipa.j@timeconsulting.co.th\nหรือถ้าต้องการสอบถามเพิ่มเติม ติดต่อได้ที่เบอร์ 02-003-9778",
+      "openingDetailContactChannel": "ส่ง CV ของคุณมาที่ 📩 hr@timeconsulting.co.th หรือ wanwipa.j@timeconsulting.co.th\nหรือถ้าต้องการสอบถามเพิ่มเติม ติดต่อได้ที่เบอร์ 02-003-9778",
+      "startDate": null,
+      "endDate": null,
+      "isPublished": true,
+      "isAcceptingApplication": true,
+      "inStudentDraftCount": 2,
+      "isBookmarked": false
+    },
+    {
+      "openingId": 1374,
+      "sessionId": 4,
+      "company": {
+        "companyId": 57,
+        "companyNameTh": "บริษัท เซ็นส์ อินโฟ เทค จำกัด",
+        "companyNameEn": "Sense Info Tech",
+        "logoUrl": "https://cedtintern.cp.eng.chula.ac.th/api/common/files/company/logo/12183865-24a5-4e99-8a66-c27eb1d16f96?v=1699868565375",
+        "website": "https://linktr.ee/senseinfotech",
+        "facebook": "https://www.facebook.com/people/Sense-Info-Tech/61550815618235/?mibextid=LQQJ4d",
+        "line": "sense6142"
+      },
+      "title": "Front End Developer",
+      "description": "\u003Cp\u003EFrontend\u003C/p\u003E\u003Cp\u003EFullStack\u003C/p\u003E",
+      "quota": 2,
+      "openForCooperativeInternship": false,
+      "compensationAmount": null,
+      "compensationType": null,
+      "workingCondition": "On-Site",
+      "requirements": null,
+      "tags": [
+        {
+          "tagId": 14,
+          "tagName": "ReactJS"
+        },
+        {
+          "tagId": 147,
+          "tagName": "typescript"
+        },
+        {
+          "tagId": 265,
+          "tagName": "Frontend "
+        }
+      ],
+      "officeName": "บริษัท เซ็นส์ อินโฟ เทค จำกัด ",
+      "officeAddressLine1": "92/6 ม.4 ถนนแจ้งวัฒนะซอย 19 ต.คลองเกลือ อ.ปากเกร็ด จ.นนทบุรี 11120 \n  ",
+      "officeAddressLine2": "",
+      "recruitmentContactChannel": "hr@sense-infotech.com 093-570-6949,02-582-8273",
+      "openingDetailContactChannel": "hr@sense-infotech.com 093-570-6949,02-582-8273",
+      "startDate": null,
+      "endDate": null,
+      "isPublished": true,
+      "isAcceptingApplication": true,
+      "inStudentDraftCount": 0,
+      "isBookmarked": false
+    },
+    {
+      "openingId": 1377,
+      "sessionId": 4,
+      "company": {
+        "companyId": 38,
+        "companyNameTh": "บริษัท น้ำตาลมิตรผล จำกัด และ บริษัทในเครือ",
+        "companyNameEn": "MitrPhol",
+        "logoUrl": "https://cedtintern.cp.eng.chula.ac.th/api/common/files/company/logo/6c8787f2-f0f3-499f-9268-271327ebe629?v=1700128036345",
+        "website": "https://www.mitrphol.com/home",
+        "facebook": "",
+        "line": ""
+      },
+      "title": "Developer - Front End & Back End Internship (Application & Workflow Automation)",
+      "description": "\u003Cp\u003E\u003Cspan style=\"color: rgb(87, 86, 86);\"\u003EPanel Plus Co., Ltd. was established since 1990 under Mitr Phol Group management. We are a leading company producing, Particle Board, Medium Density Fibreboard and Melamine Faced Panels which are substituted materials for natural wood by using high technology and professional management. With the capacity to produce 300,000 cubic-meter particle boards a year, 300,000 cubic-meter medium density fibreboards a year and 23,500,000 square meter melamine impregnated papers a year, it is well-recognized in Asia serving the needs of both domestic and overseas markets. \u003C/span\u003Ehttps://www.panelplus.co.th/\u003C/p\u003E\u003Cp\u003E\u003Cbr\u003E\u003C/p\u003E\u003Cp\u003E\u003Cstrong\u003EAssigned project\u003C/strong\u003E: Application &amp; Workflow Automation\u003C/p\u003E\u003Cp\u003E\u003Cbr\u003E\u003C/p\u003E\u003Cp\u003E\u003Cstrong\u003EResponsibilities: \u003C/strong\u003E\u003C/p\u003E\u003Cul\u003E\u003Cli\u003EContributed to the development and improvement of internal organizational systems, including web applications, mobile applications, and various automation systems.\u003C/li\u003E\u003Cli\u003EDeveloped programs based on requirements provided by the IT team or relevant departments.\u003C/li\u003E\u003Cli\u003EPerformed system testing and debugging to identify and resolve software issues.\u003C/li\u003E\u003C/ul\u003E\u003Cp\u003E\u003Cbr\u003E\u003C/p\u003E\u003Cp\u003E\u003Cstrong\u003ERequired skills\u003C/strong\u003E:\u003C/p\u003E\u003Cul\u003E\u003Cli\u003EPossess foundational programming knowledge in technologies such as Angular, Node.js, JavaScript, No-Code platforms, or other related languages.\u003C/li\u003E\u003Cli\u003EExperienced in web development.\u003C/li\u003E\u003Cli\u003EHands-on experience with workflow automation tools such as UI-Path, n8n, or other related platforms.\u003C/li\u003E\u003Cli\u003EStrong foundational understanding of databases, including SQL Server.\u003C/li\u003E\u003C/ul\u003E",
+      "quota": 1,
+      "openForCooperativeInternship": false,
+      "compensationAmount": 400,
+      "compensationType": {
+        "compensationTypeId": 1,
+        "compensationType": "บาท/วัน"
+      },
+      "workingCondition": "On-Site",
+      "requirements": "\u003Cp\u003EAt least 95% attendance is required\u003C/p\u003E",
+      "tags": [
+        {
+          "tagId": 12,
+          "tagName": "JavaScript"
+        },
+        {
+          "tagId": 13,
+          "tagName": "Frontend"
+        },
+        {
+          "tagId": 30,
+          "tagName": "nodeJS"
+        },
+        {
+          "tagId": 36,
+          "tagName": "Backend"
+        },
+        {
+          "tagId": 84,
+          "tagName": "angular"
+        },
+        {
+          "tagId": 442,
+          "tagName": "web development"
+        },
+        {
+          "tagId": 443,
+          "tagName": "SQL Server"
+        }
+      ],
+      "officeName": "สำนักงานใหญ่ ",
+      "officeAddressLine1": "บริษัท น้ำตาลมิตรผล จำกัด \n2 อาคารเพลินจิตเซ็นเตอร์ ชั้น 3 ถ.สุขุมวิท คลองเตย กรุงเทพ 10110",
+      "officeAddressLine2": "BTS: เพลินจิต\nhttps://maps.app.goo.gl/t2umpPNUMp2TuNwN7",
+      "recruitmentContactChannel": "สอบถามข้อมูลเพิ่มเติม:\nEmail: Internship@mitrphol.com\nContact number: คุณเอิง (02-794-1414)",
+      "openingDetailContactChannel": "สอบถามข้อมูลเพิ่มเติม:\nEmail: Internship@mitrphol.com\nContact number: คุณเอิง (02-794-1414)",
+      "startDate": "2026-05-17T17:00:00.000Z",
+      "endDate": "2026-07-30T17:00:00.000Z",
+      "isPublished": true,
+      "isAcceptingApplication": true,
+      "inStudentDraftCount": 1,
+      "isBookmarked": false
+    },
+    {
+      "openingId": 1381,
+      "sessionId": 4,
+      "company": {
+        "companyId": 80,
+        "companyNameTh": "ธนาคารกรุงศรีอยุธยา จำกัด (มหาชน)",
+        "companyNameEn": "Bank of Ayudhya Plc.",
+        "logoUrl": "https://cedtintern.cp.eng.chula.ac.th/api/common/files/company/logo/a6a92bd3-6a75-4033-b3a0-687edaa25bdf?v=1761806305377",
+        "website": "https://www.krungsri.com/th/personal",
+        "facebook": "https://www.facebook.com/KrungsriSimple",
+        "line": "https://page.line.me/krungsrisimple"
+      },
+      "title": "AI/ML Engineer - Stellar by krungsri ",
+      "description": "\u003Cp\u003EJoin the Stellar team, an innovation unit of Krungsri, and embark on an enriching journey at the forefront of technological advancement. As a Machine Learning Engineer intern, you'll play a pivotal role in our dynamic team, dedicated to pushing the boundaries of AI-driven solutions for chatbot development. If you're a passionate student eager to leverage cutting-edge technology, enhance user experiences, and thrive in a collaborative environment, we invite you to apply for this exciting opportunity.\u003C/p\u003E\u003Cp\u003E&nbsp;\u003C/p\u003E\u003Cp\u003E\u003Cstrong\u003EJob responsibilities (Machine Learning Engineer):\u003C/strong\u003E\u003C/p\u003E\u003Cul\u003E\u003Cli\u003EDevelop machine learning models for Chatbots such as intent classification.\u003C/li\u003E\u003Cli\u003EResearch cutting-edge technology to enhance existing model performance and explore new technology.\u003C/li\u003E\u003C/ul\u003E\u003Cp\u003E&nbsp;\u003C/p\u003E\u003Cp\u003E\u003Cstrong\u003ERequirement and skills:\u003C/strong\u003E\u003C/p\u003E\u003Cul\u003E\u003Cli\u003EExperience in programming languages such as Python.\u003C/li\u003E\u003Cli\u003EExperience with Python libraries - NumPy, scikit-learn, TensorFlow.\u003C/li\u003E\u003Cli\u003EExperience in natural language processing (NLP), AI/ML\u003C/li\u003E\u003Cli\u003EStrong in a logic of human language understanding\u003C/li\u003E\u003C/ul\u003E\u003Cp\u003E&nbsp;\u003C/p\u003E\u003Cp\u003E\u003Cstrong\u003EIt is great if you have.\u003C/strong\u003E\u003C/p\u003E\u003Cul\u003E\u003Cli\u003EExperience with source version control (Git), code editor - Jupyter Notebook/Google Colab\u003C/li\u003E\u003C/ul\u003E\u003Cp\u003E&nbsp;\u003C/p\u003E\u003Cp\u003E\u003Cstrong\u003EAbout us:\u003C/strong\u003E\u003C/p\u003E\u003Cp\u003EStellar by Krungsri, a unit dedicated to propelling the organization forward with innovation. The unit collaborates closely with internal teams and external business partners to generate and refine innovative ideas that meet business challenges. Stellar by Krungsri also conducts ongoing research and testing of new technologies to seize opportunities for business growth.\u003C/p\u003E\u003Cp\u003E&nbsp;\u003C/p\u003E\u003Cp\u003EJoin us at Stellar by Krungsri, where innovation meets opportunity, and together, let's shape the future of finance.\u003C/p\u003E",
+      "quota": 1,
+      "openForCooperativeInternship": false,
+      "compensationAmount": null,
+      "compensationType": {
+        "compensationTypeId": 1,
+        "compensationType": "บาท/วัน"
+      },
+      "workingCondition": "Hybrid",
+      "requirements": "\u003Cp\u003Eเข้าออฟฟิศสัปดาห์ละ 2 วัน\u003C/p\u003E\u003Cul\u003E\u003Cli\u003Eวันอังคาร สถานที่ Bank of Ayudhya (Krungsri) - Rama 3 Office\u003C/li\u003E\u003Cli\u003Eวันศุกร์ สถานที่ Bank of Ayudhya (Krungsri) - Phloen Chit Office\u003C/li\u003E\u003C/ul\u003E",
+      "tags": [
+        {
+          "tagId": 86,
+          "tagName": "AI"
+        }
+      ],
+      "officeName": "Bank of Ayudhya (Krungsri) - Phloen Chit Office และ Rama 3 Office",
+      "officeAddressLine1": "อาคาร ธนาคารกรุงศรีอยุธยา จำกัด (มหาชน) สำนักงานใหญ่ เลขที่ 1222  ถนน พระรามที่ 3  แขวง ยานนาวา เขต บางโพงพาง จังหวัด  กรุงเทพฯ   10120 \n  ",
+      "officeAddressLine2": "",
+      "recruitmentContactChannel": "supranee.jaroenlerdjanya@krungsri.com",
+      "openingDetailContactChannel": "supranee.jaroenlerdjanya@krungsri.com",
+      "startDate": "2026-04-30T17:00:00.000Z",
+      "endDate": "2026-07-30T17:00:00.000Z",
+      "isPublished": true,
+      "isAcceptingApplication": true,
+      "inStudentDraftCount": 1,
+      "isBookmarked": false
     }
   ],
   "meta": {
     "totalItem": 106,
-    "itemCount": 100,
-    "itemsPerPage": 100,
-    "totalPage": 2,
+    "itemCount": 106,
+    "itemsPerPage": 10000,
+    "totalPage": 1,
     "currentPage": 1
   }
 }
