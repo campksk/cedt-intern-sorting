@@ -184,7 +184,7 @@
       "endDate": null,
       "isPublished": true,
       "isAcceptingApplication": true,
-      "inStudentDraftCount": 1,
+      "inStudentDraftCount": 2,
       "isBookmarked": false
     },
     {
@@ -230,7 +230,7 @@
       "isPublished": true,
       "isAcceptingApplication": true,
       "inStudentDraftCount": 3,
-      "isBookmarked": true
+      "isBookmarked": false
     },
     {
       "openingId": 1048,
@@ -266,7 +266,7 @@
       "isPublished": true,
       "isAcceptingApplication": true,
       "inStudentDraftCount": 5,
-      "isBookmarked": true
+      "isBookmarked": false
     },
     {
       "openingId": 1050,
@@ -302,7 +302,7 @@
       "isPublished": true,
       "isAcceptingApplication": true,
       "inStudentDraftCount": 1,
-      "isBookmarked": true
+      "isBookmarked": false
     },
     {
       "openingId": 1058,
@@ -773,7 +773,7 @@
       "isPublished": true,
       "isAcceptingApplication": true,
       "inStudentDraftCount": 3,
-      "isBookmarked": true
+      "isBookmarked": false
     },
     {
       "openingId": 1087,
@@ -911,7 +911,7 @@
       "endDate": null,
       "isPublished": true,
       "isAcceptingApplication": true,
-      "inStudentDraftCount": 2,
+      "inStudentDraftCount": 3,
       "isBookmarked": false
     },
     {
@@ -961,7 +961,7 @@
       "isPublished": true,
       "isAcceptingApplication": true,
       "inStudentDraftCount": 5,
-      "isBookmarked": true
+      "isBookmarked": false
     },
     {
       "openingId": 1101,
@@ -1059,7 +1059,7 @@
       "isPublished": true,
       "isAcceptingApplication": true,
       "inStudentDraftCount": 3,
-      "isBookmarked": true
+      "isBookmarked": false
     },
     {
       "openingId": 1103,
@@ -1104,7 +1104,7 @@
       "isPublished": true,
       "isAcceptingApplication": true,
       "inStudentDraftCount": 3,
-      "isBookmarked": true
+      "isBookmarked": false
     },
     {
       "openingId": 1109,
@@ -1881,7 +1881,7 @@
       "endDate": "2026-07-30T17:00:00.000Z",
       "isPublished": true,
       "isAcceptingApplication": true,
-      "inStudentDraftCount": 4,
+      "inStudentDraftCount": 5,
       "isBookmarked": false
     },
     {
@@ -2215,7 +2215,7 @@
       "endDate": null,
       "isPublished": true,
       "isAcceptingApplication": true,
-      "inStudentDraftCount": 1,
+      "inStudentDraftCount": 2,
       "isBookmarked": false
     },
     {
@@ -2305,7 +2305,7 @@
       "isPublished": true,
       "isAcceptingApplication": true,
       "inStudentDraftCount": 4,
-      "isBookmarked": false
+      "isBookmarked": true
     },
     {
       "openingId": 1177,
@@ -2353,7 +2353,7 @@
       "endDate": null,
       "isPublished": true,
       "isAcceptingApplication": true,
-      "inStudentDraftCount": 0,
+      "inStudentDraftCount": 1,
       "isBookmarked": false
     },
     {
@@ -2480,7 +2480,7 @@
       "endDate": null,
       "isPublished": true,
       "isAcceptingApplication": true,
-      "inStudentDraftCount": 2,
+      "inStudentDraftCount": 3,
       "isBookmarked": false
     },
     {
@@ -2545,7 +2545,7 @@
       "endDate": null,
       "isPublished": true,
       "isAcceptingApplication": true,
-      "inStudentDraftCount": 1,
+      "inStudentDraftCount": 2,
       "isBookmarked": false
     },
     {
@@ -3009,7 +3009,7 @@
       "endDate": null,
       "isPublished": true,
       "isAcceptingApplication": true,
-      "inStudentDraftCount": 5,
+      "inStudentDraftCount": 6,
       "isBookmarked": false
     },
     {
@@ -3208,7 +3208,7 @@
       "endDate": null,
       "isPublished": true,
       "isAcceptingApplication": true,
-      "inStudentDraftCount": 6,
+      "inStudentDraftCount": 7,
       "isBookmarked": false
     },
     {
@@ -3244,7 +3244,7 @@
       "endDate": null,
       "isPublished": true,
       "isAcceptingApplication": true,
-      "inStudentDraftCount": 4,
+      "inStudentDraftCount": 5,
       "isBookmarked": false
     },
     {
@@ -3706,7 +3706,7 @@
       "endDate": null,
       "isPublished": true,
       "isAcceptingApplication": true,
-      "inStudentDraftCount": 3,
+      "inStudentDraftCount": 4,
       "isBookmarked": false
     },
     {
@@ -3933,7 +3933,7 @@
       "endDate": "2026-12-29T17:00:00.000Z",
       "isPublished": true,
       "isAcceptingApplication": true,
-      "inStudentDraftCount": 4,
+      "inStudentDraftCount": 5,
       "isBookmarked": false
     },
     {
@@ -4355,7 +4355,7 @@
       "endDate": "2026-06-29T17:00:00.000Z",
       "isPublished": true,
       "isAcceptingApplication": true,
-      "inStudentDraftCount": 2,
+      "inStudentDraftCount": 3,
       "isBookmarked": false
     },
     {
@@ -4396,7 +4396,7 @@
       "endDate": "2026-07-30T17:00:00.000Z",
       "isPublished": true,
       "isAcceptingApplication": true,
-      "inStudentDraftCount": 1,
+      "inStudentDraftCount": 2,
       "isBookmarked": false
     },
     {
@@ -4445,7 +4445,7 @@
       "endDate": "2026-12-30T17:00:00.000Z",
       "isPublished": true,
       "isAcceptingApplication": true,
-      "inStudentDraftCount": 3,
+      "inStudentDraftCount": 4,
       "isBookmarked": false
     },
     {
@@ -4539,8 +4539,8 @@
       "endDate": "2026-08-30T17:00:00.000Z",
       "isPublished": true,
       "isAcceptingApplication": true,
-      "inStudentDraftCount": 1,
-      "isBookmarked": false
+      "inStudentDraftCount": 2,
+      "isBookmarked": true
     },
     {
       "openingId": 1288,
@@ -4585,7 +4585,7 @@
       "isPublished": true,
       "isAcceptingApplication": true,
       "inStudentDraftCount": 0,
-      "isBookmarked": false
+      "isBookmarked": true
     },
     {
       "openingId": 1291,
@@ -4622,7 +4622,7 @@
       "endDate": null,
       "isPublished": true,
       "isAcceptingApplication": true,
-      "inStudentDraftCount": 1,
+      "inStudentDraftCount": 3,
       "isBookmarked": false
     },
     {
@@ -4667,8 +4667,8 @@
       "endDate": "2026-08-30T17:00:00.000Z",
       "isPublished": true,
       "isAcceptingApplication": true,
-      "inStudentDraftCount": 0,
-      "isBookmarked": false
+      "inStudentDraftCount": 1,
+      "isBookmarked": true
     },
     {
       "openingId": 1293,
@@ -4705,7 +4705,7 @@
       "endDate": null,
       "isPublished": true,
       "isAcceptingApplication": true,
-      "inStudentDraftCount": 0,
+      "inStudentDraftCount": 1,
       "isBookmarked": false
     },
     {
@@ -5009,7 +5009,7 @@
       "isPublished": true,
       "isAcceptingApplication": true,
       "inStudentDraftCount": 0,
-      "isBookmarked": false
+      "isBookmarked": true
     },
     {
       "openingId": 1316,
@@ -5185,7 +5185,7 @@
       "endDate": null,
       "isPublished": true,
       "isAcceptingApplication": true,
-      "inStudentDraftCount": 1,
+      "inStudentDraftCount": 2,
       "isBookmarked": false
     },
     {
@@ -5488,8 +5488,8 @@
       "endDate": null,
       "isPublished": true,
       "isAcceptingApplication": true,
-      "inStudentDraftCount": 0,
-      "isBookmarked": false
+      "inStudentDraftCount": 1,
+      "isBookmarked": true
     },
     {
       "openingId": 1371,
@@ -5524,7 +5524,7 @@
       "endDate": null,
       "isPublished": true,
       "isAcceptingApplication": true,
-      "inStudentDraftCount": 2,
+      "inStudentDraftCount": 3,
       "isBookmarked": false
     },
     {
@@ -5570,7 +5570,7 @@
       "endDate": null,
       "isPublished": true,
       "isAcceptingApplication": true,
-      "inStudentDraftCount": 0,
+      "inStudentDraftCount": 1,
       "isBookmarked": false
     },
     {
@@ -5635,7 +5635,7 @@
       "endDate": "2026-07-30T17:00:00.000Z",
       "isPublished": true,
       "isAcceptingApplication": true,
-      "inStudentDraftCount": 1,
+      "inStudentDraftCount": 2,
       "isBookmarked": false
     },
     {
@@ -5676,14 +5676,325 @@
       "endDate": "2026-07-30T17:00:00.000Z",
       "isPublished": true,
       "isAcceptingApplication": true,
-      "inStudentDraftCount": 1,
+      "inStudentDraftCount": 2,
+      "isBookmarked": false
+    },
+    {
+      "openingId": 1384,
+      "sessionId": 4,
+      "company": {
+        "companyId": 137,
+        "companyNameTh": "บริษัท เวแอม จำกัด ",
+        "companyNameEn": "vaam co.,ltd.",
+        "logoUrl": null,
+        "website": null,
+        "facebook": null,
+        "line": null
+      },
+      "title": "Internship Program: Spatial AI Engineer",
+      "description": "\u003Ch1\u003E\u003Cstrong\u003EProgram Overview\u003C/strong\u003E\u003C/h1\u003E\u003Cp\u003EThis 10-week internship immerses students in the full development pipeline of spatial AI and humanoid robotics, from simulation and robot configuration to autonomous exploration and Vision-Language-Action (VLA) systems. Interns will work with NVIDIA Isaac Sim, reinforcement learning frameworks, ROS2, and OpenVLA to build a complete robotics ecosystem where simulated robots perceive, decide, and act within high-fidelity environments.\u003C/p\u003E\u003Cp\u003EThe program is structured around seven coordinated pipelines:\u003C/p\u003E\u003Cp\u003E●&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u003Cstrong\u003E\u003Cem\u003ETasks 1 &amp; 2\u003C/em\u003E\u003C/strong\u003E \u003Cstrong\u003Efocus on constructing simulation scenes and configuring robot models forming the foundation for locomotion, navigation, exploration, and RL-based behavior training.\u003C/strong\u003E\u003C/p\u003E\u003Cp\u003E●&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u003Cstrong\u003E\u003Cem\u003ETasks 3, 4 &amp; 5\u003C/em\u003E\u003C/strong\u003E \u003Cstrong\u003Ework together to build mission capabilities: autonomous exploration logic, mission-control dashboards, and ROS nodes enabling humanoid control and system integration.\u003C/strong\u003E\u003C/p\u003E\u003Cp\u003E●&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u003Cstrong\u003E\u003Cem\u003ETasks 6 &amp; 7\u003C/em\u003E\u003C/strong\u003E \u003Cstrong\u003Edevelop the VLA stack by integrating multimodal AI models and constructing large-scale datasets that translate visual and language inputs into robot actions.\u003C/strong\u003E\u003C/p\u003E\u003Cp\u003E&nbsp;\u003C/p\u003E\u003Cp\u003E\u003Cstrong\u003E\t**Across the 10 weeks, interns will progressively build, test, and refine robotics components that collectively form a unified spatial AI system. The program concludes with an integrated demonstration scenario—featuring autonomous exploration, mission control coordination, and language-driven robot action—highlighting the collaborative work of all seven task groups.**\u003C/strong\u003E\u003C/p\u003E\u003Cp\u003E\u003Cbr\u003E\u003C/p\u003E\u003Cp\u003E&nbsp;\u003C/p\u003E\u003Ch1\u003E\u003Cstrong\u003E\u003Cem\u003ETask 1 — Simulation Scene Pipeline (2 seats)\u003C/em\u003E\u003C/strong\u003E\u003C/h1\u003E\u003Cp\u003EInterns will develop high-fidelity simulation scenes that support locomotion training, exploration missions, and vision-based perception. Responsibilities include creating terrains, obstacles, lighting setups, and sensor-enabled environments using Isaac Sim or similar tools. Interns will learn how to structure simulation assets into reusable modules and design scenes that reflect real-world constraints such as uneven ground, cluttered spaces, or dynamic elements. These simulation pipelines will be foundational for training and testing spatial AI systems.\u003C/p\u003E\u003Cp\u003E\u003Cem\u003E\u003Cu\u003E\t\u003C/u\u003E\u003C/em\u003E\u003Cstrong\u003E\u003Cem\u003E\u003Cu\u003ETools: \u003C/u\u003E\u003C/em\u003E\u003C/strong\u003E\u003Cem\u003E\u003Cu\u003EIsaac Sim, Python, FreeCAD\u003C/u\u003E\u003C/em\u003E\u003C/p\u003E\u003Cp\u003E&nbsp;\u003C/p\u003E\u003Ch1\u003E\u003Cstrong\u003E\u003Cem\u003ETask 2 — Robot Configuration Pipeline (2 seats)\u003C/em\u003E\u003C/strong\u003E\u003C/h1\u003E\u003Cp\u003EInterns will work on robot model configuration and preparation inside simulation. This includes editing URDF files, adjusting joint limits and inertial parameters, integrating sensors, and tuning articulation properties for humanoids and quadrupeds. Interns will build observation/action spaces for reinforcement learning, validate locomotion stability, and ensure each robot’s configuration is compatible with downstream control or RL pipelines. This task bridges robot modeling with behavior learning.\u003C/p\u003E\u003Cp\u003E\u003Cstrong\u003E\u003Cem\u003E\u003Cu\u003ETools: \u003C/u\u003E\u003C/em\u003E\u003C/strong\u003E\u003Cem\u003E\u003Cu\u003EURDF/Xacro, FreeCAD, Isaac Sim, ROS2 URDF tools\u003C/u\u003E\u003C/em\u003E\u003C/p\u003E\u003Cp\u003E&nbsp;\u003C/p\u003E\u003Ch1\u003E\u003Cstrong\u003E\u003Cem\u003ETask 3 — Search &amp; Exploration Mission (2 seats)\u003C/em\u003E\u003C/strong\u003E\u003C/h1\u003E\u003Cp\u003EInterns will design and implement autonomous search, mapping, and exploration behaviors for rescue, wildfire, and hazardous-area scenarios. Using LiDAR, thermal imaging, and SLAM techniques, interns will build algorithms for frontier exploration, anomaly detection, and mission sequencing. Robots must be able to navigate unstructured terrain and relay mission-critical information through dashboards. This task exposes interns to practical robotic autonomy in challenging environments.\u003C/p\u003E\u003Cp\u003E\u003Cstrong\u003ETools: \u003C/strong\u003EROS2, Cartographer/FAST-LIO, LiDAR SDKs (Ouster), Nav2, Isaac Sim\u003C/p\u003E\u003Cp\u003E&nbsp;\u003C/p\u003E\u003Ch1\u003E\u003Cstrong\u003E\u003Cem\u003ETask 4 — Dashboard &amp; Mission Control (2 seats)\u003C/em\u003E\u003C/strong\u003E\u003C/h1\u003E\u003Cp\u003EInterns will create real-time mission control dashboards for robot monitoring and remote operation. Responsibilities include building web-based interfaces that display ROS2 data, visualizing robot states through RViz-style components, and implementing command interfaces for navigation or mission execution. The focus is on usability, responsiveness, and clean integration with robotic middleware. Interns gain valuable experience in human-robot interaction tools and real-time systems.\u003C/p\u003E\u003Cp\u003E\u003Cstrong\u003E\u003Cem\u003E\u003Cu\u003ETools: \u003C/u\u003E\u003C/em\u003E\u003C/strong\u003E\u003Cem\u003E\u003Cu\u003EROS2, RVizWeb, WebSockets, Docker\u003C/u\u003E\u003C/em\u003E\u003C/p\u003E\u003Cp\u003E&nbsp;\u003C/p\u003E\u003Ch1\u003E\u003Cstrong\u003E\u003Cem\u003ETask 5 — ROS Node for Customized Humanoid (2 seats)\u003C/em\u003E\u003C/strong\u003E\u003C/h1\u003E\u003Cp\u003EInterns will develop ROS/ROS2 nodes specifically for a customized humanoid robot. Tasks include implementing modules for joint actuation, sensor streaming, IMU filtering, foot contact estimation, and high-level control services. Interns will construct publishers, subscribers, action servers, and TF frames required for seamless operation between simulation, control systems, and web-based dashboards. This role provides direct experience in robotics middleware and real-time humanoid control structure design.\u003C/p\u003E\u003Cp\u003E\u003Cstrong\u003E\u003Cem\u003E\u003Cu\u003ETools: \u003C/u\u003E\u003C/em\u003E\u003C/strong\u003E\u003Cem\u003E\u003Cu\u003EROS2 Humble, Isaac Sim ROS BridgeRViz, TF\u003C/u\u003E\u003C/em\u003E\u003C/p\u003E\u003Cp\u003E&nbsp;\u003C/p\u003E\u003Ch1\u003E\u003Cstrong\u003E\u003Cem\u003ETask 6 — OpenVLA Pipeline (2 seats)\u003C/em\u003E\u003C/strong\u003E\u003C/h1\u003E\u003Cp\u003EInterns will integrate and experiment with Vision-Language-Action (VLA) models to enable robots to interpret natural-language instructions and visual inputs. Work involves connecting perception modules, tokenizer pipelines, and action generators within the OpenVLA ecosystem. Interns will test model behavior, tune input structures, and build simple VLA-driven behaviors in simulation. This task places interns at the frontier of embodied AI research.\u003C/p\u003E\u003Cp\u003E\u003Cstrong\u003E\u003Cem\u003E\u003Cu\u003ETools: \u003C/u\u003E\u003C/em\u003E\u003C/strong\u003E\u003Cem\u003E\u003Cu\u003EOpenVLA, PyTorch, Isaac Sim, Python\u003C/u\u003E\u003C/em\u003E\u003C/p\u003E\u003Cp\u003E&nbsp;\u003C/p\u003E\u003Ch1\u003E\u003Cstrong\u003E\u003Cem\u003ETask 7 — VLA Data Collection Pipeline (2 seats)\u003C/em\u003E\u003C/strong\u003E\u003C/h1\u003E\u003Cp\u003EInterns will construct multimodal data pipelines for training Vision-Language-Action systems. Responsibilities include capturing task demonstrations, recording robot telemetry, labeling sequences, and generating clean language annotations. Interns will prepare structured datasets—combining images, video, action traces, and text—in formats suitable for VLA models. This role emphasizes dataset quality, consistency, and scalable data-generation workflows.\u003C/p\u003E\u003Cp\u003E\u003Cstrong\u003E\u003Cem\u003E\u003Cu\u003ETools: \u003C/u\u003E\u003C/em\u003E\u003C/strong\u003E\u003Cem\u003E\u003Cu\u003EOpenCV, FFmpeg, HuggingFace Datasets\u003C/u\u003E\u003C/em\u003E\u003C/p\u003E",
+      "quota": 5,
+      "openForCooperativeInternship": false,
+      "compensationAmount": 0,
+      "compensationType": {
+        "compensationTypeId": 5,
+        "compensationType": "ไม่มีค่าตอบแทน"
+      },
+      "workingCondition": "Hybrid",
+      "requirements": "\u003Cp\u003E\u003Cbr\u003E\u003C/p\u003E\u003Cp\u003EDuration: 10 Weeks\u003C/p\u003E\u003Cp\u003E\u003Cbr\u003E\u003C/p\u003E\u003Cp\u003Eเบี้ยเลี้ยง ขึ้นอยู่กับความสามารถและผลงานที่ผ่านการพิจารณา\u003C/p\u003E",
+      "tags": [
+        {
+          "tagId": 41,
+          "tagName": "Developer"
+        },
+        {
+          "tagId": 73,
+          "tagName": "Python"
+        },
+        {
+          "tagId": 86,
+          "tagName": "AI"
+        },
+        {
+          "tagId": 221,
+          "tagName": "Docker"
+        },
+        {
+          "tagId": 308,
+          "tagName": "PyTorch"
+        },
+        {
+          "tagId": 445,
+          "tagName": "IsaacSim"
+        },
+        {
+          "tagId": 446,
+          "tagName": "#FreeCAD"
+        },
+        {
+          "tagId": 447,
+          "tagName": "#URDF/Xacro"
+        },
+        {
+          "tagId": 448,
+          "tagName": "#ROS2URDFtools"
+        },
+        {
+          "tagId": 449,
+          "tagName": "#ROS2"
+        },
+        {
+          "tagId": 450,
+          "tagName": "#Cartographer/FAST-LIO"
+        },
+        {
+          "tagId": 451,
+          "tagName": "#LiDAR SDKs (Ouster)"
+        },
+        {
+          "tagId": 452,
+          "tagName": "#Nav2"
+        },
+        {
+          "tagId": 453,
+          "tagName": "RVizWeb"
+        },
+        {
+          "tagId": 454,
+          "tagName": "WebSockets"
+        },
+        {
+          "tagId": 455,
+          "tagName": "ROS2 Humble"
+        },
+        {
+          "tagId": 456,
+          "tagName": "Isaac Sim ROS BridgeRViz"
+        },
+        {
+          "tagId": 457,
+          "tagName": "TF"
+        },
+        {
+          "tagId": 458,
+          "tagName": "OpenVLA"
+        },
+        {
+          "tagId": 459,
+          "tagName": "OpenCV"
+        },
+        {
+          "tagId": 460,
+          "tagName": "FFmpeg"
+        },
+        {
+          "tagId": 461,
+          "tagName": "HuggingFace Datasets"
+        }
+      ],
+      "officeName": "287 ซอย อ่อนนุช 17 แยก 16 แขวงสวนหลวง เขตสวนหลวง กรุงเทพมหานคร 10250",
+      "officeAddressLine1": "Location :  ห้องปฏิบัติการ ISL2 ชั้น 20 อาคารเจริญวิศวกรรม และ 287 ซอย อ่อนนุช 17 แยก 16 แขวงสวนหลวง เขตสวนหลวง กรุงเทพมหานคร 10250",
+      "officeAddressLine2": "",
+      "recruitmentContactChannel": "hr@vaam.co.th \nnarit@vaam.co.th",
+      "openingDetailContactChannel": "",
+      "startDate": null,
+      "endDate": null,
+      "isPublished": true,
+      "isAcceptingApplication": true,
+      "inStudentDraftCount": 0,
+      "isBookmarked": false
+    },
+    {
+      "openingId": 1387,
+      "sessionId": 4,
+      "company": {
+        "companyId": 38,
+        "companyNameTh": "บริษัท น้ำตาลมิตรผล จำกัด และ บริษัทในเครือ",
+        "companyNameEn": "MitrPhol",
+        "logoUrl": "https://cedtintern.cp.eng.chula.ac.th/api/common/files/company/logo/6c8787f2-f0f3-499f-9268-271327ebe629?v=1700128036345",
+        "website": "https://www.mitrphol.com/home",
+        "facebook": "",
+        "line": ""
+      },
+      "title": "ERP Solution Development Internship",
+      "description": "\u003Cp\u003E\u003Cstrong\u003E﻿\u003C/strong\u003E\u003Cspan style=\"color: rgba(0, 0, 0, 0.6);\"\u003EMitr Phol Group is in the value-added sugarcane business for almost seven decades. Our portfolio comprises not only sugar but also renewable energy, wood substitute materials, consumer, and bio-based products. We are the largest sugar producer in Thailand and the world’s third-largest. We have a strong presence in the regional arena, namely, China, Australia, Indonesia, Laos, and Vietnam. \u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cbr\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"color: rgba(0, 0, 0, 0.6);\"\u003EWe operate our business with social responsibility, transparency, and consideration for all stakeholders including cane farmers, suppliers, customers, consumers, communities, society, and environment. This commitment is aligned with the UN’s Sustainable Development Goals (SDGs), with the aim of working together to bring about sustainable development, economic progress, and better living quality for our society.\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cbr\u003E\u003C/p\u003E\u003Cp\u003E\u003Cstrong\u003EJob Overview \u003C/strong\u003E\u003C/p\u003E\u003Cp\u003E\u003Cbr\u003E\u003C/p\u003E\u003Cp\u003ESupport and promote the adoption of SAP Business Technology Platform (SAP BTP) within the organization to modernize and enhance both SAP and Non-SAP systems, aligning with the Digital Transformation strategy. This helps drive innovation, reduce reliance on custom code that directly touches the core system, and increase business agility across Integration, Extension, Automation, and Data/Analytics.\u003C/p\u003E\u003Cp\u003E\u003Cbr\u003E\u003C/p\u003E\u003Cp\u003E\u003Cstrong\u003EKey Responsibilities \u003C/strong\u003E\u003C/p\u003E\u003Cul\u003E\u003Cli\u003E\u003Cstrong\u003EDesign and develop solutions on SAP BTP\u003C/strong\u003E covering \u003Cstrong\u003EExtension &amp; Integration\u003C/strong\u003E: SAP Build Apps, SAP Build Process Automation, SAP Integration Suite (CPI/Cloud Integration), API Management\u003C/li\u003E\u003Cli\u003E\u003Cstrong\u003EAI &amp; Automation\u003C/strong\u003E: SAP AI Core / AI Foundation, Document Information Extraction, Joule AI\u003C/li\u003E\u003Cli\u003ECollaborate with Functional and Technical teams to develop \u003Cstrong\u003ECustom Apps / Workflows / Integrations\u003C/strong\u003E\u003C/li\u003E\u003Cli\u003E\u003Cstrong\u003EAnalyze business requirements and design system architecture leveraging BTP for seamless connectivity with SAP S/4HANA and other systems\u003C/strong\u003E\u003C/li\u003E\u003Cli\u003E\u003Cstrong\u003EProvide consultation and guidance on migrating legacy custom code and interfaces to BTP (Business Technology Platform)\u003C/strong\u003E\u003C/li\u003E\u003Cli\u003E\u003Cstrong\u003EStay updated on new SAP BTP technologies and services to recommend adoption that benefits the business\u003C/strong\u003E\u003C/li\u003E\u003Cli\u003E\u003Cstrong\u003ESupport collaboration with vendors/partners\u003C/strong\u003E and monitor BTP development projects to ensure delivery within scope, timeline, and budget\u003C/li\u003E\u003Cli\u003EOffer guidance and conduct training for end-users and internal IT teams on BTP tools and best practicesPerform other tasks as assigned by supervisors\u003C/li\u003E\u003C/ul\u003E\u003Cp\u003E\u003Cbr\u003E\u003C/p\u003E\u003Cp\u003E\u003Cstrong\u003EQualifications: \u003C/strong\u003E\u003C/p\u003E\u003Cp\u003ETechnical Skills:\u003C/p\u003E\u003Cul\u003E\u003Cli\u003E\u003Cstrong\u003EBasic programming knowledge\u003C/strong\u003E, such as Java, Next.js, React\u003C/li\u003E\u003Cli\u003E\u003Cstrong\u003EExperience in web development\u003C/strong\u003E\u003C/li\u003E\u003Cli\u003E\u003Cstrong\u003EBasic understanding of databases\u003C/strong\u003E, such as SQL DB\u003C/li\u003E\u003Cli\u003E\u003Cstrong\u003EDeep understanding of SAP BTP architecture and cloud platforms\u003C/strong\u003E\u003C/li\u003E\u003Cli\u003EStrong interest in developing \u003Cstrong\u003Eintegrations using SAP Integration Suite (CPI, API Management)\u003C/strong\u003E\u003C/li\u003E\u003Cli\u003ESkilled in building \u003Cstrong\u003ESAP Build Apps / SAP Build Process Automation\u003C/strong\u003E and enhancing \u003Cstrong\u003EFiori / Workflow\u003C/strong\u003E\u003C/li\u003E\u003Cli\u003EAbility to work effectively as part of a team\u003C/li\u003E\u003C/ul\u003E",
+      "quota": 1,
+      "openForCooperativeInternship": false,
+      "compensationAmount": 400,
+      "compensationType": {
+        "compensationTypeId": 1,
+        "compensationType": "บาท/วัน"
+      },
+      "workingCondition": "On-Site",
+      "requirements": "\u003Cp\u003EAt least 95% attendance is required\u003C/p\u003E",
+      "tags": [
+        {
+          "tagId": 11,
+          "tagName": "Java"
+        },
+        {
+          "tagId": 12,
+          "tagName": "JavaScript"
+        },
+        {
+          "tagId": 56,
+          "tagName": "ERP"
+        },
+        {
+          "tagId": 172,
+          "tagName": "SAP"
+        },
+        {
+          "tagId": 194,
+          "tagName": "React"
+        },
+        {
+          "tagId": 462,
+          "tagName": "Next.js"
+        }
+      ],
+      "officeName": "สำนักงานใหญ่",
+      "officeAddressLine1": "อาคาร อาคารเพลินจิตเซ็นเตอร์  ชั้น 3 เลขที่ 2 ถนน สุขุมวิท แขวง คลองเตย เขต คลองเตย จังหวัด กรุงเทพ   10110 \n  ",
+      "officeAddressLine2": "BTS: เพลินจิต ",
+      "recruitmentContactChannel": "Email: Internship@mitrphol.com\nContact number: คุณเอิง (02-794-1414) ",
+      "openingDetailContactChannel": "Email: Internship@mitrphol.com\nContact number: คุณเอิง (02-794-1414) ",
+      "startDate": "2026-05-17T17:00:00.000Z",
+      "endDate": "2026-07-30T17:00:00.000Z",
+      "isPublished": true,
+      "isAcceptingApplication": true,
+      "inStudentDraftCount": 0,
+      "isBookmarked": false
+    },
+    {
+      "openingId": 1394,
+      "sessionId": 4,
+      "company": {
+        "companyId": 34,
+        "companyNameTh": "บริษัท ซอฟต์สแควร์ 1999 จำกัด",
+        "companyNameEn": "Softsquare",
+        "logoUrl": "https://cedtintern.cp.eng.chula.ac.th/api/common/files/company/logo/7e52a25a-194e-40df-8968-eadf9ffcba27?v=1699590887041",
+        "website": "https://www.softsquaregroup.com/th/about-soft-square-group",
+        "facebook": "https://www.facebook.com/profile.php?id=100057496628105",
+        "line": "https://line.me/ti/p/DlGNTE0tR1"
+      },
+      "title": "Software Developer ",
+      "description": "\u003Cp\u003Eหัวข้อฝึก\u003C/p\u003E\u003Cp\u003E1. Lecture 70 ชม.\u003C/p\u003E\u003Cp\u003EType Script 8 ชม.\u003C/p\u003E\u003Cp\u003EAngular Framework 24 ชม.\u003C/p\u003E\u003Cp\u003EIntermediate SQL 8 ชม.\u003C/p\u003E\u003Cp\u003EFront-end &amp; Back-end Integration 24 ชม.\u003C/p\u003E\u003Cp\u003ESoft Skill 6 ชม.\u003C/p\u003E\u003Cp\u003E2. ฝึก Coding + ทำงานที่ได้รับมอบหมาย 300 ชม.\u003C/p\u003E\u003Cp\u003E\u003Cbr\u003E\u003C/p\u003E\u003Cp\u003Eผลลัพธ์หลังจากจบการฝึกงาน\u003C/p\u003E\u003Cp\u003E1.สามารถนำความรู้ที่ได้ไปพัฒนาโปรแกรม Front-End และ Back-End\u003C/p\u003E\u003Cp\u003E2. มีรายได้อย่างน้อย 3,000 บาทต่อเดือน (ตาม Performance)\u003C/p\u003E",
+      "quota": 2,
+      "openForCooperativeInternship": false,
+      "compensationAmount": 3000,
+      "compensationType": {
+        "compensationTypeId": 3,
+        "compensationType": "บาท/เดือน"
+      },
+      "workingCondition": "Hybrid",
+      "requirements": "\u003Cp\u003Eบริษัทมีที่พักให้ (หากต้องการ)\u003C/p\u003E",
+      "tags": [
+        {
+          "tagId": 2,
+          "tagName": "UX/UI"
+        },
+        {
+          "tagId": 3,
+          "tagName": "Software Engineer"
+        },
+        {
+          "tagId": 4,
+          "tagName": "Intern"
+        },
+        {
+          "tagId": 7,
+          "tagName": "C#"
+        },
+        {
+          "tagId": 12,
+          "tagName": "JavaScript"
+        },
+        {
+          "tagId": 13,
+          "tagName": "Frontend"
+        },
+        {
+          "tagId": 22,
+          "tagName": "Business"
+        },
+        {
+          "tagId": 24,
+          "tagName": "Strategy"
+        },
+        {
+          "tagId": 29,
+          "tagName": "SQL"
+        },
+        {
+          "tagId": 32,
+          "tagName": "infrastructure"
+        },
+        {
+          "tagId": 36,
+          "tagName": "Backend"
+        },
+        {
+          "tagId": 38,
+          "tagName": "ai"
+        },
+        {
+          "tagId": 52,
+          "tagName": ".Net Core"
+        },
+        {
+          "tagId": 53,
+          "tagName": "Data Engineer"
+        },
+        {
+          "tagId": 56,
+          "tagName": "ERP"
+        },
+        {
+          "tagId": 58,
+          "tagName": "web application"
+        },
+        {
+          "tagId": 60,
+          "tagName": "startup"
+        },
+        {
+          "tagId": 61,
+          "tagName": "ux"
+        },
+        {
+          "tagId": 70,
+          "tagName": "FullStack"
+        },
+        {
+          "tagId": 76,
+          "tagName": "Database"
+        },
+        {
+          "tagId": 84,
+          "tagName": "angular"
+        },
+        {
+          "tagId": 85,
+          "tagName": "CMMI"
+        }
+      ],
+      "officeName": "สำนักงานใหญ่",
+      "officeAddressLine1": "อาคาร Soft Square Building เลขที่ 51/597 ถนน Mueng Ake Village Moo 7 แขวง Muengpathumthani เขต Lakhok จังหวัด Pathumthani  12000 \n  ",
+      "officeAddressLine2": "BTS - ลงสถานี คปอ และนั่งแท็กซี่ต่อมาลงยังบริษัท\nSRT - ลงสถานีหลักหก และนั่งแท็กซี่ต่อมายังบริษัท\n\nบริษัทมีที่จอดรถ\nบริษัทมีที่พักให้",
+      "recruitmentContactChannel": "",
+      "openingDetailContactChannel": "",
+      "startDate": "2026-05-17T17:00:00.000Z",
+      "endDate": "2026-07-30T17:00:00.000Z",
+      "isPublished": true,
+      "isAcceptingApplication": true,
+      "inStudentDraftCount": 0,
       "isBookmarked": false
     }
   ],
   "meta": {
-    "totalItem": 106,
-    "itemCount": 106,
-    "itemsPerPage": 10000,
+    "totalItem": 109,
+    "itemCount": 109,
+    "itemsPerPage": 1000,
     "totalPage": 1,
     "currentPage": 1
   }
