@@ -160,6 +160,7 @@ function renderJobs(jobs) {
   }
 
   jobs.forEach((job) => {
+    // --- ส่วนจัดการเงินเดือน ---
     let compensationHTML = "";
     if (job.compensationAmount && job.compensationAmount > 0) {
       compensationHTML = `<span class="text-lg font-semibold text-gray-900">${formatNumber(
@@ -171,13 +172,11 @@ function renderJobs(jobs) {
       compensationHTML = `<span class="text-gray-400 text-sm font-light">ไม่ระบุเงินเดือน</span>`;
     }
 
+    // --- ส่วนจัดการ Tags (ที่มี Tooltip) ---
     let tagsHTML = "";
     if (job.tags && job.tags.length > 0) {
-      // ใช้ flex-wrap เพื่อให้ tag ตกบรรทัดได้ถ้าเยอะเกิน
       tagsHTML = `<div class="flex flex-wrap gap-2 mt-4">`;
-      
       job.tags.slice(0, 5).forEach((t) => {
-        // --- จุดที่แก้ไข: เพิ่ม max-width, truncate และ title ---
         tagsHTML += `
           <span 
             title="${t.tagName}" 
@@ -185,11 +184,11 @@ function renderJobs(jobs) {
                    max-w-[150px] truncate block">
             ${t.tagName}
           </span>`;
-        // ----------------------------------------------------
       });
       tagsHTML += `</div>`;
     }
 
+    // --- ส่วนจัดการ Meta Data อื่นๆ ---
     let metaList = [];
     if (job.workingCondition) metaList.push(job.workingCondition);
     if (job.quota && job.quota > 0) metaList.push(`รับ ${job.quota} อัตรา`);
@@ -200,6 +199,26 @@ function renderJobs(jobs) {
       ' <span class="text-gray-300 mx-2">•</span> '
     );
 
+    // --- [เพิ่มใหม่] ส่วนจัดการสถานที่ทำงาน (Office Location) ---
+    let locationHTML = "";
+    if (job.officeName) {
+      // ใช้ officeAddressLine1 ในการค้นหา ถ้าไม่มีให้ใช้ officeName แทน
+      const mapQuery = job.officeAddressLine1 || job.officeName;
+      const mapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(mapQuery)}`;
+      
+      locationHTML = `
+        <div class="mt-1 flex items-start gap-1 text-sm text-gray-500">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mt-0.5 flex-shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+            </svg>
+            <a href="${mapUrl}" target="_blank" class="hover:text-blue-600 hover:underline transition leading-tight">
+                ${job.officeName}
+            </a>
+        </div>
+      `;
+    }
+    // --------------------------------------------------------
+
     const cardHTML = `
             <div class="group bg-white p-6 rounded-xl border border-transparent shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] hover:shadow-lg hover:border-gray-100 transition duration-300 flex flex-col h-full">
                 
@@ -209,11 +228,16 @@ function renderJobs(jobs) {
                             ${job.title}
                         </a>
                     </h3>
-                    <p class="text-base text-gray-500 mt-1">
-                        <a href="https://cedtintern.cp.eng.chula.ac.th/company/profile/${job.company?.companyId}" target="_blank" class="hover:text-gray-800 transition relative z-10">
-                            ${job.company?.companyNameTh || "ไม่ระบุบริษัท"}
-                        </a>
-                    </p>
+                    
+                    <div class="mt-1">
+                        <p class="text-base text-gray-500">
+                            <a href="https://cedtintern.cp.eng.chula.ac.th/company/profile/${job.company?.companyId}" target="_blank" class="hover:text-gray-800 transition relative z-10">
+                                ${job.company?.companyNameTh || "ไม่ระบุบริษัท"}
+                            </a>
+                        </p>
+                        
+                        ${locationHTML}
+                    </div>
                 </div>
 
                 <div class="relative z-10">
