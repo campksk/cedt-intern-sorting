@@ -58,10 +58,22 @@ function populateTagOptions(jobs) {
   const sortedTags = Array.from(tagSet).sort();
   const selectElement = document.getElementById("tag-filter");
 
+  // เคลียร์ Option เก่าออกก่อนเสมอ (ยกเว้นตัวแรกที่เป็น All)
+  selectElement.innerHTML = '<option value="all">ทั้งหมด</option>';
+
   sortedTags.forEach((tagName) => {
     const option = document.createElement("option");
     option.value = tagName;
-    option.textContent = tagName;
+    
+    // --- จุดที่แก้ไข: ตัดคำถ้ายาวเกิน 40 ตัวอักษร ---
+    const maxLength = 40;
+    if (tagName.length > maxLength) {
+        option.textContent = tagName.substring(0, maxLength) + '...';
+    } else {
+        option.textContent = tagName;
+    }
+    // ------------------------------------------
+
     selectElement.appendChild(option);
   });
 }
@@ -142,7 +154,7 @@ function renderJobs(jobs) {
   if (jobs.length === 0) {
     container.innerHTML = `
             <div class="col-span-full py-20 text-center">
-                <p class="text-gray-400 text-lg font-light">No positions found.</p>
+                <p class="text-gray-400 text-lg font-light">ไม่พบตำแหน่งงานที่ค้นหา</p>
             </div>`;
     return;
   }
@@ -161,9 +173,19 @@ function renderJobs(jobs) {
 
     let tagsHTML = "";
     if (job.tags && job.tags.length > 0) {
+      // ใช้ flex-wrap เพื่อให้ tag ตกบรรทัดได้ถ้าเยอะเกิน
       tagsHTML = `<div class="flex flex-wrap gap-2 mt-4">`;
+      
       job.tags.slice(0, 5).forEach((t) => {
-        tagsHTML += `<span class="text-xs text-gray-600 bg-gray-100 px-2 py-1 rounded hover:bg-gray-200 transition cursor-default">${t.tagName}</span>`;
+        // --- จุดที่แก้ไข: เพิ่ม max-width, truncate และ title ---
+        tagsHTML += `
+          <span 
+            title="${t.tagName}" 
+            class="text-xs text-gray-600 bg-gray-100 px-2 py-1 rounded hover:bg-gray-200 transition cursor-help 
+                   max-w-[150px] truncate block">
+            ${t.tagName}
+          </span>`;
+        // ----------------------------------------------------
       });
       tagsHTML += `</div>`;
     }
@@ -183,18 +205,12 @@ function renderJobs(jobs) {
                 
                 <div class="mb-4">
                     <h3 class="text-xl font-semibold text-gray-900 leading-snug group-hover:text-blue-600 transition">
-                        <a href="https://cedtintern.cp.eng.chula.ac.th/opening/${
-                          job.openingId
-                        }/session/${
-      job.sessionId
-    }" target="_blank" class="focus:outline-none">
+                        <a href="https://cedtintern.cp.eng.chula.ac.th/opening/${job.openingId}/session/${job.sessionId}" target="_blank" class="focus:outline-none">
                             ${job.title}
                         </a>
                     </h3>
                     <p class="text-base text-gray-500 mt-1">
-                        <a href="https://cedtintern.cp.eng.chula.ac.th/company/profile/${
-                          job.company?.companyId
-                        }" target="_blank" class="hover:text-gray-800 transition relative z-10">
+                        <a href="https://cedtintern.cp.eng.chula.ac.th/company/profile/${job.company?.companyId}" target="_blank" class="hover:text-gray-800 transition relative z-10">
                             ${job.company?.companyNameTh || "ไม่ระบุบริษัท"}
                         </a>
                     </p>

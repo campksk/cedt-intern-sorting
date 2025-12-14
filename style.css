@@ -11,3 +11,39 @@ select {
     background-repeat: no-repeat;
     background-size: 1em 1em;
 }
+
+/* --- จัดการโครงสร้างตาราง --- */
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* ให้เลื่อนซ้าย-ขวาได้ในมือถือ */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* หัวใจสำคัญ: บังคับความกว้างคอลัมน์ให้คงที่ */
+}
+
+th, td {
+    padding: 12px 8px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    vertical-align: middle; /* จัดให้อยู่กึ่งกลางแนวตั้ง */
+}
+
+/* --- กำหนดความกว้างของแต่ละคอลัมน์ (ปรับ % ตามความชอบ) --- */
+/* สมมติว่ามี 4 คอลัมน์: ลำดับ, บริษัท, ตำแหน่ง, Tags */
+th:nth-child(1) { width: 10%; } /* ลำดับ */
+th:nth-child(2) { width: 25%; } /* บริษัท */
+th:nth-child(3) { width: 25%; } /* ตำแหน่ง */
+th:nth-child(4) { width: 40%; } /* Tags (ให้พื้นที่เยอะสุด แต่จำกัดไว้) */
+
+/* --- คลาสสำหรับตัดคำที่ยาวเกิน (Ellipsis) --- */
+.text-truncate {
+    display: block;          /* จำเป็นสำหรับ td */
+    width: 100%;             /* กว้างเต็ม cell */
+    white-space: nowrap;     /* ห้ามขึ้นบรรทัดใหม่ */
+    overflow: hidden;        /* ซ่อนส่วนที่ล้น */
+    text-overflow: ellipsis; /* ใส่ ... ต่อท้าย */
+    cursor: help;            /* เปลี่ยนเมาส์เป็นรูป ? เพื่อบอกว่ามี info เพิ่ม */
+}
