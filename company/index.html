@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEDT Intern Sorting</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sarabun:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="header-title">
+            <h1>CEDT Sorting</h1>
+            <span id="resultCount" class="count-badge">Loading...</span>
+        </div>
+        
+        <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="searchInput" placeholder="Search company, type, or location..." disabled>
+        </div>
+    </header>
+
+    <div class="table-container">
+        <table id="companyTable">
+            <thead>
+                <tr>
+                    <th onclick="sortTable('companyNameTh')">Company Name <span>⇅</span></th>
+                    <th onclick="sortTable('type')">Type <span>⇅</span></th>
+                    <th onclick="sortTable('province')">Location <span>⇅</span></th>
+                    <th>Links</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <tr>
+                    <td colspan="5" class="state-msg">Initializing...</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,222 @@
+/* --- CORE VARIABLES & RESET --- */
+:root {
+  --bg-color: #ffffff;
+  --text-main: #111827;
+  --text-sub: #6b7280;
+  --border-color: #e5e7eb;
+  --primary: #2563eb;
+  --hover-bg: #f9fafb;
+  --header-bg: #f3f4f6;
+}
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  font-family: "Inter", "Sarabun", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+/* --- LAYOUT --- */
+.container {
+    max-width: 1500px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* --- HEADER --- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.header-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+
+.count-badge {
+  font-size: 13px;
+  color: var(--text-sub);
+  background: var(--header-bg);
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+/* --- SEARCH BOX --- */
+.search-box {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 10px 15px 10px 40px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.search-box input:focus {
+  border-color: var(--text-main);
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.05);
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-sub);
+  font-size: 16px;
+}
+
+/* --- DATA TABLE --- */
+.table-container {
+  overflow-x: auto;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  white-space: nowrap;
+}
+
+th {
+  background-color: var(--header-bg);
+  color: var(--text-main);
+  font-weight: 600;
+  text-align: left;
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--border-color);
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.2s;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+th:hover {
+  background-color: #e5e7eb;
+}
+
+th span {
+  margin-left: 5px;
+  font-size: 10px;
+  color: #9ca3af;
+}
+
+td {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-main);
+  vertical-align: middle;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+tr:hover td {
+  background-color: var(--hover-bg);
+}
+
+/* --- COLUMN STYLES --- */
+.col-name {
+  min-width: 150px;
+  max-width: 200px; /* (ทางเลือก) เพิ่ม max-width เพื่อจำกัดไม่ให้กว้างเกินไป */
+  white-space: normal; /* (ทางเลือก) ถ้าชื่อยาวเกิน ให้ปัดลงบรรทัดใหม่แทนการขยายออก */
+}
+
+.name-th {
+  display: block;
+  font-weight: 500;
+  font-size: 15px;
+  margin-bottom: 2px;
+}
+
+.name-en {
+  display: block;
+  font-size: 12px;
+  color: var(--text-sub);
+}
+
+/* --- BADGES --- */
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.badge-type {
+    
+  background-color: #eef2ff;
+  color: #4f46e5;
+}
+.badge-size {
+  background-color: #f3f4f6;
+  color: #374151;
+  white-space: normal;
+}
+.badge-loc {
+  background-color: #ecfdf5;
+  color: #059669;
+  width: fit-content;
+}
+
+/* --- LINKS --- */
+.action-links a {
+  text-decoration: none;
+  color: var(--text-sub);
+  margin-right: 12px;
+  font-size: 13px;
+  font-weight: 500;
+  transition: color 0.2s;
+  cursor: pointer;
+}
+
+.action-links a:hover {
+  color: var(--primary);
+}
+.action-links a.disabled {
+  color: #d1d5db;
+  pointer-events: none;
+  cursor: default;
+}
+
+/* --- STATES --- */
+.state-msg {
+  text-align: center;
+  padding: 60px;
+  color: var(--text-sub);
+}
+.error {
+  color: #ef4444;
+}
