@@ -151,7 +151,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 9,
+            "inStudentDraftCount": 11,
             "isBookmarked": false
         },
         {
@@ -192,7 +192,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 7,
+            "inStudentDraftCount": 8,
             "isBookmarked": false
         },
         {
@@ -228,7 +228,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 15,
+            "inStudentDraftCount": 14,
             "isBookmarked": false
         },
         {
@@ -273,7 +273,7 @@
             "endDate": "2026-04-29T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 4,
+            "inStudentDraftCount": 2,
             "isBookmarked": false
         },
         {
@@ -354,7 +354,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 16,
+            "inStudentDraftCount": 17,
             "isBookmarked": false
         },
         {
@@ -419,7 +419,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 5,
+            "inStudentDraftCount": 6,
             "isBookmarked": false
         },
         {
@@ -512,8 +512,8 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 6,
-            "isBookmarked": false
+            "inStudentDraftCount": 7,
+            "isBookmarked": true
         },
         {
             "openingId": 1066,
@@ -548,8 +548,8 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 6,
-            "isBookmarked": false
+            "inStudentDraftCount": 5,
+            "isBookmarked": true
         },
         {
             "openingId": 1067,
@@ -825,8 +825,8 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 18,
-            "isBookmarked": false
+            "inStudentDraftCount": 19,
+            "isBookmarked": true
         },
         {
             "openingId": 1087,
@@ -871,7 +871,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 9,
+            "inStudentDraftCount": 10,
             "isBookmarked": false
         },
         {
@@ -944,7 +944,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 7,
+            "inStudentDraftCount": 9,
             "isBookmarked": false
         },
         {
@@ -993,8 +993,8 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 20,
-            "isBookmarked": false
+            "inStudentDraftCount": 21,
+            "isBookmarked": true
         },
         {
             "openingId": 1101,
@@ -1042,8 +1042,8 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 12,
-            "isBookmarked": false
+            "inStudentDraftCount": 10,
+            "isBookmarked": true
         },
         {
             "openingId": 1102,
@@ -1091,8 +1091,8 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 10,
-            "isBookmarked": false
+            "inStudentDraftCount": 11,
+            "isBookmarked": true
         },
         {
             "openingId": 1103,
@@ -1136,8 +1136,8 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 13,
-            "isBookmarked": false
+            "inStudentDraftCount": 12,
+            "isBookmarked": true
         },
         {
             "openingId": 1109,
@@ -1181,7 +1181,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 14,
+            "inStudentDraftCount": 16,
             "isBookmarked": false
         },
         {
@@ -1246,7 +1246,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 7,
+            "inStudentDraftCount": 6,
             "isBookmarked": false
         },
         {
@@ -1348,7 +1348,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 5,
+            "inStudentDraftCount": 3,
             "isBookmarked": false
         },
         {
@@ -1393,7 +1393,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 6,
+            "inStudentDraftCount": 4,
             "isBookmarked": false
         },
         {
@@ -1412,13 +1412,13 @@
             "description": "<p><br></p><p>ทำระบบบนแพลตฟอร์มนิยาย Dek-D หน้าที่ความรับผิดชอบหลักคือส่วนของ Front-end&nbsp;</p><p><br></p><p>เช่น การปรับปรุง UI ในฝั่งของ Web Frontend หรือ ฟีเจอร์ที่ยังไม่เคยมี ซึ่งทางหัวหน้าทีมจะเป็นคน plan งานเข้า Sprint Backlog ทุกสัปดาห์และมีการประชุมงานกันทุกสัปดาห์ เพื่อมีการ progress และ วัดผลประสิทธิภาพของงาน และช่วยเหลือ รวมถึงอธิบายรูปแบบงาน</p>",
             "quota": 2,
             "openForCooperativeInternship": false,
-            "compensationAmount": 150,
+            "compensationAmount": 200,
             "compensationType": {
                 "compensationTypeId": 1,
                 "compensationType": "บาท/วัน"
             },
             "workingCondition": "Hybrid",
-            "requirements": "<p><strong style=\"color: rgb(81, 82, 81);\">ผู้สมัครเลือกตำแหน่งที่ต้องการสมัครได้ 1 ตำแหน่ง&nbsp;แล้วส่งข้อมูลทางอีเมล ดังนี้</strong></p><p><span style=\"color: rgb(81, 82, 81);\">﻿</span></p><ul><li>ข้อความแนะนำตัว รูปแบบฟรีสไตล์ ความยาวไม่จำกัด (ได้ทั้งข้อความ รูปภาพ หรือวิดีโอ) / resume</li></ul><p><br></p><ul><li>การบ้านตามตำแหน่งที่สมัคร   ดูรายละเอียดโจทย์ได้ที่</li></ul><p><br></p><p>https://vintage-painter-228.notion.site/Frontend-Quiz-9466837540634c4094dcc6f5ef7c4b4f?pvs=4</p><p><br></p><ul><li>ส่งอีเมลที่มีหัวข้อ สมัครฝึกงาน&nbsp;&nbsp;รอบมิถุนายน 2569 มาที่&nbsp;<span style=\"color: rgb(249, 101, 25);\">intern@dek-d.com</span></li><li>สอบถามข้อมูลเพิ่มเติมที่&nbsp;<span style=\"color: rgb(249, 101, 25);\">intern@dek-d.com</span></li></ul><p><br></p>",
+            "requirements": "<p><strong style=\"color: rgb(81, 82, 81);\">ผู้สมัครเลือกตำแหน่งที่ต้องการสมัครได้ 1 ตำแหน่ง&nbsp;แล้วส่งข้อมูลทางอีเมล ดังนี้</strong></p><p><span style=\"color: rgb(81, 82, 81);\">﻿</span></p><ul><li>ข้อความแนะนำตัว รูปแบบฟรีสไตล์ ความยาวไม่จำกัด (ได้ทั้งข้อความ รูปภาพ หรือวิดีโอ) / resume</li></ul><p><br></p><ul><li>การบ้านตามตำแหน่งที่สมัคร ดูรายละเอียดโจทย์ได้ที่</li></ul><p><br></p><p>https://vintage-painter-228.notion.site/Frontend-Quiz-9466837540634c4094dcc6f5ef7c4b4f?pvs=4</p><p><br></p><ul><li>ส่งอีเมลที่มีหัวข้อ สมัครฝึกงาน&nbsp;&nbsp;รอบมิถุนายน 2569 มาที่&nbsp;<span style=\"color: rgb(249, 101, 25);\">intern@dek-d.com</span></li><li>สอบถามข้อมูลเพิ่มเติมที่&nbsp;<span style=\"color: rgb(249, 101, 25);\">intern@dek-d.com</span></li></ul>",
             "tags": [],
             "officeName": "สำนักงานใหญ่",
             "officeAddressLine1": "อาคาร ชาร์เตอร์สแควร์ ชั้น 29 เลขที่ 152 ถนน สาทรเหนือ แขวง บางรัก เขต สีลม จังหวัด กรุงเทพมหานคร  10500 \n  ",
@@ -1429,7 +1429,7 @@
             "endDate": "2026-07-09T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 7,
+            "inStudentDraftCount": 10,
             "isBookmarked": false
         },
         {
@@ -1482,7 +1482,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 6,
+            "inStudentDraftCount": 7,
             "isBookmarked": false
         },
         {
@@ -1576,7 +1576,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 2,
+            "inStudentDraftCount": 4,
             "isBookmarked": false
         },
         {
@@ -1593,7 +1593,7 @@
             },
             "title": "Backend, Ai Developer",
             "description": "<p><strong>Department:</strong> ศูนย์ซ่อมและพัฒนาเครื่องจักรด้านวิศวกรรมอาหารสำเร็จรูป</p><p><br></p><ol><li>ออกแบบและพัฒนา <strong>AI Agents</strong> สำหรับวิเคราะห์ข้อมูลที่จัดเก็บในฐานข้อมูล <strong>PostgreSQL</strong> เพื่อสนับสนุนการทำงานด้านวิศวกรรมอาหารสำเร็จรูป</li><li>พัฒนา <strong>Back-End Services</strong> สำหรับเชื่อมต่อฐานข้อมูล ประมวลผลข้อมูล และสื่อสารกับระบบ AI</li><li>สร้าง API หรือบริการหลังบ้านสำหรับนำผลการวิเคราะห์ไปใช้งานในระบบต่าง ๆ ของหน่วยงาน</li><li>ทดลองใช้งานและออกแบบระบบที่เกี่ยวกับ</li><li class=\"ql-indent-1\"><strong>RAG (Retrieval-Augmented Generation)</strong></li><li class=\"ql-indent-1\"><strong>Vector Database </strong>เพื่อเพิ่มความสามารถในการตอบคำถามและวิเคราะห์ข้อมูล</li><li>ทำงานร่วมกับทีมวิศวกรรมและไอที เพื่อพัฒนาเครื่องมือที่ช่วยยกระดับการวิเคราะห์ข้อมูลจากเครื่องจักร</li><li>จัดทำเอกสารทางเทคนิค รายงานผลการทดสอบระบบ และข้อเสนอแนะการพัฒนาในอนาคต</li></ol>",
-            "quota": 1,
+            "quota": 2,
             "openForCooperativeInternship": false,
             "compensationAmount": null,
             "compensationType": null,
@@ -1678,7 +1678,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 1,
+            "inStudentDraftCount": 2,
             "isBookmarked": false
         },
         {
@@ -1724,7 +1724,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 4,
+            "inStudentDraftCount": 3,
             "isBookmarked": false
         },
         {
@@ -1770,7 +1770,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 7,
+            "inStudentDraftCount": 6,
             "isBookmarked": false
         },
         {
@@ -1812,7 +1812,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 5,
+            "inStudentDraftCount": 7,
             "isBookmarked": false
         },
         {
@@ -1893,7 +1893,7 @@
             "endDate": "2026-07-29T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 6,
+            "inStudentDraftCount": 5,
             "isBookmarked": false
         },
         {
@@ -1974,7 +1974,7 @@
             "endDate": "2026-07-29T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 6,
+            "inStudentDraftCount": 7,
             "isBookmarked": false
         },
         {
@@ -2055,7 +2055,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 11,
+            "inStudentDraftCount": 14,
             "isBookmarked": false
         },
         {
@@ -2112,8 +2112,8 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 15,
-            "isBookmarked": false
+            "inStudentDraftCount": 14,
+            "isBookmarked": true
         },
         {
             "openingId": 1155,
@@ -2349,7 +2349,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 4,
+            "inStudentDraftCount": 5,
             "isBookmarked": false
         },
         {
@@ -2479,7 +2479,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 4,
+            "inStudentDraftCount": 2,
             "isBookmarked": false
         },
         {
@@ -2617,7 +2617,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 12,
+            "inStudentDraftCount": 9,
             "isBookmarked": false
         },
         {
@@ -2666,7 +2666,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 7,
+            "inStudentDraftCount": 5,
             "isBookmarked": false
         },
         {
@@ -2711,7 +2711,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 9,
+            "inStudentDraftCount": 8,
             "isBookmarked": false
         },
         {
@@ -2744,7 +2744,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 7,
+            "inStudentDraftCount": 10,
             "isBookmarked": false
         },
         {
@@ -2809,7 +2809,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 5,
+            "inStudentDraftCount": 4,
             "isBookmarked": false
         },
         {
@@ -2886,7 +2886,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 8,
+            "inStudentDraftCount": 9,
             "isBookmarked": false
         },
         {
@@ -2922,8 +2922,8 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 10,
-            "isBookmarked": false
+            "inStudentDraftCount": 11,
+            "isBookmarked": true
         },
         {
             "openingId": 1189,
@@ -2971,7 +2971,7 @@
             "endDate": "2026-07-02T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 5,
+            "inStudentDraftCount": 4,
             "isBookmarked": false
         },
         {
@@ -3025,7 +3025,7 @@
             "isPublished": true,
             "isAcceptingApplication": true,
             "inStudentDraftCount": 6,
-            "isBookmarked": false
+            "isBookmarked": true
         },
         {
             "openingId": 1197,
@@ -3073,7 +3073,7 @@
             "endDate": "2026-07-02T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 4,
+            "inStudentDraftCount": 5,
             "isBookmarked": false
         },
         {
@@ -3122,8 +3122,8 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 7,
-            "isBookmarked": false
+            "inStudentDraftCount": 10,
+            "isBookmarked": true
         },
         {
             "openingId": 1202,
@@ -3158,7 +3158,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 7,
+            "inStudentDraftCount": 5,
             "isBookmarked": false
         },
         {
@@ -3207,8 +3207,8 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 5,
-            "isBookmarked": false
+            "inStudentDraftCount": 7,
+            "isBookmarked": true
         },
         {
             "openingId": 1206,
@@ -3286,7 +3286,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 5,
+            "inStudentDraftCount": 4,
             "isBookmarked": false
         },
         {
@@ -3319,7 +3319,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 3,
+            "inStudentDraftCount": 4,
             "isBookmarked": false
         },
         {
@@ -3355,8 +3355,8 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 5,
-            "isBookmarked": false
+            "inStudentDraftCount": 6,
+            "isBookmarked": true
         },
         {
             "openingId": 1219,
@@ -3554,7 +3554,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 21,
+            "inStudentDraftCount": 24,
             "isBookmarked": false
         },
         {
@@ -3623,8 +3623,8 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 17,
-            "isBookmarked": false
+            "inStudentDraftCount": 22,
+            "isBookmarked": true
         },
         {
             "openingId": 1228,
@@ -3639,8 +3639,8 @@
                 "line": ""
             },
             "title": "Intern - Software Engineer ",
-            "description": "<p class=\"ql-align-center\"><strong style=\"background-color: transparent;\">Intern - Software Engineer</strong></p><p><br></p><p><strong style=\"background-color: transparent;\">Our company</strong></p><p><br></p><p class=\"ql-align-justify\"><span style=\"background-color: transparent;\">We are Thailand’s Leading On-Demand Delivery and Lifestyle e-Commerce platform services. We build technology to help Thai people live better, to empower all local businesses by creating an end-to-end food ecosystem through our channel. Connected consumers, riders, and local businesses and improved the daily life of all parties with restaurants nationwide. And because we are local, we provide the deepest variety and services that are tailor-made for Thai people.</span></p><p><br></p><p class=\"ql-align-justify\"><span style=\"background-color: transparent;\">We are looking for interns to join our team as Software Engineers in various areas, including Backend, Frontend, Testing, and Mobile Development. Depending on the tech stack you're interested in, the responsibilities and projects will vary accordingly.</span></p><p><br></p><p class=\"ql-align-justify\"><strong style=\"background-color: transparent;\">Intern - Software Engineer, Backend</strong></p><p><br></p><p class=\"ql-align-justify\"><span style=\"background-color: transparent;\">Backend team is one of our important teams that design backend systems such as LINE MAN, Wongnai.com, Wongnai POS, and Wongnai Merchant App (WMA) and other services to deliver food meals for millions of customers from 1 million restaurants.</span></p><p><br></p><p class=\"ql-align-justify\"><strong style=\"background-color: transparent;\">Intern - Software Engineer, Backend (Go)</strong></p><p><br></p><p class=\"ql-align-justify\"><strong style=\"background-color: transparent;\">What you’ll Do:</strong></p><p><br></p><ul><li class=\"ql-align-justify\"><span style=\"background-color: transparent;\">Support and collaborate with the Product Development Team to design and implement useful systems for team and LINE MAN Wongnai users.&nbsp;&nbsp;</span></li><li class=\"ql-align-justify\"><span style=\"background-color: transparent;\">Learn and improve important skills for good teamwork with the LINE MAN Wongnai Engineering team to develop effective softwares.</span></li></ul><p><br></p><p class=\"ql-align-justify\"><strong style=\"background-color: transparent;\">What you’ll Need:&nbsp;</strong></p><p><br></p><ul><li class=\"ql-align-justify\"><span style=\"background-color: transparent;\">Have proficient knowledge and an in-depth understanding of Data Structure, Algorithm, OOP, Coding, Design Patterns, Other Best Practices.</span></li><li class=\"ql-align-justify\"><span style=\"background-color: transparent;\">Able to work well with others in fast pacing environments</span></li><li class=\"ql-align-justify\"><span style=\"background-color: transparent;\">Have a growth mindset and are willing to learn new things.</span></li><li class=\"ql-align-justify\"><span style=\"background-color: transparent;\">Able to use Golang to develop programs proficiently.</span></li><li class=\"ql-align-justify\"><span style=\"background-color: transparent;\">Experience in JavaScript MVC, DevOps practices, CI/CD pipelines, TDD, Unit, Integration and E2E tests is a plus.</span></li></ul><p><br></p><p class=\"ql-align-justify\"><strong style=\"background-color: transparent;\">Intern - Software Engineer, Backend (Java)</strong></p><p><br></p><p><strong style=\"background-color: transparent;\">What you’ll Do:</strong></p><ul><li><span style=\"background-color: transparent;\">Develop Wongnai and Merchant App by improving the system and adding new features, and collaborate with Frontend/Backend/iOS/Android teams to design the system functionality.</span></li><li><span style=\"background-color: transparent;\">Improve code quality to make the code efficient, functional, and easy to run, test and maintain.</span></li><li><span style=\"background-color: transparent;\">Support on documents creating system designing such as ​​Sequence Diagram, API Spec, Collaboration Diagram, etc.</span></li></ul><p><br></p><p><strong style=\"background-color: transparent;\">What you’ll Need:&nbsp;</strong></p><ul><li><span style=\"background-color: transparent;\">Have proficient knowledge and an in-depth understanding of Data Structure, Algorithm, OOP, Coding, Design Patterns, Other Best Practices.</span></li><li><span style=\"background-color: transparent;\">Able to work well with others in fast pacing environments.</span></li><li><span style=\"background-color: transparent;\">Have a growth mindset and are willing to learn new things.</span></li><li><span style=\"background-color: transparent;\">Able to use Java language to develop the backend API or Scheduler Job.</span></li><li><span style=\"background-color: transparent;\">Familiarity with any of the following: Golang in production environments is a plus.</span></li><li><span style=\"background-color: transparent;\">Experience in Spring, Hibernate, Solr, gRPC, Docker, Amazon Web Services or Cloud Platform is a plus.</span></li></ul><p><br></p><p><strong style=\"background-color: transparent; color: rgb(34, 34, 34);\">Intern - Software Engineer, Frontend</strong></p><p><br></p><p class=\"ql-align-justify\"><span style=\"background-color: transparent;\">Frontend team is one of our important teams that design frontend systems especially Wongnai.com and Software Engineer, Frontend will work with SEO and marketing team to develop quality processes for performance applications to be high quality and efficient for the website of 200,000 pages on Google Search.</span></p><p><br></p><p><strong style=\"background-color: transparent;\">What you’ll Do:</strong></p><ul><li><span style=\"background-color: transparent;\">Develop products of LINE MAN and Wongnai with Typescript.</span></li><li><span style=\"background-color: transparent;\">Initiate and implement new features, including improving developer experience.</span></li><li><span style=\"background-color: transparent;\">Design and develop the system to effectively work with new features in the long term.</span></li></ul><p><br></p><p><strong style=\"background-color: transparent;\">What you’ll Need:&nbsp;</strong></p><ul><li><span style=\"background-color: transparent;\">Have proficient knowledge and an in-depth understanding of Data Structure, Algorithm, OOP, Coding, Design Patterns, Other Best Practices.</span></li><li><span style=\"background-color: transparent;\">Able to work well with others in fast pacing environments.</span></li><li><span style=\"background-color: transparent;\">Have a growth mindset and are willing to learn new things.</span></li><li><span style=\"background-color: transparent;\">Able to use JavaScript (ES6), HTML5, CSS3 to develop programs proficiently.</span></li><li><span style=\"background-color: transparent;\">Good understanding of Web Technology and Responsive Design.</span></li><li><span style=\"background-color: transparent;\">Experience in ReactJS, Universal React, Redux, GraphQL, ImmutableJS, SCSS is a plus.</span></li></ul><p><br></p><p><strong style=\"background-color: transparent;\">Intern -&nbsp;Software Engineer in Test</strong></p><p><br></p><p class=\"ql-align-justify\"><span style=\"background-color: transparent;\">Software Engineer in Test is one of our important teams that will be a member in every Squads. Software Engineer in Test will work with Product manager, Software engineer, Site reliability engineering ,and UX/UI designer to develop quality processes for LINE MAN Wongnai applications to be high quality and meet the user's practical needs.</span></p><p><br></p><p><strong style=\"background-color: transparent; color: rgb(34, 34, 34);\">What you’ll Do:</strong></p><ul><li><span style=\"background-color: transparent;\">Create and design testing procedures for software applications with automated testing, including functional and non-functional testing procedures.</span></li><li><span style=\"background-color: transparent;\">Support and collaborate with the Product Development Team to design and implement useful systems for team and LINE MAN Wongnai users.</span></li><li><span style=\"background-color: transparent;\">Learn and improve important skills for good teamwork with the LINE MAN Wongnai Engineering team to develop effective software.</span></li></ul><p><br></p><p><strong style=\"background-color: transparent; color: rgb(34, 34, 34);\">What you’ll Need:</strong></p><ul><li><span style=\"background-color: transparent;\">Have proficient knowledge and an in-depth understanding of Data Structure, Algorithm, OOP, Coding, Design Patterns, other Best Practices.</span></li><li><span style=\"background-color: transparent;\">Experience in software testing process and software development.</span></li><li><span style=\"background-color: transparent;\">Able to work well with others in a fast paced environment.</span></li><li><span style=\"background-color: transparent;\">Have a growth mindset and are willing to learn new things.</span></li><li><span style=\"background-color: transparent;\">Experience in DevOps practices, CI/CD pipelines, TDD, Unit, Integration and E2E tests is a plus.</span></li></ul><p><br></p><p><strong style=\"background-color: transparent; color: rgb(34, 34, 34);\">Intern - Software Engineer, Mobile</strong></p><p class=\"ql-align-justify\"><span style=\"background-color: transparent;\">Mobile team is one of our important teams that develop applications LINE MAN and Wongnai to build quality processes for users to be high quality that impact millions of people on our journey to become the No.1 food platform in Thailand.</span></p><p><br></p><p class=\"ql-align-justify\"><strong style=\"background-color: transparent;\">Intern - Software Engineer, iOS</strong></p><p><br></p><p><strong style=\"background-color: transparent;\">What you’ll Do:</strong></p><p><br></p><ul><li><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Design and develop native user applications interface with the latest technologies on iOS.</span></li><li><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Improve code quality and boost the productivity in specific feature for users</span></li><li><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Brainstorm and initiate ideas to apply new ways and technologies for the system in charge.</span></li></ul><p><br></p><p><strong style=\"background-color: transparent;\">What you’ll Need:&nbsp;</strong></p><p><br></p><ul><li><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Have proficient knowledge and an in-depth understanding of Data Structure, Algorithm, OOP, Coding, Design Patterns, Other Best Practices.</span></li><li><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Able to work well with others in a fast paced environment.&nbsp;</span></li><li><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Have a growth mindset and are willing to learn new things.</span></li><li><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Able to use Swift language to develop programs proficiently and can work with Objective-C language code.</span></li><li><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Good understanding of OOP, UIKit, Auto Layout.</span></li><li><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">If you are familiar with Software Architecture with MVVM, Reactive Programming is preferable.</span></li><li><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">If you are familiar with Libraries / Tools such as Alamofire, Realm, Gloss, RxSwift, Fastlane is preferable.</span></li></ul><p><br></p><p><strong style=\"background-color: transparent;\">Intern - Software Engineer, Android</strong></p><p><strong style=\"background-color: transparent;\">What you’ll Do:</strong></p><p><br></p><ul><li><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Collaborate with the Product team and the Design team to give the best experience to LINE MAN Wongnai’s users for Android.</span></li><li><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Design and implement applications with the latest technologies on Android.</span></li></ul><p><br></p><p><strong style=\"background-color: transparent;\">What you’ll Need:&nbsp;</strong></p><p><br></p><ul><li><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Have the ability to use Java to implement Android’s application. Kotlin is a plus.</span></li><li><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Have proficient knowledge and an in-depth understanding of Data Structure, Algorithm, OOP, Coding, Design Patterns, Other Best Practices.</span></li><li><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Able to work well with others in fast pacing environments.</span></li><li><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Have a growth mindset and are willing to learn new things.</span></li><li><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Good understanding of Android Fundamentals such as Activity and Fragment Lifecycle, Android Resources, RecyclerView, Layout, Http request etc.</span></li></ul><h3><br></h3><h3><strong style=\"background-color: transparent;\">It'd be Great if you have:</strong></h3><ul><li><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Good understanding of Design patterns such as MVP, MVVM, Clean architecture etc.</span></li><li><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Good understanding of Android architecture components such as ViewModel, LiveData, Room etc.</span></li><li><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Good understanding of Android Jetpack Library is a plus.</span></li><li><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Good understanding of Unit tests is a plus.</span></li></ul>",
-            "quota": 3,
+            "description": "<p class=\"ql-align-center\"><strong style=\"background-color: transparent;\">Intern - Software Engineer</strong></p><p><br></p><p><strong style=\"background-color: transparent;\">Our company</strong></p><p><br></p><p class=\"ql-align-justify\"><span style=\"background-color: transparent;\">We are Thailand’s Leading On-Demand Delivery and Lifestyle e-Commerce platform services. We build technology to help Thai people live better, to empower all local businesses by creating an end-to-end food ecosystem through our channel. Connected consumers, riders, and local businesses and improved the daily life of all parties with restaurants nationwide. And because we are local, we provide the deepest variety and services that are tailor-made for Thai people.</span></p><p><br></p><p class=\"ql-align-justify\"><span style=\"background-color: transparent;\">We are looking for interns to join our team as Software Engineers in various areas, including Backend, Frontend, Testing, and Mobile Development. Depending on the tech stack you're interested in, the responsibilities and projects will vary accordingly.</span></p><p><br></p><p class=\"ql-align-justify\"><strong style=\"background-color: transparent;\">Intern - Software Engineer, Backend</strong></p><p><br></p><p class=\"ql-align-justify\"><span style=\"background-color: transparent;\">Backend team is one of our important teams that design backend systems such as LINE MAN, Wongnai.com, Wongnai POS, and Wongnai Merchant App (WMA) and other services to deliver food meals for millions of customers from 1 million restaurants.</span></p><p><br></p><p class=\"ql-align-justify\"><strong style=\"background-color: transparent;\">Intern - Software Engineer, Backend (Go)</strong></p><p><br></p><p class=\"ql-align-justify\"><strong style=\"background-color: transparent;\">What you’ll Do:</strong></p><p><br></p><ul><li class=\"ql-align-justify\"><span style=\"background-color: transparent;\">Support and collaborate with the Product Development Team to design and implement useful systems for team and LINE MAN Wongnai users.&nbsp;&nbsp;</span></li><li class=\"ql-align-justify\"><span style=\"background-color: transparent;\">Learn and improve important skills for good teamwork with the LINE MAN Wongnai Engineering team to develop effective softwares.</span></li></ul><p><br></p><p class=\"ql-align-justify\"><strong style=\"background-color: transparent;\">What you’ll Need:&nbsp;</strong></p><p><br></p><ul><li class=\"ql-align-justify\"><span style=\"background-color: transparent;\">Have proficient knowledge and an in-depth understanding of Data Structure, Algorithm, OOP, Coding, Design Patterns, Other Best Practices.</span></li><li class=\"ql-align-justify\"><span style=\"background-color: transparent;\">Able to work well with others in fast pacing environments</span></li><li class=\"ql-align-justify\"><span style=\"background-color: transparent;\">Have a growth mindset and are willing to learn new things.</span></li><li class=\"ql-align-justify\"><span style=\"background-color: transparent;\">Able to use Golang to develop programs proficiently.</span></li><li class=\"ql-align-justify\"><span style=\"background-color: transparent;\">Experience in JavaScript MVC, DevOps practices, CI/CD pipelines, TDD, Unit, Integration and E2E tests is a plus.</span></li></ul><p><br></p><p class=\"ql-align-justify\"><strong style=\"background-color: transparent;\">Intern - Software Engineer, Backend (Java)</strong></p><p><br></p><p><strong style=\"background-color: transparent;\">What you’ll Do:</strong></p><ul><li><span style=\"background-color: transparent;\">Develop Wongnai and Merchant App by improving the system and adding new features, and collaborate with Frontend/Backend/iOS/Android teams to design the system functionality.</span></li><li><span style=\"background-color: transparent;\">Improve code quality to make the code efficient, functional, and easy to run, test and maintain.</span></li><li><span style=\"background-color: transparent;\">Support on documents creating system designing such as ​​Sequence Diagram, API Spec, Collaboration Diagram, etc.</span></li></ul><p><br></p><p><strong style=\"background-color: transparent;\">What you’ll Need:&nbsp;</strong></p><ul><li><span style=\"background-color: transparent;\">Have proficient knowledge and an in-depth understanding of Data Structure, Algorithm, OOP, Coding, Design Patterns, Other Best Practices.</span></li><li><span style=\"background-color: transparent;\">Able to work well with others in fast pacing environments.</span></li><li><span style=\"background-color: transparent;\">Have a growth mindset and are willing to learn new things.</span></li><li><span style=\"background-color: transparent;\">Able to use Java language to develop the backend API or Scheduler Job.</span></li><li><span style=\"background-color: transparent;\">Familiarity with any of the following: Golang in production environments is a plus.</span></li><li><span style=\"background-color: transparent;\">Experience in Spring, Hibernate, Solr, gRPC, Docker, Amazon Web Services or Cloud Platform is a plus.</span></li></ul><p><br></p><p><strong style=\"color: rgb(34, 34, 34); background-color: transparent;\">Intern - Software Engineer, Frontend</strong></p><p><br></p><p class=\"ql-align-justify\"><span style=\"background-color: transparent;\">Frontend team is one of our important teams that design frontend systems especially Wongnai.com and Software Engineer, Frontend will work with SEO and marketing team to develop quality processes for performance applications to be high quality and efficient for the website of 200,000 pages on Google Search.</span></p><p><br></p><p><strong style=\"background-color: transparent;\">What you’ll Do:</strong></p><ul><li><span style=\"background-color: transparent;\">Develop products of LINE MAN and Wongnai with Typescript.</span></li><li><span style=\"background-color: transparent;\">Initiate and implement new features, including improving developer experience.</span></li><li><span style=\"background-color: transparent;\">Design and develop the system to effectively work with new features in the long term.</span></li></ul><p><br></p><p><strong style=\"background-color: transparent;\">What you’ll Need:&nbsp;</strong></p><ul><li><span style=\"background-color: transparent;\">Have proficient knowledge and an in-depth understanding of Data Structure, Algorithm, OOP, Coding, Design Patterns, Other Best Practices.</span></li><li><span style=\"background-color: transparent;\">Able to work well with others in fast pacing environments.</span></li><li><span style=\"background-color: transparent;\">Have a growth mindset and are willing to learn new things.</span></li><li><span style=\"background-color: transparent;\">Able to use JavaScript (ES6), HTML5, CSS3 to develop programs proficiently.</span></li><li><span style=\"background-color: transparent;\">Good understanding of Web Technology and Responsive Design.</span></li><li><span style=\"background-color: transparent;\">Experience in ReactJS, Universal React, Redux, GraphQL, ImmutableJS, SCSS is a plus.</span></li></ul><p><br></p><p><strong style=\"background-color: transparent;\">Intern -&nbsp;Software Engineer in Test</strong></p><p><br></p><p class=\"ql-align-justify\"><span style=\"background-color: transparent;\">Software Engineer in Test is one of our important teams that will be a member in every Squads. Software Engineer in Test will work with Product manager, Software engineer, Site reliability engineering ,and UX/UI designer to develop quality processes for LINE MAN Wongnai applications to be high quality and meet the user's practical needs.</span></p><p><br></p><p><strong style=\"color: rgb(34, 34, 34); background-color: transparent;\">What you’ll Do:</strong></p><ul><li><span style=\"background-color: transparent;\">Create and design testing procedures for software applications with automated testing, including functional and non-functional testing procedures.</span></li><li><span style=\"background-color: transparent;\">Support and collaborate with the Product Development Team to design and implement useful systems for team and LINE MAN Wongnai users.</span></li><li><span style=\"background-color: transparent;\">Learn and improve important skills for good teamwork with the LINE MAN Wongnai Engineering team to develop effective software.</span></li></ul><p><br></p><p><strong style=\"color: rgb(34, 34, 34); background-color: transparent;\">What you’ll Need:</strong></p><ul><li><span style=\"background-color: transparent;\">Have proficient knowledge and an in-depth understanding of Data Structure, Algorithm, OOP, Coding, Design Patterns, other Best Practices.</span></li><li><span style=\"background-color: transparent;\">Experience in software testing process and software development.</span></li><li><span style=\"background-color: transparent;\">Able to work well with others in a fast paced environment.</span></li><li><span style=\"background-color: transparent;\">Have a growth mindset and are willing to learn new things.</span></li><li><span style=\"background-color: transparent;\">Experience in DevOps practices, CI/CD pipelines, TDD, Unit, Integration and E2E tests is a plus.</span></li></ul><p><br></p><p><strong style=\"color: rgb(34, 34, 34); background-color: transparent;\">Intern - Software Engineer, Mobile</strong></p><p class=\"ql-align-justify\"><span style=\"background-color: transparent;\">Mobile team is one of our important teams that develop applications LINE MAN and Wongnai to build quality processes for users to be high quality that impact millions of people on our journey to become the No.1 food platform in Thailand.</span></p><p><br></p><p class=\"ql-align-justify\"><strong style=\"background-color: transparent;\">Intern - Software Engineer, iOS</strong></p><p><br></p><p><strong style=\"background-color: transparent;\">What you’ll Do:</strong></p><p><br></p><ul><li><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Design and develop native user applications interface with the latest technologies on iOS.</span></li><li><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Improve code quality and boost the productivity in specific feature for users</span></li><li><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Brainstorm and initiate ideas to apply new ways and technologies for the system in charge.</span></li></ul><p><br></p><p><strong style=\"background-color: transparent;\">What you’ll Need:&nbsp;</strong></p><p><br></p><ul><li><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Have proficient knowledge and an in-depth understanding of Data Structure, Algorithm, OOP, Coding, Design Patterns, Other Best Practices.</span></li><li><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Able to work well with others in a fast paced environment.&nbsp;</span></li><li><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Have a growth mindset and are willing to learn new things.</span></li><li><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Able to use Swift language to develop programs proficiently and can work with Objective-C language code.</span></li><li><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Good understanding of OOP, UIKit, Auto Layout.</span></li><li><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">If you are familiar with Software Architecture with MVVM, Reactive Programming is preferable.</span></li><li><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">If you are familiar with Libraries / Tools such as Alamofire, Realm, Gloss, RxSwift, Fastlane is preferable.</span></li></ul><p><br></p><p><strong style=\"background-color: transparent;\">Intern - Software Engineer, Android</strong></p><p><strong style=\"background-color: transparent;\">What you’ll Do:</strong></p><p><br></p><ul><li><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Collaborate with the Product team and the Design team to give the best experience to LINE MAN Wongnai’s users for Android.</span></li><li><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Design and implement applications with the latest technologies on Android.</span></li></ul><p><br></p><p><strong style=\"background-color: transparent;\">What you’ll Need:&nbsp;</strong></p><p><br></p><ul><li><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Have the ability to use Java to implement Android’s application. Kotlin is a plus.</span></li><li><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Have proficient knowledge and an in-depth understanding of Data Structure, Algorithm, OOP, Coding, Design Patterns, Other Best Practices.</span></li><li><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Able to work well with others in fast pacing environments.</span></li><li><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Have a growth mindset and are willing to learn new things.</span></li><li><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Good understanding of Android Fundamentals such as Activity and Fragment Lifecycle, Android Resources, RecyclerView, Layout, Http request etc.</span></li></ul><h3><br></h3><h3><strong style=\"background-color: transparent;\">It'd be Great if you have:</strong></h3><ul><li><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Good understanding of Design patterns such as MVP, MVVM, Clean architecture etc.</span></li><li><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Good understanding of Android architecture components such as ViewModel, LiveData, Room etc.</span></li><li><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Good understanding of Android Jetpack Library is a plus.</span></li><li><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Good understanding of Unit tests is a plus.</span></li></ul>",
+            "quota": 4,
             "openForCooperativeInternship": false,
             "compensationAmount": null,
             "compensationType": {
@@ -3748,7 +3748,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 19,
+            "inStudentDraftCount": 20,
             "isBookmarked": false
         },
         {
@@ -3814,7 +3814,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 5,
+            "inStudentDraftCount": 6,
             "isBookmarked": false
         },
         {
@@ -3868,7 +3868,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 2,
+            "inStudentDraftCount": 4,
             "isBookmarked": false
         },
         {
@@ -4027,7 +4027,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 8,
+            "inStudentDraftCount": 5,
             "isBookmarked": false
         },
         {
@@ -4068,7 +4068,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 14,
+            "inStudentDraftCount": 12,
             "isBookmarked": false
         },
         {
@@ -4118,7 +4118,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 11,
+            "inStudentDraftCount": 15,
             "isBookmarked": false
         },
         {
@@ -4232,7 +4232,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 8,
+            "inStudentDraftCount": 7,
             "isBookmarked": false
         },
         {
@@ -4289,7 +4289,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 6,
+            "inStudentDraftCount": 7,
             "isBookmarked": false
         },
         {
@@ -4306,7 +4306,7 @@
             },
             "title": "Full Stack Developer Intern",
             "description": "<h1><strong style=\"color: rgba(0,0,0,var(--O42jJQ,1));\">💻 The Role: Building &amp; Innovating</strong></h1><p><span style=\"color: rgba(0,0,0,var(--O42jJQ,1));\">As a Full-Stack Developer Intern, you'll be involved in all phases of the development lifecycle, from frontend interface design to backend data management and AI integration.</span></p><ul><li><strong style=\"color: rgba(0,0,0,var(--O42jJQ,1));\">Full-Stack Power:</strong><span style=\"color: rgba(0,0,0,var(--O42jJQ,1));\"> Work with modern stacks like Next.js, TypeScript, Kotlin, Spring Boot, Grails, and PostgreSQL.</span></li><li><strong style=\"color: rgba(0,0,0,var(--O42jJQ,1));\">AI Integration: </strong><span style=\"color: rgba(0,0,0,var(--O42jJQ,1));\">Contribute to integrating cutting-edge technologies like ChatGPT and Gemini into business consultancy tools, turning raw data into actionable intelligence.</span></li></ul><p><span style=\"color: rgba(0,0,0,var(--O42jJQ,1));\">You'll receive real </span><strong style=\"color: rgba(0,0,0,var(--O42jJQ,1));\">mentorship </strong><span style=\"color: rgba(0,0,0,var(--O42jJQ,1));\">in debugging, optimization, and full-stack best practices while working closely with our experienced team leads and project managers.</span></p>",
-            "quota": 3,
+            "quota": 5,
             "openForCooperativeInternship": false,
             "compensationAmount": 400,
             "compensationType": {
@@ -4366,7 +4366,7 @@
             "endDate": "2026-12-29T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 15,
+            "inStudentDraftCount": 16,
             "isBookmarked": false
         },
         {
@@ -4512,8 +4512,8 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 5,
-            "isBookmarked": false
+            "inStudentDraftCount": 4,
+            "isBookmarked": true
         },
         {
             "openingId": 1267,
@@ -4614,7 +4614,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 4,
+            "inStudentDraftCount": 6,
             "isBookmarked": false
         },
         {
@@ -4788,7 +4788,7 @@
             "endDate": "2026-06-29T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 8,
+            "inStudentDraftCount": 13,
             "isBookmarked": false
         },
         {
@@ -4886,7 +4886,7 @@
             "endDate": "2026-12-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 10,
+            "inStudentDraftCount": 11,
             "isBookmarked": false
         },
         {
@@ -4935,7 +4935,7 @@
             "endDate": "2026-12-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 7,
+            "inStudentDraftCount": 8,
             "isBookmarked": false
         },
         {
@@ -4980,8 +4980,8 @@
             "endDate": "2026-08-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 6,
-            "isBookmarked": false
+            "inStudentDraftCount": 7,
+            "isBookmarked": true
         },
         {
             "openingId": 1288,
@@ -5026,7 +5026,7 @@
             "isPublished": true,
             "isAcceptingApplication": true,
             "inStudentDraftCount": 3,
-            "isBookmarked": false
+            "isBookmarked": true
         },
         {
             "openingId": 1291,
@@ -5063,7 +5063,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 6,
+            "inStudentDraftCount": 5,
             "isBookmarked": false
         },
         {
@@ -5108,8 +5108,8 @@
             "endDate": "2026-08-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 5,
-            "isBookmarked": false
+            "inStudentDraftCount": 4,
+            "isBookmarked": true
         },
         {
             "openingId": 1293,
@@ -5146,7 +5146,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 8,
+            "inStudentDraftCount": 7,
             "isBookmarked": false
         },
         {
@@ -5272,7 +5272,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 4,
+            "inStudentDraftCount": 2,
             "isBookmarked": false
         },
         {
@@ -5520,7 +5520,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 9,
+            "inStudentDraftCount": 8,
             "isBookmarked": false
         },
         {
@@ -5619,7 +5619,7 @@
             "isPublished": true,
             "isAcceptingApplication": true,
             "inStudentDraftCount": 1,
-            "isBookmarked": false
+            "isBookmarked": true
         },
         {
             "openingId": 1349,
@@ -5651,7 +5651,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 7,
+            "inStudentDraftCount": 9,
             "isBookmarked": false
         },
         {
@@ -5684,7 +5684,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 5,
+            "inStudentDraftCount": 6,
             "isBookmarked": false
         },
         {
@@ -5729,7 +5729,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 2,
+            "inStudentDraftCount": 4,
             "isBookmarked": false
         },
         {
@@ -5882,7 +5882,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 4,
+            "inStudentDraftCount": 3,
             "isBookmarked": false
         },
         {
@@ -6090,7 +6090,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 5,
+            "inStudentDraftCount": 6,
             "isBookmarked": false
         },
         {
@@ -6179,8 +6179,8 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 9,
-            "isBookmarked": false
+            "inStudentDraftCount": 7,
+            "isBookmarked": true
         },
         {
             "openingId": 1374,
@@ -6290,7 +6290,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 4,
+            "inStudentDraftCount": 7,
             "isBookmarked": false
         },
         {
@@ -6307,7 +6307,7 @@
             },
             "title": "AI/ML Engineer - Stellar by krungsri ",
             "description": "<p>Join the Stellar team, an innovation unit of Krungsri, and embark on an enriching journey at the forefront of technological advancement. As a Machine Learning Engineer intern, you'll play a pivotal role in our dynamic team, dedicated to pushing the boundaries of AI-driven solutions for chatbot development. If you're a passionate student eager to leverage cutting-edge technology, enhance user experiences, and thrive in a collaborative environment, we invite you to apply for this exciting opportunity.</p><p>&nbsp;</p><p><strong>Job responsibilities (Machine Learning Engineer):</strong></p><ul><li>Develop machine learning models for Chatbots such as intent classification.</li><li>Research cutting-edge technology to enhance existing model performance and explore new technology.</li></ul><p>&nbsp;</p><p><strong>Requirement and skills:</strong></p><ul><li>Experience in programming languages such as Python.</li><li>Experience with Python libraries - NumPy, scikit-learn, TensorFlow.</li><li>Experience in natural language processing (NLP), AI/ML</li><li>Strong in a logic of human language understanding</li></ul><p>&nbsp;</p><p><strong>It is great if you have.</strong></p><ul><li>Experience with source version control (Git), code editor - Jupyter Notebook/Google Colab</li></ul><p>&nbsp;</p><p><strong>About us:</strong></p><p>Stellar by Krungsri, a unit dedicated to propelling the organization forward with innovation. The unit collaborates closely with internal teams and external business partners to generate and refine innovative ideas that meet business challenges. Stellar by Krungsri also conducts ongoing research and testing of new technologies to seize opportunities for business growth.</p><p>&nbsp;</p><p>Join us at Stellar by Krungsri, where innovation meets opportunity, and together, let's shape the future of finance.</p>",
-            "quota": 1,
+            "quota": 2,
             "openForCooperativeInternship": false,
             "compensationAmount": null,
             "compensationType": {
@@ -6343,7 +6343,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 11,
+            "inStudentDraftCount": 9,
             "isBookmarked": false
         },
         {
@@ -6468,7 +6468,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 6,
+            "inStudentDraftCount": 4,
             "isBookmarked": false
         },
         {
@@ -6723,7 +6723,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 11,
+            "inStudentDraftCount": 12,
             "isBookmarked": false
         },
         {
@@ -6860,7 +6860,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 7,
+            "inStudentDraftCount": 6,
             "isBookmarked": false
         },
         {
@@ -7029,7 +7029,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 4,
+            "inStudentDraftCount": 1,
             "isBookmarked": false
         },
         {
@@ -7217,7 +7217,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 5,
+            "inStudentDraftCount": 6,
             "isBookmarked": false
         },
         {
@@ -7253,7 +7253,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 2,
+            "inStudentDraftCount": 3,
             "isBookmarked": false
         },
         {
@@ -7289,7 +7289,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 2,
+            "inStudentDraftCount": 3,
             "isBookmarked": false
         },
         {
@@ -7457,7 +7457,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 17,
+            "inStudentDraftCount": 22,
             "isBookmarked": false
         },
         {
@@ -7502,7 +7502,7 @@
             "endDate": "2026-06-29T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 2,
+            "inStudentDraftCount": 3,
             "isBookmarked": false
         },
         {
@@ -7559,8 +7559,8 @@
             "endDate": "2026-08-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 6,
-            "isBookmarked": false
+            "inStudentDraftCount": 7,
+            "isBookmarked": true
         },
         {
             "openingId": 1443,
@@ -7625,7 +7625,7 @@
             "isPublished": true,
             "isAcceptingApplication": true,
             "inStudentDraftCount": 13,
-            "isBookmarked": false
+            "isBookmarked": true
         },
         {
             "openingId": 1444,
@@ -7673,7 +7673,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 10,
+            "inStudentDraftCount": 11,
             "isBookmarked": false
         },
         {
@@ -7730,8 +7730,8 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 10,
-            "isBookmarked": false
+            "inStudentDraftCount": 9,
+            "isBookmarked": true
         },
         {
             "openingId": 1448,
@@ -7776,7 +7776,7 @@
             "isPublished": true,
             "isAcceptingApplication": true,
             "inStudentDraftCount": 6,
-            "isBookmarked": false
+            "isBookmarked": true
         },
         {
             "openingId": 1450,
@@ -7837,7 +7837,7 @@
             "isPublished": true,
             "isAcceptingApplication": true,
             "inStudentDraftCount": 8,
-            "isBookmarked": false
+            "isBookmarked": true
         },
         {
             "openingId": 1457,
@@ -8112,7 +8112,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 7,
+            "inStudentDraftCount": 6,
             "isBookmarked": false
         },
         {
@@ -8166,7 +8166,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 26,
+            "inStudentDraftCount": 27,
             "isBookmarked": false
         },
         {
@@ -8220,7 +8220,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 8,
+            "inStudentDraftCount": 9,
             "isBookmarked": false
         },
         {
@@ -8388,7 +8388,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 8,
+            "inStudentDraftCount": 7,
             "isBookmarked": false
         },
         {
@@ -8445,7 +8445,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 7,
+            "inStudentDraftCount": 6,
             "isBookmarked": false
         },
         {
@@ -8531,7 +8531,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 12,
+            "inStudentDraftCount": 11,
             "isBookmarked": false
         },
         {
@@ -8616,8 +8616,8 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 14,
-            "isBookmarked": false
+            "inStudentDraftCount": 20,
+            "isBookmarked": true
         },
         {
             "openingId": 1479,
@@ -8709,7 +8709,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 17,
+            "inStudentDraftCount": 15,
             "isBookmarked": true
         },
         {
@@ -8806,8 +8806,8 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 17,
-            "isBookmarked": false
+            "inStudentDraftCount": 20,
+            "isBookmarked": true
         },
         {
             "openingId": 1485,
@@ -8912,7 +8912,7 @@
             "endDate": "2026-06-29T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 11,
+            "inStudentDraftCount": 12,
             "isBookmarked": false
         },
         {
@@ -8986,7 +8986,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 8,
+            "inStudentDraftCount": 12,
             "isBookmarked": false
         },
         {
@@ -9031,7 +9031,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 7,
+            "inStudentDraftCount": 8,
             "isBookmarked": false
         },
         {
@@ -9147,7 +9147,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 6,
+            "inStudentDraftCount": 8,
             "isBookmarked": false
         },
         {
@@ -9389,7 +9389,7 @@
             "endDate": "2026-09-29T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 20,
+            "inStudentDraftCount": 17,
             "isBookmarked": false
         },
         {
@@ -9447,7 +9447,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 2,
+            "inStudentDraftCount": 3,
             "isBookmarked": false
         },
         {
@@ -9489,7 +9489,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 5,
+            "inStudentDraftCount": 6,
             "isBookmarked": false
         },
         {
@@ -9559,7 +9559,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 6,
+            "inStudentDraftCount": 7,
             "isBookmarked": false
         },
         {
@@ -9616,7 +9616,7 @@
             "endDate": "2026-08-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 6,
+            "inStudentDraftCount": 7,
             "isBookmarked": false
         },
         {
@@ -9665,7 +9665,7 @@
             "endDate": "2026-10-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 5,
+            "inStudentDraftCount": 4,
             "isBookmarked": false
         },
         {
@@ -9710,7 +9710,7 @@
             "endDate": "2026-10-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 8,
+            "inStudentDraftCount": 7,
             "isBookmarked": false
         },
         {
@@ -9844,7 +9844,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 5,
+            "inStudentDraftCount": 4,
             "isBookmarked": false
         },
         {
@@ -9890,7 +9890,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 3,
+            "inStudentDraftCount": 2,
             "isBookmarked": false
         },
         {
@@ -9992,7 +9992,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 1,
+            "inStudentDraftCount": 2,
             "isBookmarked": false
         },
         {
@@ -10077,7 +10077,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 2,
+            "inStudentDraftCount": 3,
             "isBookmarked": false
         },
         {
@@ -10146,8 +10146,8 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 3,
-            "isBookmarked": false
+            "inStudentDraftCount": 2,
+            "isBookmarked": true
         },
         {
             "openingId": 1546,
@@ -10182,7 +10182,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 5,
+            "inStudentDraftCount": 6,
             "isBookmarked": false
         },
         {
@@ -10228,7 +10228,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 5,
+            "inStudentDraftCount": 6,
             "isBookmarked": false
         },
         {
@@ -10321,7 +10321,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 3,
+            "inStudentDraftCount": 1,
             "isBookmarked": false
         },
         {
@@ -10543,7 +10543,7 @@
             },
             "title": "Data Analyst/Engineer",
             "description": "<p>· Acquire data from different sources that align with business needs</p><p>· Analyze and organize raw data</p><p>· Build, test, and maintain data systems and pipelines</p><p>· Develop algorithms to transform data into useful or actionable information</p><p>· Create new data validation methods</p><p>· Collaborate with data scientists, data analyst, or stakeholders on several projects</p>",
-            "quota": 1,
+            "quota": 2,
             "openForCooperativeInternship": false,
             "compensationAmount": 10000,
             "compensationType": {
@@ -10588,7 +10588,7 @@
             },
             "title": "Retail loan credit risk modeling and analytics",
             "description": "<p>Risk Retail Business Intelligence</p><p>1. Analytics of Credit risk modelling &amp; management for retail loan portfolios.</p><p>2. Developing credit risk models for both regulatory and non regulatory aspects.</p><p>3. Analyzing advanced risk measurements to recommend strategies &amp; actions for business units and relevant entities.</p><p>&nbsp;</p><p>What’s your challenge?</p><p>1.Analysis of Non-Performing Loans (NPLs) across credit portfolios to identify trends, risk concentrations,</p><p>and early warning indicators.</p><p>2. Build and optimize code to extract, transform, and analyze data for estimating regulatory risk parameters</p><p>3. Design and create automated reports.</p><p>&nbsp;</p><p>What will you learn?</p><p>1. Enhance understanding of credit risk and big data analytics.</p><p>2. Strengthen collaboration and communication skills.</p><p>3. Improve coding skills (python / PySpark) and data visualization.</p><p>&nbsp;</p><p>Nice to know</p><p>Python, PySpark, SQL, MS Office, Power BI</p>",
-            "quota": 1,
+            "quota": 2,
             "openForCooperativeInternship": false,
             "compensationAmount": 500,
             "compensationType": {
@@ -10628,7 +10628,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 10,
+            "inStudentDraftCount": 7,
             "isBookmarked": false
         },
         {
@@ -10645,7 +10645,7 @@
             },
             "title": "Credit Risk Analytics",
             "description": "<p><strong>Risk SSME &amp; SME Business Intelligence</strong></p><ol><li><strong>Develop and enhance statistical, expert, and hybrid models using various data modeling techniques.</strong></li><li><strong>Monitor, validate, and enhance credit risk models throughout their lifecycle to ensure models' effectiveness.</strong></li><li><strong>Perform credit risk analytics to optimize the strategies and to recommend actions for related parties</strong></li></ol><p><strong>What’s your challenge?</strong></p><ol><li><strong>Develop and enhance statistical, expert, and hybrid models using various data modeling techniques </strong></li><li><strong>Monitor, validate, and enhance credit risk models throughout their lifecycle to ensure models' effectiveness</strong></li><li><strong>Perform credit risk analytics to optimize the strategies and to recommend actions for related parties</strong></li></ol><p><strong>What will you learn?</strong></p><ol><li><strong>Enhance and leverage a large collection of data including collateral, customers' payment, customers' behavior into credit risk model.</strong></li><li><strong>Design an automated framework for credit risk analytics validation and measurement.</strong></li><li><strong>Collaborate with related parties to deploy projects</strong></li></ol><p><strong>﻿Nice to know </strong></p><p><strong>Python, SQL</strong></p>",
-            "quota": 1,
+            "quota": 2,
             "openForCooperativeInternship": false,
             "compensationAmount": 500,
             "compensationType": {
@@ -10673,7 +10673,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 10,
+            "inStudentDraftCount": 11,
             "isBookmarked": false
         },
         {
@@ -10775,7 +10775,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 10,
+            "inStudentDraftCount": 9,
             "isBookmarked": false
         },
         {
@@ -10811,8 +10811,8 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 7,
-            "isBookmarked": false
+            "inStudentDraftCount": 6,
+            "isBookmarked": true
         },
         {
             "openingId": 1598,
@@ -10892,7 +10892,7 @@
             "isPublished": true,
             "isAcceptingApplication": true,
             "inStudentDraftCount": 3,
-            "isBookmarked": false
+            "isBookmarked": true
         },
         {
             "openingId": 1605,
@@ -10940,8 +10940,8 @@
                 "line": ""
             },
             "title": "AI Intern ",
-            "description": "<h3>About DeeMoney</h3><p>DeeMoney is Thailand’s leading fintech company, providing fast, transparent, and secure cross-border payment and foreign exchange services for both individuals and businesses. We are actively exploring AI and data-driven solutions to enhance operational efficiency, customer experience, and decision-making.</p><h3><br></h3><h3>Role Overview</h3><p>As an <strong>AI Intern</strong>, you will work closely with our Data, IT, and Business teams to explore and develop AI-driven solutions that support DeeMoney’s internal operations and business growth. This internship is ideal for students who are passionate about AI, data, and real-world problem solving in a fintech environment.</p><p><br></p><h3>Key Responsibilities</h3><ul><li>Assist in developing and testing <strong>AI/ML or rule-based automation solutions</strong> for business use cases</li><li>Support <strong>data preparation, data cleaning, and basic analysis</strong> for AI projects</li><li>Explore use cases such as:</li><li class=\"ql-indent-1\">Process automation (RPA + AI)</li><li class=\"ql-indent-1\">Customer service support (chatbot / FAQ automation)</li><li class=\"ql-indent-1\">Internal reporting &amp; insights</li><li class=\"ql-indent-1\">AI-assisted document or data processing</li><li>Research new AI tools, models, or frameworks and summarize findings for the team</li><li>Prepare documentation and simple presentations of project outcomes</li><li>Collaborate with cross-functional teams (IT, Operations, Business)</li></ul><p><br></p><h3>Qualifications</h3><ul><li>Currently pursuing a degree in:</li><li class=\"ql-indent-1\">Computer Engineering / Computer Science</li><li class=\"ql-indent-1\">Data Science / AI / CEDT or related fields</li><li>Basic understanding of:</li><li class=\"ql-indent-1\">Python or similar programming language</li><li class=\"ql-indent-1\">Data concepts (CSV, Excel, SQL – basic level)</li><li class=\"ql-indent-1\">AI / Machine Learning fundamentals (coursework is sufficient)</li><li>Interest in <strong>AI, automation, and fintech</strong></li><li>Good analytical thinking and problem-solving skills</li><li>Able to communicate in English (basic–intermediate)</li></ul><h3><br></h3><h3>Nice to Have (Not Required)</h3><ul><li>Experience with Python libraries (Pandas, NumPy, Scikit-learn)</li><li>Familiarity with Power BI, SQL, RPA, or cloud platforms</li><li>Experience using AI tools (ChatGPT, Copilot, AutoML, etc.)</li><li>Basic understanding of APIs or system integration</li></ul><h3><br></h3><h3>What You Will Gain</h3><ul><li>Hands-on experience with <strong>real AI use cases in a fintech company</strong></li><li>Mentorship from experienced IT, Data, and Business professionals</li><li>Opportunity to contribute to <strong>production-related or proof-of-concept projects</strong></li><li>Exposure to fintech operations, compliance-aware environments, and enterprise systems</li><li>Internship certificate and evaluation</li></ul><p><br></p>",
-            "quota": 1,
+            "description": "<h3>About DeeMoney</h3><p>DeeMoney is Thailand’s leading fintech company, providing fast, transparent, and secure cross-border payment and foreign exchange services for both individuals and businesses. We are actively exploring AI and data-driven solutions to enhance operational efficiency, customer experience, and decision-making.</p><h3><br></h3><h3>Role Overview</h3><p>As an <strong>AI Intern</strong>, you will work closely with our Data, IT, and Business teams to explore and develop AI-driven solutions that support DeeMoney’s internal operations and business growth. This internship is ideal for students who are passionate about AI, data, and real-world problem solving in a fintech environment.</p><p><br></p><h3>Key Responsibilities</h3><ul><li>Assist in developing and testing <strong>AI/ML or rule-based automation solutions</strong> for business use cases</li><li>Support <strong>data preparation, data cleaning, and basic analysis</strong> for AI projects</li><li>Explore use cases such as:</li><li class=\"ql-indent-1\">Process automation (RPA + AI)</li><li class=\"ql-indent-1\">Customer service support (chatbot / FAQ automation)</li><li class=\"ql-indent-1\">Internal reporting &amp; insights</li><li class=\"ql-indent-1\">AI-assisted document or data processing</li><li>Research new AI tools, models, or frameworks and summarize findings for the team</li><li>Prepare documentation and simple presentations of project outcomes</li><li>Collaborate with cross-functional teams (IT, Operations, Business)</li></ul><p><br></p><h3>Qualifications</h3><ul><li>Currently pursuing a degree in:</li><li class=\"ql-indent-1\">Computer Engineering / Computer Science</li><li class=\"ql-indent-1\">Data Science / AI / CEDT or related fields</li><li>Basic understanding of:</li><li class=\"ql-indent-1\">Python or similar programming language</li><li class=\"ql-indent-1\">Data concepts (CSV, Excel, SQL – basic level)</li><li class=\"ql-indent-1\">AI / Machine Learning fundamentals (coursework is sufficient)</li><li>Interest in <strong>AI, automation, and fintech</strong></li><li>Good analytical thinking and problem-solving skills</li><li>Able to communicate in English (basic–intermediate)</li></ul><h3><br></h3><h3>Nice to Have (Not Required)</h3><ul><li>Experience with Python libraries (Pandas, NumPy, Scikit-learn)</li><li>Familiarity with Power BI, SQL, RPA, or cloud platforms</li><li>Experience using AI tools (ChatGPT, Copilot, AutoML, etc.)</li><li>Basic understanding of APIs or system integration</li></ul><h3><br></h3><h3>What You Will Gain</h3><ul><li>Hands-on experience with <strong>real AI use cases in a fintech company</strong></li><li>Mentorship from experienced IT, Data, and Business professionals</li><li>Opportunity to contribute to <strong>production-related or proof-of-concept projects</strong></li><li>Exposure to fintech operations, compliance-aware environments, and enterprise systems</li><li>Internship certificate and evaluation</li></ul>",
+            "quota": 2,
             "openForCooperativeInternship": false,
             "compensationAmount": null,
             "compensationType": {
@@ -10981,7 +10981,7 @@
             "endDate": "2026-08-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 1,
+            "inStudentDraftCount": 3,
             "isBookmarked": false
         },
         {
@@ -11058,7 +11058,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 4,
+            "inStudentDraftCount": 6,
             "isBookmarked": false
         },
         {
@@ -11100,7 +11100,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 4,
+            "inStudentDraftCount": 5,
             "isBookmarked": false
         },
         {
@@ -11162,7 +11162,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 15,
+            "inStudentDraftCount": 13,
             "isBookmarked": false
         },
         {
@@ -11203,7 +11203,7 @@
             "endDate": "2026-07-23T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 4,
+            "inStudentDraftCount": 3,
             "isBookmarked": false
         },
         {
@@ -11262,7 +11262,7 @@
             },
             "title": "Elderly Activity Monitoring Intern",
             "description": "<p>*Job Description</p><p>The intern will contribute to the development of a motion-based system for evaluating elderly activities in a clinical research environment. The work includes designing a camera- and/or sensor-based motion capture setup and implementing pose and motion extraction using MediaPipe and/or OpenPose.</p><p><br></p><p>The intern will analyze motion data using Python and OpenCV to identify basic activities such as walking, sitting, and standing, and to derive simple mobility-related indicators. Results will be visualized to support interpretation by clinicians and researchers.</p><p><br></p><p>The intern will work under ethical and privacy guidelines for healthcare research, collaborate with clinical staff during scheduled onsite meetings, and prepare a final technical report and presentation.</p><p><br></p><p>*Toolchain</p><p>Camera &amp; sensor-based motion capture → MediaPipe / OpenPose → Python &amp; OpenCV →</p><p>Activity analysis &amp; visualization under clinical research standards</p><p><br></p><p>*Deliverables</p><p>Motion analysis prototype or processing pipeline</p><p>Documentation and experimental results</p><p>Final report and presentation</p><p><br></p><p>*Note*</p><p>This position is for software and hardware development only and does not involve direct clinical diagnosis or treatment</p><p><br></p><p>**Joint supervision by Clinical Researchers and Ajarn Sukhum Sattaratnamai</p>",
-            "quota": 1,
+            "quota": 7,
             "openForCooperativeInternship": false,
             "compensationAmount": null,
             "compensationType": null,
