@@ -1,12 +1,49 @@
 let originalJobList = [];
 
-async function loadJSON() {
-    const statusMsg = document.getElementById('status-msg');
+async function initApp() {
     try {
-        const response = await fetch('result.json'); 
+        const response = await fetch('config.json');
+        if (!response.ok) throw new Error('ไม่พบไฟล์สารบัญ config.json');
+        const fileList = await response.json();
+
+        const selectElement = document.getElementById('data-source-select');
+        selectElement.innerHTML = ''; 
+
+        let defaultFile = fileList[0].filename; 
+
+        fileList.forEach(file => {
+            const option = document.createElement('option');
+            option.value = file.filename;
+            option.textContent = file.label;
+            
+            if (file.isDefault) {
+                option.selected = true;
+                defaultFile = file.filename;
+            }
+            
+            selectElement.appendChild(option);
+        });
+
+        loadJSON(defaultFile);
+
+    } catch (error) {
+        console.error("Error init:", error);
+        document.getElementById('status-msg').innerHTML = 'ไม่สามารถโหลดระบบได้ กรุณาตรวจสอบไฟล์ data/config.json';
+        document.getElementById('status-msg').className = "text-red-500";
+    }
+}
+
+async function loadJSON(fileName) {
+    const statusMsg = document.getElementById('status-msg');
+    statusMsg.innerHTML = 'กำลังโหลดข้อมูล...'; 
+    statusMsg.className = "text-sm md:text-base text-gray-500 font-light";
+
+    try {
+        const response = await fetch(`data/${fileName}`); 
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
         const data = await response.json();
         
+        // ดึงข้อมูล array มาเก็บไว้ใน originalJobList
         if (data.items) {
             originalJobList = data.items;
         } else if (Array.isArray(data)) {
@@ -15,17 +52,31 @@ async function loadJSON() {
             originalJobList = data.fullContent ? data.fullContent.items : [];
         }
 
-    populateTagOptions(originalJobList);
-    populateWorkingOptions(originalJobList); // 1. เพิ่มบรรทัดนี้
-    applyFilterAndSort();
-  } catch (error) {
-    console.error("Error loading JSON:", error);
-    statusMsg.innerHTML = `โหลดข้อมูลไม่สำเร็จ (ต้องเปิดผ่าน Local Server)`;
-    statusMsg.className = "text-red-500";
-  }
+        // ---------- เพิ่มบรรทัดนี้ ----------
+        // กรองเอาเฉพาะข้อมูลที่ quota มีค่ามากกว่า 0
+        originalJobList = originalJobList.filter(job => job.quota && job.quota > 0);
+        // ---------------------------------
+
+        populateTagOptions(originalJobList);
+        populateWorkingOptions(originalJobList);
+        applyFilterAndSort();
+        
+        // statusMsg.innerHTML = `โหลดข้อมูลจาก ${fileName} สำเร็จ`;
+    } catch (error) {
+        console.error("Error loading JSON:", error);
+        statusMsg.innerHTML = `โหลดข้อมูล ${fileName} ไม่สำเร็จ`;
+        statusMsg.className = "text-red-500";
+    }
 }
 
-// 2. เพิ่มฟังก์ชันนี้ (สำหรับสร้างตัวเลือกใน Dropdown)
+function changeDataSource() {
+    const selectedFile = document.getElementById('data-source-select').value;
+    document.getElementById("search-input").value = "";
+    document.getElementById("tag-filter").value = "all";
+    document.getElementById("working-filter").value = "all";
+    loadJSON(selectedFile);
+}
+
 function populateWorkingOptions(jobs) {
   const workingSet = new Set();
   jobs.forEach((job) => {
@@ -36,6 +87,8 @@ function populateWorkingOptions(jobs) {
 
   const sortedWorking = Array.from(workingSet).sort();
   const selectElement = document.getElementById("working-filter");
+
+  selectElement.innerHTML = '<option value="all">รูปแบบงานทั้งหมด</option>';
 
   sortedWorking.forEach((workType) => {
     const option = document.createElement("option");
@@ -58,50 +111,47 @@ function populateTagOptions(jobs) {
   const sortedTags = Array.from(tagSet).sort();
   const selectElement = document.getElementById("tag-filter");
 
-  // เคลียร์ Option เก่าออกก่อนเสมอ (ยกเว้นตัวแรกที่เป็น All)
-  selectElement.innerHTML = '<option value="all">ทั้งหมด</option>';
+  selectElement.innerHTML = '<option value="all">Tags ทั้งหมด</option>';
 
   sortedTags.forEach((tagName) => {
     const option = document.createElement("option");
     option.value = tagName;
     
-    // --- จุดที่แก้ไข: ตัดคำถ้ายาวเกิน 40 ตัวอักษร ---
     const maxLength = 40;
     if (tagName.length > maxLength) {
         option.textContent = tagName.substring(0, maxLength) + '...';
     } else {
         option.textContent = tagName;
     }
-    // ------------------------------------------
 
     selectElement.appendChild(option);
   });
 }
 
-// 3. แก้ไขฟังก์ชันนี้ (เพิ่ม Logic การกรอง)
 function applyFilterAndSort() {
   const selectedTag = document.getElementById("tag-filter").value;
-  const selectedWorking = document.getElementById("working-filter").value; // รับค่ารูปแบบงาน
+  const selectedWorking = document.getElementById("working-filter").value;
   const sortValue = document.getElementById("sort-filter").value;
   const searchText = document
     .getElementById("search-input")
     .value.trim()
     .toLowerCase();
   const statusMsg = document.getElementById("status-msg");
+  
+  // ป้องกัน error ถ้า Dropdown ยังไม่โหลด
+  const dataSourceSelect = document.getElementById('data-source-select');
+  const currentFile = dataSourceSelect ? dataSourceSelect.value : ""; 
 
   let filteredList = originalJobList.filter((job) => {
-    // เงื่อนไข Tag
     const matchTag =
       selectedTag === "all" ||
       (job.tags && job.tags.some((t) => t.tagName === selectedTag));
 
-    // เงื่อนไข Search
     const title = (job.title || "").toLowerCase();
     const companyName = (job.company?.companyNameTh || "").toLowerCase();
     const matchSearch =
       title.includes(searchText) || companyName.includes(searchText);
 
-    // เงื่อนไข Working Condition (เพิ่มใหม่)
     const matchWorking =
       selectedWorking === "all" || job.workingCondition === selectedWorking;
 
@@ -139,7 +189,7 @@ function applyFilterAndSort() {
   if (filteredList.length === 0) {
     statusMsg.innerText = "ไม่พบข้อมูลที่ค้นหา";
   } else {
-    statusMsg.innerText = `${filteredList.length} ตำแหน่งงาน`;
+    statusMsg.innerText = `แสดงผล ${filteredList.length} ตำแหน่งงาน`;
   }
 }
 
@@ -160,7 +210,6 @@ function renderJobs(jobs) {
   }
 
   jobs.forEach((job) => {
-    // --- ส่วนจัดการเงินเดือน ---
     let compensationHTML = "";
     if (job.compensationAmount && job.compensationAmount > 0) {
       compensationHTML = `<span class="text-lg font-semibold text-gray-900">${formatNumber(
@@ -172,7 +221,6 @@ function renderJobs(jobs) {
       compensationHTML = `<span class="text-gray-400 text-sm font-light">ไม่ระบุเงินเดือน</span>`;
     }
 
-    // --- ส่วนจัดการ Tags (ที่มี Tooltip) ---
     let tagsHTML = "";
     if (job.tags && job.tags.length > 0) {
       tagsHTML = `<div class="flex flex-wrap gap-2 mt-4">`;
@@ -188,7 +236,6 @@ function renderJobs(jobs) {
       tagsHTML += `</div>`;
     }
 
-    // --- ส่วนจัดการ Meta Data อื่นๆ ---
     let metaList = [];
     if (job.workingCondition) metaList.push(job.workingCondition);
     if (job.quota && job.quota > 0) metaList.push(`รับ ${job.quota} อัตรา`);
@@ -199,10 +246,8 @@ function renderJobs(jobs) {
       ' <span class="text-gray-300 mx-2">•</span> '
     );
 
-    // --- [เพิ่มใหม่] ส่วนจัดการสถานที่ทำงาน (Office Location) ---
     let locationHTML = "";
     if (job.officeName) {
-      // ใช้ officeAddressLine1 ในการค้นหา ถ้าไม่มีให้ใช้ officeName แทน
       const mapQuery = job.officeAddressLine1 || job.officeName;
       const mapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(mapQuery)}`;
       
@@ -217,7 +262,6 @@ function renderJobs(jobs) {
         </div>
       `;
     }
-    // --------------------------------------------------------
 
     const cardHTML = `
             <div class="group bg-white p-6 rounded-xl border border-transparent shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] hover:shadow-lg hover:border-gray-100 transition duration-300 flex flex-col h-full">
@@ -259,4 +303,4 @@ function renderJobs(jobs) {
   });
 }
 
-loadJSON();
+initApp();
