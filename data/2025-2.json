@@ -102,7 +102,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 8,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -151,7 +151,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 11,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -192,7 +192,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 8,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -228,7 +228,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 14,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -273,7 +273,7 @@
             "endDate": "2026-04-29T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 2,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -318,7 +318,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 12,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -354,7 +354,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 17,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -419,7 +419,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 6,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -476,7 +476,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 5,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -512,7 +512,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 7,
+            "inStudentDraftCount": 0,
             "isBookmarked": true
         },
         {
@@ -548,7 +548,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 5,
+            "inStudentDraftCount": 0,
             "isBookmarked": true
         },
         {
@@ -584,7 +584,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 5,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -601,7 +601,7 @@
             },
             "title": "Internship Developer",
             "description": "<p><strong style=\"color: rgb(28, 28, 34);\">Job Overview</strong></p><p>Calling all tech enthusiasts!  If you’re a student in Computer Engineering, Computer Sciences, or a related field, this is your chance to dive into the world of cutting-edge development and turn your skills into real-world impact.</p><p><br></p><p><strong>Why Join Us?</strong></p><p>Get hands-on experience with a tech stack that’s shaping the future: .NET Core, C#, Angular, TypeScript, Next.js, SQL Server, and more! You’ll work in a dynamic, agile environment, solving exciting challenges alongside a passionate team that’s redefining possibilities.</p><p><br></p><p><strong>Open to Full Stack, Front-end, Back-end, Flutter Developers, or others – let us know what excites you!</strong></p><p><br></p><p><strong style=\"color: rgb(28, 28, 34);\">Responsibilities</strong></p><ol><li>Work with product/project managers and business analysts to understand business goals and requirements.</li><li>Analyze requirements, design, and develop functionalities based on the product requirements.</li><li>Work in an agile environment to build/develop features based on a web technology stack including .NET Core, C#, Angular, TypeScript, Next.js, and SQL Server.</li><li>Collaborate with team members to deliver high-quality software with good performance and thorough documentation.</li><li>Work with internal or external stakeholders to develop software integration with other systems.</li><li>Understand the product thoroughly, constantly optimize the product, identify and fix problems, and improve stability and user experience.</li><li>Design the architecture of services.</li><li>Take a lead on projects as needed.</li></ol><p><br></p><p><strong style=\"color: rgb(28, 28, 34);\">Qualifications</strong></p><ol><li>Currently pursuing a Computer Engineering, Computer Sciences, Information Systems, or related fields</li><li>Experience with .NET Core, C#, Angular, TypeScript, Next.js, and SQL Server</li><li>Positive attitude, customer-service minded, with strong analytical and problem-solving skills</li><li>Ability to work as part of a team and handle pressure</li><li>Self-development skills to stay up-to-date with fast-changing trends</li><li>Self-motivated, fast learner, detail-oriented, and a team player</li></ol>",
-            "quota": 0,
+            "quota": 1,
             "openForCooperativeInternship": false,
             "compensationAmount": 200,
             "compensationType": {
@@ -645,7 +645,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 9,
+            "inStudentDraftCount": 1,
             "isBookmarked": false
         },
         {
@@ -698,7 +698,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 7,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -731,7 +731,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 5,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -764,7 +764,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 3,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -825,7 +825,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 19,
+            "inStudentDraftCount": 0,
             "isBookmarked": true
         },
         {
@@ -871,7 +871,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 10,
+            "inStudentDraftCount": 2,
             "isBookmarked": false
         },
         {
@@ -944,7 +944,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 9,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -993,7 +993,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 21,
+            "inStudentDraftCount": 1,
             "isBookmarked": true
         },
         {
@@ -1042,7 +1042,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 10,
+            "inStudentDraftCount": 0,
             "isBookmarked": true
         },
         {
@@ -1091,7 +1091,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 11,
+            "inStudentDraftCount": 0,
             "isBookmarked": true
         },
         {
@@ -1136,7 +1136,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 12,
+            "inStudentDraftCount": 1,
             "isBookmarked": true
         },
         {
@@ -1181,7 +1181,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 16,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -1246,7 +1246,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 6,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -1299,7 +1299,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 6,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -1348,7 +1348,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 3,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -1393,7 +1393,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 4,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -1429,7 +1429,7 @@
             "endDate": "2026-07-09T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 10,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -1482,7 +1482,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 7,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -1576,7 +1576,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 4,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -1678,7 +1678,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 2,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -1724,7 +1724,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 3,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -1770,7 +1770,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 6,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -1812,7 +1812,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 7,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -1893,7 +1893,7 @@
             "endDate": "2026-07-29T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 5,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -1974,7 +1974,7 @@
             "endDate": "2026-07-29T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 7,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -2055,7 +2055,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 14,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -2112,7 +2112,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 14,
+            "inStudentDraftCount": 1,
             "isBookmarked": true
         },
         {
@@ -2145,7 +2145,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 8,
+            "inStudentDraftCount": 1,
             "isBookmarked": false
         },
         {
@@ -2202,7 +2202,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 6,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -2316,7 +2316,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 2,
+            "inStudentDraftCount": 1,
             "isBookmarked": false
         },
         {
@@ -2349,7 +2349,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 5,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -2479,7 +2479,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 2,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -2568,7 +2568,7 @@
             "endDate": "2026-07-02T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 11,
+            "inStudentDraftCount": 1,
             "isBookmarked": false
         },
         {
@@ -2617,7 +2617,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 9,
+            "inStudentDraftCount": 1,
             "isBookmarked": false
         },
         {
@@ -2666,7 +2666,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 5,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -2711,7 +2711,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 8,
+            "inStudentDraftCount": 1,
             "isBookmarked": false
         },
         {
@@ -2744,7 +2744,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 10,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -2809,7 +2809,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 4,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -2886,7 +2886,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 9,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -2922,7 +2922,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 11,
+            "inStudentDraftCount": 0,
             "isBookmarked": true
         },
         {
@@ -2971,7 +2971,7 @@
             "endDate": "2026-07-02T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 4,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -3024,7 +3024,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 6,
+            "inStudentDraftCount": 0,
             "isBookmarked": true
         },
         {
@@ -3073,7 +3073,7 @@
             "endDate": "2026-07-02T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 5,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -3122,7 +3122,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 10,
+            "inStudentDraftCount": 1,
             "isBookmarked": true
         },
         {
@@ -3158,7 +3158,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 5,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -3207,7 +3207,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 7,
+            "inStudentDraftCount": 0,
             "isBookmarked": true
         },
         {
@@ -3240,7 +3240,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 1,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -3286,7 +3286,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 4,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -3319,7 +3319,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 4,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -3355,7 +3355,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 6,
+            "inStudentDraftCount": 0,
             "isBookmarked": true
         },
         {
@@ -3425,7 +3425,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 4,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -3554,7 +3554,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 24,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -3623,7 +3623,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 22,
+            "inStudentDraftCount": 2,
             "isBookmarked": true
         },
         {
@@ -3747,8 +3747,8 @@
             "startDate": "2026-05-24T17:00:00.000Z",
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
-            "isAcceptingApplication": true,
-            "inStudentDraftCount": 20,
+            "isAcceptingApplication": false,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -3814,7 +3814,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 6,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -3868,7 +3868,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 4,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -3908,8 +3908,8 @@
             "startDate": "2026-05-17T17:00:00.000Z",
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
-            "isAcceptingApplication": true,
-            "inStudentDraftCount": 10,
+            "isAcceptingApplication": false,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -4027,7 +4027,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 5,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -4067,8 +4067,8 @@
             "startDate": "2026-05-17T17:00:00.000Z",
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
-            "isAcceptingApplication": true,
-            "inStudentDraftCount": 12,
+            "isAcceptingApplication": false,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -4118,7 +4118,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 15,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -4183,7 +4183,7 @@
             "endDate": "2026-06-29T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 4,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -4232,7 +4232,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 7,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -4289,7 +4289,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 7,
+            "inStudentDraftCount": 2,
             "isBookmarked": false
         },
         {
@@ -4366,7 +4366,7 @@
             "endDate": "2026-12-29T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 16,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -4512,7 +4512,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 4,
+            "inStudentDraftCount": 0,
             "isBookmarked": true
         },
         {
@@ -4573,7 +4573,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 11,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -4614,7 +4614,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 6,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -4694,8 +4694,8 @@
             "startDate": "2026-04-19T17:00:00.000Z",
             "endDate": "2026-06-29T17:00:00.000Z",
             "isPublished": true,
-            "isAcceptingApplication": true,
-            "inStudentDraftCount": 6,
+            "isAcceptingApplication": false,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -4787,8 +4787,8 @@
             "startDate": "2026-04-19T17:00:00.000Z",
             "endDate": "2026-06-29T17:00:00.000Z",
             "isPublished": true,
-            "isAcceptingApplication": true,
-            "inStudentDraftCount": 13,
+            "isAcceptingApplication": false,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -4837,7 +4837,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 5,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -4886,7 +4886,7 @@
             "endDate": "2026-12-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 11,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -4935,7 +4935,7 @@
             "endDate": "2026-12-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 8,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -4980,7 +4980,7 @@
             "endDate": "2026-08-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 7,
+            "inStudentDraftCount": 0,
             "isBookmarked": true
         },
         {
@@ -5025,7 +5025,7 @@
             "endDate": "2026-08-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 3,
+            "inStudentDraftCount": 0,
             "isBookmarked": true
         },
         {
@@ -5063,7 +5063,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 5,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -5108,7 +5108,7 @@
             "endDate": "2026-08-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 4,
+            "inStudentDraftCount": 0,
             "isBookmarked": true
         },
         {
@@ -5146,7 +5146,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 7,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -5188,7 +5188,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 4,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -5234,7 +5234,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 4,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -5272,7 +5272,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 2,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -5310,7 +5310,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 4,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -5360,7 +5360,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 2,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -5417,7 +5417,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 5,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -5474,7 +5474,7 @@
             "endDate": "2026-07-09T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 3,
+            "inStudentDraftCount": 0,
             "isBookmarked": true
         },
         {
@@ -5520,7 +5520,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 8,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -5582,7 +5582,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 2,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -5618,7 +5618,7 @@
             "endDate": "2026-07-09T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 1,
+            "inStudentDraftCount": 0,
             "isBookmarked": true
         },
         {
@@ -5651,7 +5651,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 9,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -5684,7 +5684,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 6,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -5729,7 +5729,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 4,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -5774,7 +5774,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 5,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -5828,7 +5828,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 4,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -5882,7 +5882,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 3,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -5940,7 +5940,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 2,
+            "inStudentDraftCount": 1,
             "isBookmarked": false
         },
         {
@@ -6029,7 +6029,7 @@
             "endDate": "2026-07-09T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 6,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -6090,7 +6090,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 6,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -6126,7 +6126,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 12,
+            "inStudentDraftCount": 1,
             "isBookmarked": true
         },
         {
@@ -6179,7 +6179,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 7,
+            "inStudentDraftCount": 2,
             "isBookmarked": true
         },
         {
@@ -6225,7 +6225,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 2,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -6290,7 +6290,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 7,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -6343,7 +6343,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 9,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -6468,7 +6468,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 4,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -6533,7 +6533,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 2,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -6598,7 +6598,7 @@
             "endDate": "2026-06-29T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 6,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -6723,7 +6723,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 12,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -6860,7 +6860,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 6,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -7029,7 +7029,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 1,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -7098,7 +7098,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 1,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -7151,7 +7151,7 @@
             "endDate": "2026-06-29T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 3,
+            "inStudentDraftCount": 1,
             "isBookmarked": false
         },
         {
@@ -7184,7 +7184,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 7,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -7217,7 +7217,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 6,
+            "inStudentDraftCount": 2,
             "isBookmarked": false
         },
         {
@@ -7253,7 +7253,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 3,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -7289,7 +7289,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 3,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -7322,7 +7322,7 @@
             "endDate": "2026-07-17T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 1,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -7375,8 +7375,8 @@
             "startDate": null,
             "endDate": null,
             "isPublished": true,
-            "isAcceptingApplication": true,
-            "inStudentDraftCount": 5,
+            "isAcceptingApplication": false,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -7457,7 +7457,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 22,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -7502,7 +7502,7 @@
             "endDate": "2026-06-29T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 3,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -7559,7 +7559,7 @@
             "endDate": "2026-08-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 7,
+            "inStudentDraftCount": 0,
             "isBookmarked": true
         },
         {
@@ -7624,7 +7624,7 @@
             "endDate": "2026-08-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 13,
+            "inStudentDraftCount": 1,
             "isBookmarked": true
         },
         {
@@ -7673,7 +7673,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 11,
+            "inStudentDraftCount": 3,
             "isBookmarked": false
         },
         {
@@ -7730,7 +7730,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 9,
+            "inStudentDraftCount": 1,
             "isBookmarked": true
         },
         {
@@ -7775,7 +7775,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 6,
+            "inStudentDraftCount": 2,
             "isBookmarked": true
         },
         {
@@ -7836,7 +7836,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 8,
+            "inStudentDraftCount": 0,
             "isBookmarked": true
         },
         {
@@ -7890,7 +7890,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 9,
+            "inStudentDraftCount": 1,
             "isBookmarked": false
         },
         {
@@ -8112,7 +8112,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 6,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -8165,8 +8165,8 @@
             "startDate": null,
             "endDate": null,
             "isPublished": true,
-            "isAcceptingApplication": true,
-            "inStudentDraftCount": 27,
+            "isAcceptingApplication": false,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -8219,8 +8219,8 @@
             "startDate": null,
             "endDate": null,
             "isPublished": true,
-            "isAcceptingApplication": true,
-            "inStudentDraftCount": 9,
+            "isAcceptingApplication": false,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -8265,8 +8265,8 @@
             "startDate": null,
             "endDate": null,
             "isPublished": true,
-            "isAcceptingApplication": true,
-            "inStudentDraftCount": 14,
+            "isAcceptingApplication": false,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -8323,7 +8323,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 3,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -8388,7 +8388,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 7,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -8445,7 +8445,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 6,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -8530,8 +8530,8 @@
             "startDate": null,
             "endDate": null,
             "isPublished": true,
-            "isAcceptingApplication": true,
-            "inStudentDraftCount": 11,
+            "isAcceptingApplication": false,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -8616,7 +8616,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 20,
+            "inStudentDraftCount": 0,
             "isBookmarked": true
         },
         {
@@ -8709,7 +8709,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 15,
+            "inStudentDraftCount": 4,
             "isBookmarked": true
         },
         {
@@ -8806,7 +8806,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 20,
+            "inStudentDraftCount": 0,
             "isBookmarked": true
         },
         {
@@ -8867,7 +8867,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 9,
+            "inStudentDraftCount": 1,
             "isBookmarked": false
         },
         {
@@ -8912,7 +8912,7 @@
             "endDate": "2026-06-29T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 12,
+            "inStudentDraftCount": 2,
             "isBookmarked": false
         },
         {
@@ -8986,7 +8986,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 12,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -9031,7 +9031,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 8,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -9092,8 +9092,8 @@
             "startDate": null,
             "endDate": null,
             "isPublished": true,
-            "isAcceptingApplication": true,
-            "inStudentDraftCount": 8,
+            "isAcceptingApplication": false,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -9146,8 +9146,8 @@
             "startDate": null,
             "endDate": null,
             "isPublished": true,
-            "isAcceptingApplication": true,
-            "inStudentDraftCount": 8,
+            "isAcceptingApplication": false,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -9199,8 +9199,8 @@
             "startDate": "2026-04-30T17:00:00.000Z",
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
-            "isAcceptingApplication": true,
-            "inStudentDraftCount": 3,
+            "isAcceptingApplication": false,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -9217,7 +9217,7 @@
             },
             "title": "Internship Program 2026 (นักศึกษาฝึกงาน)",
             "description": "<p>โครงการฝึกงานอลิอันซ์ อยุธยา ประจำปี 2026 มุ่งเน้นการพัฒนาศักยภาพของนักศึกษาผ่านการปฏิบัติงานจริง (Project-based) ร่วมกับทีมงานมืออาชีพ รองรับทั้งรูปแบบการฝึกงานภาคปกติ และ สหกิจศึกษา (Co-Op)</p><p><br></p><p>The Allianz Ayudhya Internship Program 2026 is designed to nurture the next generation of talent. Interns will gain hands-on experience, mentorship, and exposure to global standards in the insurance and financial sector. We welcome both Regular Interns and Co-Op students.</p><p><br></p><p><u>คุณสมบัติผู้สมัคร:</u></p><p><br></p><ul><li>กำลังศึกษาอยู่ชั้นปีที่ 3 หรือ 4 ในระดับปริญญาตรี (ทั้งภาคปกติและสหกิจศึกษา) - Current 3rd or 4th-year university students (both Regular Interns and Co-Op students)</li><li>มีความกระตือรือร้น พร้อมเรียนรู้สิ่งใหม่ๆ และกล้าแสดงความคิดเห็น - Eager to learn, proactive, and adaptable (\"Dare to\" attitude)</li><li>สามารถใช้งานคอมพิวเตอร์ โปรแกรมพื้นฐาน และเครื่องมือ AI ใหม่ๆได้เป็นอย่างดี - Able to use computers, basic programs, and new AI tools well.</li><li>ค่าตอบแทนระหว่างฝึกงาน 400 บาทต่อวัน - Internship allowance: 400 baht per day</li></ul><p><br></p><p><u>สาขาวิชาที่เปิดรับ (Majors):</u></p><p><br></p><ul><li>สาย Tech &amp; Data: Computer Science, IT, ICT, MIS, Data/Business Analytics, Programming</li><li>สาย Actuarial &amp; Statistics: Actuarial Science, Statistics, Mathematics, Insurance, Economics, Finance</li><li>สาย Business &amp; Management: Industrial Engineering, Safety Engineering,</li><li>Civil Engineering, Electrical Engineering, Public Health - Occupational Health &amp; Safety</li><li>สาย Creative &amp; Design: Marketing, Digital Marketing, Arts, Communication Arts, Education</li></ul><p><br></p><p><u>วิธีการสมัคร:</u></p><p><br></p><p>สนใจร่วมฝึกงานกับเรา ส่ง Resume และ Transcript พร้อมระบุช่วงเวลาที่ต้องการฝึกงาน มาที่ลิงก์ - If you are interested in joining us for an internship, please send your resume and transcript, specifying the desired internship period, to the link: <a rel=\"noopener noreferrer\" href=\"https://allianz-thailand.esaas.inmoment.eu/cgi-bin/qwebcorporate?idx=YBQHSV\">https://allianz-thailand.esaas.inmoment.eu/cgi-bin/qwebcorporate?idx=YBQHSV</a></p>",
-            "quota": 30,
+            "quota": 1,
             "openForCooperativeInternship": false,
             "compensationAmount": 400,
             "compensationType": {
@@ -9389,7 +9389,7 @@
             "endDate": "2026-09-29T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 17,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -9447,7 +9447,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 3,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -9489,7 +9489,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 6,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -9559,7 +9559,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 7,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -9616,7 +9616,7 @@
             "endDate": "2026-08-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 7,
+            "inStudentDraftCount": 1,
             "isBookmarked": false
         },
         {
@@ -9665,7 +9665,7 @@
             "endDate": "2026-10-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 4,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -9708,67 +9708,6 @@
             "openingDetailContactChannel": "",
             "startDate": "2026-06-30T17:00:00.000Z",
             "endDate": "2026-10-30T17:00:00.000Z",
-            "isPublished": true,
-            "isAcceptingApplication": true,
-            "inStudentDraftCount": 7,
-            "isBookmarked": false
-        },
-        {
-            "openingId": 1524,
-            "sessionId": 4,
-            "company": {
-                "companyId": 171,
-                "companyNameTh": "บริษัท เภสัชกรรมศรีประสิทธิ์ จำกัด",
-                "companyNameEn": "SRIPRASIT PHARMA COMPANY LIMITED",
-                "logoUrl": "https://cedtintern.cp.eng.chula.ac.th/api/common/files/company/logo/54332c94-1396-421f-a951-32eb4b264e34?v=1765266300245",
-                "website": "https://www.sriprasit.com",
-                "facebook": "",
-                "line": ""
-            },
-            "title": "IT Support/Help Desk",
-            "description": "<p><strong>หน้าที่หลัก :&nbsp;</strong>ดูแลระบบ Hardware, Software, Network และการบำรุงรักษา ตามนโยบายบริษัทและตามข้อกำหนด ISO, GMP PIC/S</p><p><u>หน้าที่รับผิดชอบ</u></p><p>1.&nbsp;จัดการและดูแลระบบที่เกี่ยวข้องกับ IT ทั้งหมดของบริษัทฯ</p><p>2.&nbsp;ตรวจสอบ แก้ไขปัญหา และบำรุงรักษาระบบ Hardware, Software, Network และระบบที่เกี่ยวข้องทางด้าน IT ของบริษัทฯ</p><p>3.&nbsp;ดูแลซ่อมบำรุง จัดซื้อ ส่งซ่อม Computer PC, Notebook และอุปกรณ์ที่เกี่ยวข้องทางด้าน IT</p><p>4.&nbsp;ให้คำปรึกษากับผู้ใช้งาน Hardware และ Software ของบริษัท</p><p>5.&nbsp;ติดต่อประสานงานกับหน่วยงานภายในและภายนอกในการจัดซื้อ จัดหาอุปกรณ์คอมพิวเตอร์ และอุปกรณ์ที่เกี่ยวข้องด้าน IT</p><p>6.&nbsp;ปฏิบัติงานอื่น ๆ ตามที่ได้รับมอบหมาย</p>",
-            "quota": 1,
-            "openForCooperativeInternship": false,
-            "compensationAmount": 0,
-            "compensationType": {
-                "compensationTypeId": 1,
-                "compensationType": "บาท/วัน"
-            },
-            "workingCondition": "On-Site",
-            "requirements": null,
-            "tags": [
-                {
-                    "tagId": 110,
-                    "tagName": "IT"
-                },
-                {
-                    "tagId": 360,
-                    "tagName": "IT Support"
-                },
-                {
-                    "tagId": 361,
-                    "tagName": "Network"
-                },
-                {
-                    "tagId": 362,
-                    "tagName": "Software"
-                },
-                {
-                    "tagId": 485,
-                    "tagName": "Hardware"
-                },
-                {
-                    "tagId": 568,
-                    "tagName": "Help Desk"
-                }
-            ],
-            "officeName": "บริษัท เภสัชกรรมศรีประสิทธิ์ จำกัด ",
-            "officeAddressLine1": "เลขที่ 216  ม.6 ถนน ซ.เพชรเกษม 91 แขวง กระทุ่มแบน เขต สวนหลวง จังหวัด สมุทรสาคร  74130 \n  ",
-            "officeAddressLine2": "",
-            "recruitmentContactChannel": "คุณธนัสธรณ์ \nโทร.02-4201632-5 , 086-3363460 \n",
-            "openingDetailContactChannel": "คุณธนัสธรณ์ \nโทร.02-4201632-5 , 086-3363460 \n",
-            "startDate": "2026-05-14T17:00:00.000Z",
-            "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
             "inStudentDraftCount": 0,
@@ -9844,7 +9783,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 4,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -9890,7 +9829,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 2,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -9943,7 +9882,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 2,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -9992,7 +9931,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 2,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -10041,7 +9980,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 2,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -10077,7 +10016,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 3,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -10146,7 +10085,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 2,
+            "inStudentDraftCount": 0,
             "isBookmarked": true
         },
         {
@@ -10182,7 +10121,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 6,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -10228,7 +10167,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 6,
+            "inStudentDraftCount": 1,
             "isBookmarked": false
         },
         {
@@ -10321,7 +10260,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 1,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -10453,7 +10392,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 2,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -10526,7 +10465,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 5,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -10571,7 +10510,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 6,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -10628,7 +10567,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 7,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -10673,7 +10612,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 11,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -10714,7 +10653,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 4,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -10775,7 +10714,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 9,
+            "inStudentDraftCount": 2,
             "isBookmarked": false
         },
         {
@@ -10811,7 +10750,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 6,
+            "inStudentDraftCount": 0,
             "isBookmarked": true
         },
         {
@@ -10853,7 +10792,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 5,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -10891,7 +10830,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 3,
+            "inStudentDraftCount": 0,
             "isBookmarked": true
         },
         {
@@ -10924,7 +10863,7 @@
             "endDate": "2026-06-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 2,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -10981,7 +10920,7 @@
             "endDate": "2026-08-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 3,
+            "inStudentDraftCount": 1,
             "isBookmarked": false
         },
         {
@@ -11058,7 +10997,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 6,
+            "inStudentDraftCount": 1,
             "isBookmarked": false
         },
         {
@@ -11100,7 +11039,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 5,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -11162,7 +11101,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 13,
+            "inStudentDraftCount": 1,
             "isBookmarked": false
         },
         {
@@ -11203,7 +11142,7 @@
             "endDate": "2026-07-23T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 3,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -11245,7 +11184,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 2,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -11302,14 +11241,583 @@
             "startDate": "2026-05-17T17:00:00.000Z",
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
+            "isAcceptingApplication": false,
+            "inStudentDraftCount": 0,
+            "isBookmarked": false
+        },
+        {
+            "openingId": 1645,
+            "sessionId": 4,
+            "company": {
+                "companyId": 177,
+                "companyNameTh": "บริษัท เอ็ม บี เค จำกัด (มหาชน)",
+                "companyNameEn": "MBK Public Company Limited",
+                "logoUrl": "https://cedtintern.cp.eng.chula.ac.th/api/common/files/company/logo/51779163-a769-425b-845a-7529842e3c83?v=1768876040857",
+                "website": "https://www.mbkgroup.co.th/th/home",
+                "facebook": "",
+                "line": ""
+            },
+            "title": "Software Engineer (Tenant Profile Management)",
+            "description": "<h1><strong>Project: Tenant Profile Management</strong></h1><p><br></p><p><strong>เป้าหมายโครงการ:</strong></p><p>โครงการ Tenant Profile Management มีเป้าหมายในการพัฒนาแอปพลิเคชันที่รวบรวม และเชื่อมโยงข้อมูลผู้เช่าในรูปแบบ 360 องศา เพื่อให้สามารถมองเห็นข้อมูลเชิงลึกของผู้เช่าได้อย่างครบถ้วน และทันสมัย โดยโครงการมุ่งเน้นผลลัพธ์หลักดังต่อไปนี้:</p><p><br></p><p>1) ยกระดับประสบการณ์ผู้เช่าและสร้างความภักดี (Tenant Loyalty)</p><p>2) มอบการบริการที่ยอดเยี่ยม (Service Excellence)</p><p>3) เพิ่มประสิทธิภาพการทำงานภายในองค์กร (Operational Efficiency)</p><p><br></p><p>โครงการนี้จะเป็นรากฐานสำคัญในการสร้างระบบบริหารจัดการผู้เช่าที่ยั่งยืน ตอบโจทย์ทั้งในด้านธุรกิจ การบริการ และการบริหารจัดการภายในองค์กรอย่างครบวงจร</p><p><br></p><p><strong>Software Engineer:</strong></p><p>- ออกแบบและพัฒนาโซลูชันแบบ Full Stack ครอบคลุมตั้งแต่ส่วนงาน Frontend ไปจนถึง Backend</p><p>- พัฒนาระบบบนสถาปัตยกรรมแบบ Cloud-Native และ Microservices เพื่อรองรับการขยายตัวและความยืดหยุ่นของระบบ</p><p>- ใช้เทคโนโลยีสมัยใหม่ ได้แก่ Frontend: Next.js / Backend: Golang (REST API / Microservices) / Infrastructure: Docker, Kubernetes (K8s)</p><p>- แนวคิดด้าน DevOps, การทำงานแบบ CI/CD, และการ Deploy บนระบบ Cloud</p><p>- ทำงานร่วมกับทีมพัฒนาในรูปแบบ Agile / Scrum เพื่อให้สามารถส่งมอบงานได้อย่างต่อเนื่องและมีคุณภาพ</p><p>- ร่วมออกแบบสถาปัตยกรรมระบบ เชื่อมต่อข้อมูล และแก้ไขปัญหาทางเทคนิคเพื่อให้ระบบมีความเสถียรและรองรับผู้ใช้จำนวนมากได้อย่างมีประสิทธิภาพ</p>",
+            "quota": 1,
+            "openForCooperativeInternship": false,
+            "compensationAmount": 150,
+            "compensationType": {
+                "compensationTypeId": 1,
+                "compensationType": "บาท/วัน"
+            },
+            "workingCondition": "On-Site",
+            "requirements": null,
+            "tags": [
+                {
+                    "tagId": 3,
+                    "tagName": "Software Engineer"
+                },
+                {
+                    "tagId": 58,
+                    "tagName": "web application"
+                },
+                {
+                    "tagId": 70,
+                    "tagName": "FullStack"
+                },
+                {
+                    "tagId": 145,
+                    "tagName": "Agile"
+                },
+                {
+                    "tagId": 257,
+                    "tagName": "microservice"
+                },
+                {
+                    "tagId": 725,
+                    "tagName": "Cloud-Native"
+                }
+            ],
+            "officeName": "MBK Center สำนักงานใหญ่",
+            "officeAddressLine1": "444 ชั้น 8 อาคารเอ็ม บี เค เซ็นเตอร์ ถนนพญาไท\nแขวงวังใหม่ เขตปทุมวัน กทม 10330",
+            "officeAddressLine2": "",
+            "recruitmentContactChannel": "bundid@mbkgroup.co.th\nweerapol@techgateway.co.th",
+            "openingDetailContactChannel": "bundid@mbkgroup.co.th\nweerapol@techgateway.co.th",
+            "startDate": "2026-05-10T17:00:00.000Z",
+            "endDate": "2026-07-30T17:00:00.000Z",
+            "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 8,
+            "inStudentDraftCount": 1,
+            "isBookmarked": false
+        },
+        {
+            "openingId": 1654,
+            "sessionId": 4,
+            "company": {
+                "companyId": 179,
+                "companyNameTh": "บริษัท คอนเทรล แมเนจเม้นท์ จำกัด ",
+                "companyNameEn": "Contrail Management Co.,Ltd.",
+                "logoUrl": null,
+                "website": null,
+                "facebook": null,
+                "line": null
+            },
+            "title": "[Internship] Data Analyst",
+            "description": "<p><strong style=\"background-color: transparent;\">Responsibilities:</strong></p><ul><li><span style=\"background-color: transparent;\">Define key business metrics, definitions, and calculation logic used across business units.</span></li><li><span style=\"background-color: transparent;\">Ensure data accuracy, consistency, and reliability across multiple data sources.</span></li><li><span style=\"background-color: transparent;\">Establish basic data quality checks, controls, and documentation to improve long-term data trust.</span></li><li><span style=\"background-color: transparent;\">Improve the data collection and cleaning methods through automation</span></li><li><span style=\"background-color: transparent;\">Collaborate projects to extract, analyze, and gather data for advanced analytics and reporting tasks.</span></li></ul><p><br></p><p><strong style=\"background-color: transparent;\">หน้าที่และความรับผิดชอบ (Responsibilities):</strong></p><ul><li><span style=\"background-color: transparent;\">ตรวจสอบความถูกต้องและความน่าเชื่อถือของข้อมูลจากแหล่งข้อมูลหลายแหล่ง</span></li><li><span style=\"background-color: transparent;\">สร้างระบบตรวจสอบคุณภาพข้อมูล การควบคุม และเอกสารประกอบขั้นพื้นฐาน เพื่อเพิ่มความน่าเชื่อถือของข้อมูลในระยะยาว</span></li><li><span style=\"background-color: transparent;\">ปรับปรุงวิธีการรวบรวมและทำความสะอาดข้อมูลผ่านระบบอัตโนมัติ</span></li><li><span style=\"background-color: transparent;\">มีร่วมมือในโครงการต่างๆ เพื่อดึง วิเคราะห์ และรวบรวมข้อมูลสำหรับการวิเคราะห์ขั้นสูงและงานรายงาน</span></li></ul>",
+            "quota": 1,
+            "openForCooperativeInternship": false,
+            "compensationAmount": 10000,
+            "compensationType": {
+                "compensationTypeId": 3,
+                "compensationType": "บาท/เดือน"
+            },
+            "workingCondition": "On-Site",
+            "requirements": "<p><strong style=\"background-color: transparent;\">Requirements:</strong></p><ul><li><span style=\"background-color: transparent;\">Bachelor's (undergraduate) candidate or a Master's (graduate) degree student in Computer Science or Software Engineering or equivalent industry experience.</span></li><li><span style=\"background-color: transparent;\">Programming skills in one or more general-purpose languages such as Go, Python, TypeScript/JavaScript, C#, Java, or a related language.</span></li><li><span style=\"background-color: transparent;\">Have knowledge or interest in Trading and cryptocurrency.</span></li><li><span style=\"background-color: transparent;\">Good understanding of algorithms, data structures, concurrency, and system design.</span></li><li><span style=\"background-color: transparent;\">Must be able to learn, understand, and apply new technologies</span></li></ul><p><br></p><p><strong style=\"background-color: transparent;\">คุณสมบัติ (Requirements):</strong></p><ul><li><span style=\"background-color: transparent;\">กำลังศึกษาอยู่ระดับปริญญาตรี หรือปริญญาโท สาขาวิทยาการคอมพิวเตอร์ วิศวกรรมซอฟต์แวร์ หรือมีประสบการณ์ในอุตสาหกรรมที่เทียบเท่า</span></li><li><span style=\"background-color: transparent;\">มีทักษะการเขียนโปรแกรมอย่างน้อยหนึ่งภาษาในกลุ่มภาษาสำหรับการใช้งานทั่วไป เช่น Go, Python, TypeScript/JavaScript, C#, Java หรือภาษาอื่นที่เกี่ยวข้อง</span></li><li><span style=\"background-color: transparent;\">มีความรู้หรือความสนใจด้านการซื้อขายและ Cryptocurrency</span></li><li><span style=\"background-color: transparent;\">มีความเข้าใจที่ดีเกี่ยวกับอัลกอริทึม โครงสร้างข้อมูล การประมวลผลแบบพร้อมกัน (Concurrency) และการออกแบบระบบ</span></li><li><span style=\"background-color: transparent;\">สามารถเรียนรู้ ทำความเข้าใจ และประยุกต์ใช้เทคโนโลยีใหม่ได้อย่างมีประสิทธิภาพ</span></li></ul>",
+            "tags": [],
+            "officeName": "สำนักงานใหญ่",
+            "officeAddressLine1": "126/9 ซอย สุขุมวิท 63 (เอกมัย) แขวงคลองตันเหนือ เขตวัฒนา กรุงเทพมหานคร 10110\nhttps://maps.app.goo.gl/grQa57Hinreq7HuF7",
+            "officeAddressLine2": "ออฟฟิศอยู่ในโครงการ Park Avenue สามารถเดินทางด้วยรถไฟฟ้า BTS ลงสถานีเอกมัยและต่อรถมอเตอร์ไซค์ มาที่อาคารปาร์คอเวนิวหรือขึ้นรถเมล์สาย 23 นำรถยนต์หรือรถมอเตอร์ไซค์มาเองได้",
+            "recruitmentContactChannel": "hr@contrail.management",
+            "openingDetailContactChannel": "hr@contrail.management",
+            "startDate": null,
+            "endDate": null,
+            "isPublished": true,
+            "isAcceptingApplication": true,
+            "inStudentDraftCount": 0,
+            "isBookmarked": false
+        },
+        {
+            "openingId": 1656,
+            "sessionId": 4,
+            "company": {
+                "companyId": 177,
+                "companyNameTh": "บริษัท เอ็ม บี เค จำกัด (มหาชน)",
+                "companyNameEn": "MBK Public Company Limited",
+                "logoUrl": "https://cedtintern.cp.eng.chula.ac.th/api/common/files/company/logo/51779163-a769-425b-845a-7529842e3c83?v=1768876040857",
+                "website": "https://www.mbkgroup.co.th/th/home",
+                "facebook": "",
+                "line": ""
+            },
+            "title": "Software Engineer (Plant Nursery)",
+            "description": "<h1>Project Plant Nursery</h1><p><br></p><p><strong>เป้าหมายโครงการ:</strong></p><p>โครงการ Plant Nursery Management System มีวัตถุประสงค์เพื่อพัฒนาแอปพลิเคชันที่ช่วยสนับสนุนการบริหารจัดการงานเพาะปลูกและการดูแลต้นไม้ในทุกขั้นตอนอย่างเป็นระบบ ด้วยการนำเทคโนโลยีมาช่วยตรวจสอบ ติดตาม และวิเคราะห์ข้อมูล เพื่อเพิ่มประสิทธิภาพการดำเนินงาน ลดความผิดพลาด และยกระดับคุณภาพการบริหารจัดการต้นทุนและผลผลิต</p><p><br></p><p>ระบบนี้จะช่วยให้หน่วยงานสามารถจัดการข้อมูลสำคัญด้านการเพาะปลูก เช่น ต้นทุนเมล็ดพันธุ์ ปุ๋ย วัสดุอุปกรณ์ และค่าแรงงาน ได้อย่างถูกต้องครบถ้วน รวมถึงติดตาม การเจริญเติบโต สุขภาพ และสถานะของต้นไม้ ตั้งแต่ระยะเพาะชำจนถึงพร้อมจำหน่าย นอกจากนี้ยังมี Dashboard แสดงข้อมูลต้นทุน ผลการผลิต และประสิทธิภาพการเพาะปลูกในมุมมองต่าง ๆ เพื่อให้ผู้บริหารสามารถตัดสินใจบนพื้นฐานข้อมูลจริงและทันสมัย</p><p><br></p><p><strong>Software Engineer:</strong></p><p>- ออกแบบและพัฒนาโซลูชันแบบ Full Stack ครอบคลุมตั้งแต่ส่วนงาน Frontend ไปจนถึง Backend</p><p>- พัฒนาระบบบนสถาปัตยกรรมแบบ Cloud-Native และ Microservices เพื่อรองรับการขยายตัวและความยืดหยุ่นของระบบ</p><p>- ใช้เทคโนโลยีสมัยใหม่ ได้แก่ Frontend: Next.js / Backend: Golang (REST API / Microservices) / Infrastructure: Docker, Kubernetes (K8s)</p><p>- แนวคิดด้าน DevOps, การทำงานแบบ CI/CD, และการ Deploy บนระบบ Cloud</p><p>- ทำงานร่วมกับทีมพัฒนาในรูปแบบ Agile / Scrum เพื่อให้สามารถส่งมอบงานได้อย่างต่อเนื่องและมีคุณภาพ</p><p>- ร่วมออกแบบสถาปัตยกรรมระบบ เชื่อมต่อข้อมูล และแก้ไขปัญหาทางเทคนิคเพื่อให้ระบบมีความเสถียรและรองรับผู้ใช้จำนวนมากได้อย่างมีประสิทธิภาพ</p>",
+            "quota": 1,
+            "openForCooperativeInternship": false,
+            "compensationAmount": 150,
+            "compensationType": {
+                "compensationTypeId": 1,
+                "compensationType": "บาท/วัน"
+            },
+            "workingCondition": "On-Site",
+            "requirements": null,
+            "tags": [
+                {
+                    "tagId": 3,
+                    "tagName": "Software Engineer"
+                },
+                {
+                    "tagId": 31,
+                    "tagName": "agile"
+                },
+                {
+                    "tagId": 70,
+                    "tagName": "FullStack"
+                },
+                {
+                    "tagId": 725,
+                    "tagName": "Cloud-Native"
+                }
+            ],
+            "officeName": "MBK Center สำนักงานใหญ่",
+            "officeAddressLine1": "444 ชั้น 8 อาคารเอ็ม บี เค เซ็นเตอร์ ถนนพญาไท แขวงวังใหม่ เขตปทุมวัน กทม 10330",
+            "officeAddressLine2": "",
+            "recruitmentContactChannel": "bundid@mbkgroup.co.th\nweerapol@techgateway.co.th",
+            "openingDetailContactChannel": "bundid@mbkgroup.co.th\nweerapol@techgateway.co.th",
+            "startDate": "2026-05-10T17:00:00.000Z",
+            "endDate": "2026-07-30T17:00:00.000Z",
+            "isPublished": true,
+            "isAcceptingApplication": true,
+            "inStudentDraftCount": 0,
+            "isBookmarked": false
+        },
+        {
+            "openingId": 1658,
+            "sessionId": 4,
+            "company": {
+                "companyId": 175,
+                "companyNameTh": "ศูนย์ประสาทศาสตร์ โรงพยาบาลจุฬาลงกรณ์",
+                "companyNameEn": "Neuroscience Center",
+                "logoUrl": "https://cedtintern.cp.eng.chula.ac.th/api/common/files/company/logo/b421b59e-1eff-44ea-9b5a-fd0224864b6b?v=1765533727471",
+                "website": null,
+                "facebook": null,
+                "line": null
+            },
+            "title": "Elderly Activity Monitoring Intern",
+            "description": "<p><strong>Job Description</strong></p><p>The intern will contribute to the development of a motion-based system for evaluating elderly activities in a clinical research environment. The work includes designing a camera- and/or sensor-based motion capture setup and implementing pose and motion extraction using MediaPipe and/or OpenPose.</p><p><br></p><p>The intern will analyze motion data using Python and OpenCV to identify basic activities such as walking, sitting, and standing, and to derive simple mobility-related indicators. Results will be visualized to support interpretation by clinicians and researchers.</p><p><br></p><p>The intern will work under ethical and privacy guidelines for healthcare research, collaborate with clinical staff during scheduled onsite meetings, and prepare a final technical report and presentation.</p><p><br></p><p><strong>Available Topics</strong></p><p>1. Full-Body Motion Detection for Shoulder Rehabilitation (https://www.youtube.com/watch?v=KM36zdNUzZk)</p><p>2. Force Measurement with Posture-Aware Motion Detection (https://www.youtube.com/watch?v=8G2x1VYsFGU)</p><p><br></p><p><strong>Toolchain</strong></p><p>Camera &amp; sensor-based motion capture → MediaPipe / OpenPose → Python &amp; OpenCV →</p><p>Activity analysis &amp; visualization under clinical research standards</p><p><br></p><p><strong>Deliverables</strong></p><p>Motion analysis prototype or processing pipeline</p><p>Documentation and experimental results</p><p>Final report and presentation</p><p><br></p><p><strong>*Note*</strong></p><p>This position is for software and hardware development only and does not involve direct clinical diagnosis or treatment</p><p><br></p><p>**Joint supervision by Clinical Researchers and Ajarn Sukhum Sattaratnamai</p>",
+            "quota": 2,
+            "openForCooperativeInternship": false,
+            "compensationAmount": null,
+            "compensationType": null,
+            "workingCondition": "Hybrid",
+            "requirements": null,
+            "tags": [
+                {
+                    "tagId": 73,
+                    "tagName": "Python"
+                },
+                {
+                    "tagId": 459,
+                    "tagName": "OpenCV"
+                },
+                {
+                    "tagId": 720,
+                    "tagName": "Motion Detection"
+                },
+                {
+                    "tagId": 721,
+                    "tagName": "MediaPipe/OpenPose"
+                },
+                {
+                    "tagId": 722,
+                    "tagName": "Clinical Research"
+                },
+                {
+                    "tagId": 719,
+                    "tagName": "Elderly Activity Monitoring"
+                }
+            ],
+            "officeName": "Chula Neuroscience Center",
+            "officeAddressLine1": "S.T. Building (Geriatric Patients), 11th Floor King Chulalongkorn Memorial Hospital, The Thai Red Cross Society (Hybrid working mode: onsite once per week)",
+            "officeAddressLine2": "",
+            "recruitmentContactChannel": "",
+            "openingDetailContactChannel": "",
+            "startDate": "2026-05-17T17:00:00.000Z",
+            "endDate": "2026-07-30T17:00:00.000Z",
+            "isPublished": true,
+            "isAcceptingApplication": true,
+            "inStudentDraftCount": 0,
+            "isBookmarked": false
+        },
+        {
+            "openingId": 1668,
+            "sessionId": 4,
+            "company": {
+                "companyId": 180,
+                "companyNameTh": "บริษัท เลิร์นดู วิสาหกิจเพื่อสังคม จำกัด",
+                "companyNameEn": "Learndo Social Enterprise Co., Ltd",
+                "logoUrl": "https://cedtintern.cp.eng.chula.ac.th/api/common/files/company/logo/25c55631-4e8e-4962-ad41-dae315e61891?v=1771487064239",
+                "website": "",
+                "facebook": "https://www.facebook.com/LearnDoClub/",
+                "line": "@learndo"
+            },
+            "title": "Product Analyst & UX/UI Design",
+            "description": "<h3>อยากฝึกงานแบบสนุก ได้เจอโจทย์จริง ได้ลองทำอะไรใหม่ๆ ตื่นเต้นทุกวัน สมัครมาเลยจ้า</h3><h3>ใครรู้แล้วว่าชอบทำอะไร อยากทำอะไร มาคุยกันได้ ได้ลองแน่นอน แต่ถ้ายังไม่รู้ว่า จบแล้วจะทำงานอะไรดี ก็มาเลือกจากสิ่งที่มีได้ ที่นี่ก็คือที่ๆจะให้น้องๆได้ลองก่อนไปทำงานจริง</h3><h3><br></h3><h3>อ่ะจริงจังบ้าง เดี๋ยวไม่รู้ว่าจะมาสมัครฝึกงานแล้วทำอะไรดี</h3><h3><br></h3><h3><strong>Roles &amp; Responsibilities (R&amp;R)</strong></h3><p><strong>1. Customer Requirement &amp; Business Analysis</strong></p><ul><li>ประสานงานกับผู้ใช้งานและ Stakeholders เพื่อเก็บข้อมูลความต้องการ (Requirements) และวิเคราะห์โจทย์ทางธุรกิจ</li><li>ย่อยปัญหาของผู้ใช้งาน (Pain Points) ให้กลายเป็น User Stories และ Functional Requirements</li></ul><p><strong>2. Flow Analysis &amp; UX Design</strong></p><ul><li>ออกแบบ <strong>User Workflow</strong> และ <strong>Business Logic</strong> ของระบบให้ทำงานได้อย่างราบรื่น</li><li>สร้าง <strong>Wireframes</strong> และ <strong>High-Fidelity UI Design</strong> ที่สวยงามและตอบโจทย์การใช้งาน</li></ul><p><strong>3. POC &amp; Stakeholder Validation</strong></p><ul><li>พัฒนา <strong>Proof of Concept (POC)</strong> หรือ Prototype เพื่อนำไปพรีเซนต์และทดสอบกับลูกค้าจริง</li><li>ดำเนินการทดสอบกับผู้ใช้งาน (Usability Testing) เพื่อนำ Feedback มาพัฒนาต่อยอดให้ระบบสมบูรณ์ยิ่งขึ้น</li></ul><p><strong>Skill ที่ได้ใช้:</strong> Business &amp; Product Analysis, UX/UI Design, POC (Proof of Concept)</p><p>Skill ที่จะได้เพิ่มจากการมาฝึกงาน นอกเหนือจาก Hard Skill ที่ได้ จากงานด้านวิศวกรรมศาสตร์ คือ ได้เรียนรู้ Soft skill ฝึกการสัมภาษณ์ การตั้งคำถาม การเข้าใจกลุ่มลูกค้า ผู้ใช้งาน และ เข้าใจผู้คน เอาความรู้ทางด้านวิศวกรรมศาสตร์ มาประยุกต์ใช้กับโลกจริงได้ และที่สำคัญเข้าใจโลกธุรกิจ</p><p><br></p><p><strong>ตัวอย่างโปรเจคที่ให้เลือกตอนฝึกงาน</strong></p><ol><li>Platform Skill Bank</li><li>App ท่องเที่ยวบางกะเจ้า</li><li>Character Robot</li><li>Platform เก็บข้อมูลการจัดการขยะและคำนวณคาร์บอนเครดิต</li><li>Humanoid ทำอาหาร</li><li>อื่นๆ ถ้ามีสิ่งที่อยากทำ มาคุยกัน Matching กับโจทย์จริง สร้าง โปรเจคใหม่ได้</li></ol><p><br></p><p>หมายเหตุ : ช่วงฝึกงาน อาจมีให้ลงพื้นที่มาเที่ยวบางกะเจ้า บ้าง 1-2 ครั้ง หรือตามความเหมาะสมของลักษณะงาน</p>",
+            "quota": 10,
+            "openForCooperativeInternship": false,
+            "compensationAmount": null,
+            "compensationType": {
+                "compensationTypeId": 5,
+                "compensationType": "ไม่มีค่าตอบแทน"
+            },
+            "workingCondition": "Work From Home",
+            "requirements": "<h3>มาเลยจ้า อยากทำอะไร อยากฝึกเรื่องอะไรทั้งงานวิศวะ งานด้านบริหาร งานธุรกิจ Startup อยากเป็นผู้ประกอบการ ที่นี่ให้คุณได้ พี่ๆใจดี เป็นโอกาสดีที่จะได้เอาความรู้ สิ่งที่เรียนมาและ สิ่งที่สนใจมาทดสอบกับโลกจริง ถ้าอยากทำ Deep Tech ที่นี่อาจไม่ตอบโจทย์ แต่ถ้าอยาก เอา Technology มาประยุกต์ใช้ สามารถเกิด impact ได้จริง โดยเฉพาะเป็นประโยชน์ต่อสังคม ช่วยให้คุณภาพชีวิตคนดีขึ้น มาที่นี่ได้เลย</h3><p><br></p><p>สนใจสมัครฝึกงานให้ส่งคลิปวีดีโอ 1 นาที (ส่งเป็น Link จาก google drive) มาที่ Line Official : @learndo</p><p>หรือ Email : info.learndo@gmail.com</p><ol><li>แนะนำตัวเอง</li><li>ทำไมถึงอยากฝึกงานที่ เลิร์นดู</li><li>อยากทำอะไร สนใจเรื่องอะไร</li><li>อยากได้อะไรจากการฝึกงาน</li><li>รู้จักบางกะเจ้าไหม เคยมาไหม ถ้าต้องมาเที่ยวซักครั้งจะเดินทางมายังไง</li><li>ให้นิยามตัวเอง 3 คำ จะนิยามว่าอะไร</li></ol>",
+            "tags": [
+                {
+                    "tagId": 2,
+                    "tagName": "UX/UI"
+                },
+                {
+                    "tagId": 21,
+                    "tagName": "Data Analyst"
+                },
+                {
+                    "tagId": 43,
+                    "tagName": "Business Analyst"
+                },
+                {
+                    "tagId": 60,
+                    "tagName": "startup"
+                },
+                {
+                    "tagId": 61,
+                    "tagName": "ux"
+                },
+                {
+                    "tagId": 175,
+                    "tagName": "planning"
+                },
+                {
+                    "tagId": 259,
+                    "tagName": "design thinking"
+                },
+                {
+                    "tagId": 271,
+                    "tagName": "UX/UI Designer"
+                },
+                {
+                    "tagId": 337,
+                    "tagName": "problem-solving"
+                },
+                {
+                    "tagId": 390,
+                    "tagName": "Workflow"
+                },
+                {
+                    "tagId": 391,
+                    "tagName": "Business Requirement"
+                },
+                {
+                    "tagId": 570,
+                    "tagName": "ฺBusiness Development"
+                },
+                {
+                    "tagId": 686,
+                    "tagName": "frameworks"
+                }
+            ],
+            "officeName": "สำนักงานใหญ่",
+            "officeAddressLine1": "เลขที่ 68/7 ถนน เพชรหึงษ์47 แขวง พระประแดง เขต บางกอบัว จังหวัด สมุทรปราการ  10130 \n  ",
+            "officeAddressLine2": "",
+            "recruitmentContactChannel": "Line : @learndo",
+            "openingDetailContactChannel": "Line : @learndo",
+            "startDate": "2026-05-15T17:00:00.000Z",
+            "endDate": "2026-07-30T17:00:00.000Z",
+            "isPublished": true,
+            "isAcceptingApplication": true,
+            "inStudentDraftCount": 0,
+            "isBookmarked": false
+        },
+        {
+            "openingId": 1672,
+            "sessionId": 4,
+            "company": {
+                "companyId": 135,
+                "companyNameTh": "บริษัท ดิทโต้ (ประเทศไทย) จำกัด (มหาชน)",
+                "companyNameEn": "ditto (thailand) public company limited",
+                "logoUrl": "https://cedtintern.cp.eng.chula.ac.th/api/common/files/company/logo/576be27b-9be0-4996-ab33-159cee7d572b?v=1741593101127",
+                "website": "https://www.dittothailand.com/th/",
+                "facebook": "",
+                "line": "hrm.ditto"
+            },
+            "title": "AI Trainee",
+            "description": "<p><strong>หน้าที่และความรับผิดชอบ (Responsibilities)</strong></p><p><br></p><ol><li>ศึกษาและพัฒนาความรู้ทางด้าน Artificial Intelligence (Machine Learning, Deep Learning) รวมถึงเทคนิคที่เกี่ยวข้อง</li><li>ร่วมมือกับทีม Data Scientist, Data Engineer, Software Engineer ในการวิเคราะห์และออกแบบโมเดล AI ให้ตรงตามความต้องการของโครงการ</li><li>สร้างต้นแบบ (Prototype) และทดสอบโมเดล AI/ML เพื่อปรับปรุงประสิทธิภาพ</li><li>เรียนรู้และใช้งานเครื่องมือหรือ Framework ต่าง ๆ (เช่น TensorFlow, PyTorch, scikit-learn)</li><li>จัดทำเอกสารการทดลอง (Experiment Documentation) เพื่อสรุปผลและปรับโมเดลอย่างต่อเนื่อง</li></ol><p><br></p><p><strong>คุณสมบัติ (Qualifications)</strong></p><ol><li>กำลังศึกษาหรือจบการศึกษาด้านวิศวกรรมคอมพิวเตอร์ วิทยาการคอมพิวเตอร์ คณิตศาสตร์ สถิติ หรือสาขาที่เกี่ยวข้องกับ Data/AI</li><li>มีความรู้พื้นฐานเกี่ยวกับวิธีการทางสถิติ คณิตศาสตร์เชิงเส้น รวมถึงอัลกอริทึม Machine Learning ระดับเบื้องต้น</li><li>สามารถเขียนโปรแกรมด้วยภาษา Python ได้ และเข้าใจไลบรารีสำหรับงาน Data Science (เช่น NumPy, Pandas, Matplotlib)</li><li>มีใจรักการเรียนรู้สิ่งใหม่ ๆ และอัปเดตเทคโนโลยีอย่างสม่ำเสมอ</li><li>หากมีผลงานทดลอง หรือโปรเจ็กต์ AI/ML ที่เคยทำ อาจนำมาแสดงเป็นตัวอย่างเพื่อประกอบการพิจารณา</li></ol><p class=\"ql-align-center\"><br></p>",
+            "quota": 1,
+            "openForCooperativeInternship": false,
+            "compensationAmount": 350,
+            "compensationType": {
+                "compensationTypeId": 1,
+                "compensationType": "บาท/วัน"
+            },
+            "workingCondition": "On-Site",
+            "requirements": null,
+            "tags": [
+                {
+                    "tagId": 73,
+                    "tagName": "Python"
+                },
+                {
+                    "tagId": 86,
+                    "tagName": "AI"
+                },
+                {
+                    "tagId": 184,
+                    "tagName": "Pandas"
+                },
+                {
+                    "tagId": 197,
+                    "tagName": "Data Science"
+                },
+                {
+                    "tagId": 382,
+                    "tagName": "NumPy"
+                },
+                {
+                    "tagId": 383,
+                    "tagName": "Matplotlib"
+                },
+                {
+                    "tagId": 384,
+                    "tagName": "AI/ML "
+                }
+            ],
+            "officeName": "Office",
+            "officeAddressLine1": "151 ถ.นวลจันทร์ แขวงนวลจันทร์ เขตบึงกุ่ม กรุงเทพมหานคร 10230",
+            "officeAddressLine2": "",
+            "recruitmentContactChannel": "",
+            "openingDetailContactChannel": "",
+            "startDate": null,
+            "endDate": null,
+            "isPublished": true,
+            "isAcceptingApplication": true,
+            "inStudentDraftCount": 1,
+            "isBookmarked": false
+        },
+        {
+            "openingId": 1675,
+            "sessionId": 4,
+            "company": {
+                "companyId": 135,
+                "companyNameTh": "บริษัท ดิทโต้ (ประเทศไทย) จำกัด (มหาชน)",
+                "companyNameEn": "ditto (thailand) public company limited",
+                "logoUrl": "https://cedtintern.cp.eng.chula.ac.th/api/common/files/company/logo/576be27b-9be0-4996-ab33-159cee7d572b?v=1741593101127",
+                "website": "https://www.dittothailand.com/th/",
+                "facebook": "",
+                "line": "hrm.ditto"
+            },
+            "title": "Software Developer",
+            "description": "<p><strong>หน้าที่และความรับผิดชอบ (Responsibilities)</strong></p><p><br></p><ol><li>ออกแบบ พัฒนา และทดสอบโปรแกรมหรือระบบซอฟต์แวร์ตามความต้องการของลูกค้าและองค์กร</li><li>เขียนโค้ดและดูแลโค้ดให้อยู่ในมาตรฐานที่กำหนด ตลอดจนแก้ปัญหาและปรับปรุงประสิทธิภาพของระบบ</li><li>ทำงานร่วมกับทีม (เช่น QA, BA, Project Manager) เพื่อวิเคราะห์ความต้องการ (Requirements) ของระบบ และประเมินระยะเวลาในการพัฒนา</li><li>ติดตามเทคโนโลยีใหม่ ๆ เพื่อหาแนวทางการพัฒนาระบบที่ทันสมัยและมีประสิทธิภาพมากขึ้น</li><li>จัดทำเอกสารที่เกี่ยวข้อง เช่น Technical Documentation, User Manual เพื่อให้ทีมงานและลูกค้าเข้าใจโครงสร้างของซอฟต์แวร์</li></ol><p><br></p><p><strong>คุณสมบัติ (Qualifications)</strong></p><p><br></p><ol><li>กำลังศึกษาปริญญาตรีหรือสูงกว่าในสาขาวิศวกรรมคอมพิวเตอร์ วิทยาการคอมพิวเตอร์ ไอที หรือสาขาอื่นที่เกี่ยวข้อง</li><li>มีประสบการณ์ในการพัฒนาโปรแกรมด้วยภาษาโปรแกรมอย่างน้อยหนึ่งภาษา (เช่น Java, C#, Python, JavaScript)</li><li>เข้าใจหลักการออกแบบซอฟต์แวร์ (OOP, Design Patterns) และเครื่องมือในการพัฒนา (เช่น Git, CI/CD)</li><li>มีทักษะการสื่อสารและการทำงานเป็นทีมที่ดี</li><li>หากมีประสบการณ์ในการพัฒนา Web/Mobile Application หรือ Cloud Technology จะได้รับการพิจารณาเป็นพิเศษ</li></ol>",
+            "quota": 1,
+            "openForCooperativeInternship": false,
+            "compensationAmount": 350,
+            "compensationType": {
+                "compensationTypeId": 1,
+                "compensationType": "บาท/วัน"
+            },
+            "workingCondition": "On-Site",
+            "requirements": null,
+            "tags": [
+                {
+                    "tagId": 7,
+                    "tagName": "C#"
+                },
+                {
+                    "tagId": 12,
+                    "tagName": "JavaScript"
+                },
+                {
+                    "tagId": 17,
+                    "tagName": "QA"
+                },
+                {
+                    "tagId": 41,
+                    "tagName": "Developer"
+                },
+                {
+                    "tagId": 73,
+                    "tagName": "Python"
+                },
+                {
+                    "tagId": 288,
+                    "tagName": "Software Developer"
+                },
+                {
+                    "tagId": 374,
+                    "tagName": "Cloud Technology "
+                },
+                {
+                    "tagId": 375,
+                    "tagName": "Mobile Application "
+                },
+                {
+                    "tagId": 376,
+                    "tagName": "Java "
+                }
+            ],
+            "officeName": "Office",
+            "officeAddressLine1": "151 ถ.นวลจันทร์ แขวงนวลจันทร์ เขตบึงกุ่ม กรุงเทพมหานคร 10230",
+            "officeAddressLine2": "",
+            "recruitmentContactChannel": "",
+            "openingDetailContactChannel": "",
+            "startDate": null,
+            "endDate": null,
+            "isPublished": true,
+            "isAcceptingApplication": true,
+            "inStudentDraftCount": 0,
+            "isBookmarked": false
+        },
+        {
+            "openingId": 1681,
+            "sessionId": 4,
+            "company": {
+                "companyId": 135,
+                "companyNameTh": "บริษัท ดิทโต้ (ประเทศไทย) จำกัด (มหาชน)",
+                "companyNameEn": "ditto (thailand) public company limited",
+                "logoUrl": "https://cedtintern.cp.eng.chula.ac.th/api/common/files/company/logo/576be27b-9be0-4996-ab33-159cee7d572b?v=1741593101127",
+                "website": "https://www.dittothailand.com/th/",
+                "facebook": "",
+                "line": "hrm.ditto"
+            },
+            "title": "IT Site Support",
+            "description": "<p><strong>หน้าที่และความรับผิดชอบ (Responsibilities)</strong></p><ul><li>สนับสนุนการติดตั้งและตรวจสอบระบบ Server, Network, Rack และอุปกรณ์ IT</li><li>ตรวจสอบงานติดตั้งให้เป็นไปตามแบบ (Shop Drawing / As-built)</li><li>บันทึกข้อมูลหน้างาน และจัดทำรายงานความคืบหน้า (Daily / Weekly Report)</li><li>สนับสนุนการทดสอบและ Commissioning ระบบ IT / OJT</li><li>ประสานงานกับผู้รับเหมา ช่างเทคนิค และทีมวิศวกร</li><li>ตรวจสอบอุปกรณ์ (Material / Equipment) ให้ถูกต้องตาม BOQ</li><li>ปฏิบัติตามข้อกำหนดด้านความปลอดภัยในพื้นที่ก่อสร้างอย่างเคร่งครัด</li></ul><p><br></p><p><strong>คุณสมบัติ (Qualifications)</strong></p><ul><li>กำลังศึกษาในสาขาวิศวกรรมคอมพิวเตอร์ / เทคโนโลยีสารสนเทศ หรือสาขาที่เกี่ยวข้อง</li><li>มีพื้นฐานด้าน Network, Server หรือ System Infrastructure</li><li>อ่านแบบระบบ (Drawing) ได้จะพิจารณาเป็นพิเศษ</li><li>มีความรับผิดชอบ และสามารถทำงานในไซต์ก่อสร้างได้</li></ul>",
+            "quota": 1,
+            "openForCooperativeInternship": false,
+            "compensationAmount": 350,
+            "compensationType": {
+                "compensationTypeId": 1,
+                "compensationType": "บาท/วัน"
+            },
+            "workingCondition": "On-Site",
+            "requirements": null,
+            "tags": [
+                {
+                    "tagId": 361,
+                    "tagName": "Network"
+                },
+                {
+                    "tagId": 731,
+                    "tagName": "Server"
+                },
+                {
+                    "tagId": 732,
+                    "tagName": "System Infrastructure"
+                }
+            ],
+            "officeName": "หน้าไซต์งานสวนสัตว์(แห่งใหม่)  คลองหก จ.ปทุมธานี",
+            "officeAddressLine1": "หน้าไซต์งานสวนสัตว์(แห่งใหม่)  คลองหก จ.ปทุมธานี",
+            "officeAddressLine2": "",
+            "recruitmentContactChannel": "",
+            "openingDetailContactChannel": "",
+            "startDate": null,
+            "endDate": null,
+            "isPublished": true,
+            "isAcceptingApplication": true,
+            "inStudentDraftCount": 0,
+            "isBookmarked": false
+        },
+        {
+            "openingId": 1687,
+            "sessionId": 4,
+            "company": {
+                "companyId": 31,
+                "companyNameTh": "บริษัท เพลย์ทอเรียม โซลูชันส์ จำกัด (มหาชน)",
+                "companyNameEn": "Playtorium",
+                "logoUrl": "https://cedtintern.cp.eng.chula.ac.th/api/common/files/company/logo/858f9fe0-83bd-474e-a1c1-19d5f100cb27?v=1699953823377",
+                "website": "https://playtorium.co.th/",
+                "facebook": "https://www.facebook.com/PlaytoriumSolutions",
+                "line": "ID: nichapatthaikul"
+            },
+            "title": "Software Tester",
+            "description": "<p><strong>Functional Test, Performance/Load Test, Automate Test&nbsp;</strong></p><p>• Design test case and implement system test</p><p>• Record/analyze test result and provide feedback to development team</p><p>• Perform reporting the defect to the bug tracking system</p><p>• Create automate test script by using&nbsp;&nbsp;<strong>Robot framework and&nbsp;Cypress</strong>&nbsp;<strong>for Automate test position</strong></p><p>• Create performance test script&nbsp;&nbsp;by using&nbsp;<strong>LoadRunner and Jmeter</strong>&nbsp;&nbsp;<strong>for Performance test position</strong></p><p>• Co-ordinate with Developers , SA, and PM to solve software error</p><p>• Develop project-related documents such as user acceptance test document and user manual</p><p>• Coordinate and facilitate the User Acceptance Test</p>",
+            "quota": 2,
+            "openForCooperativeInternship": false,
+            "compensationAmount": 300,
+            "compensationType": {
+                "compensationTypeId": 1,
+                "compensationType": "บาท/วัน"
+            },
+            "workingCondition": "Hybrid",
+            "requirements": "<p>บริษัทขอสงวนสิทธิ์ในการพิจารณาตำแหน่งว่าจะได้ฝึกในส่วนงานใดของ Software Tester</p><p>ซึ่งจะขึ้นอยู่กับงานที่มีในขณะนั้น และหัวหน้างานพิจารณาโดยอ้างอิงจากความถนัดและความต้องการของน้องๆร่วมด้วย</p>",
+            "tags": [
+                {
+                    "tagId": 4,
+                    "tagName": "Intern"
+                },
+                {
+                    "tagId": 289,
+                    "tagName": "Software QA"
+                },
+                {
+                    "tagId": 434,
+                    "tagName": "Software Tester"
+                }
+            ],
+            "officeName": "สำนักงานใหญ่",
+            "officeAddressLine1": "อาคาร ยาคูลท์ ชั้น 15 เลขที่ 1025 ถนน พหลโยธิน แขวง พญาไท เขต พญาไท จังหวัด กรุงเทพมหานคร  10400 \n  ",
+            "officeAddressLine2": "BTS สนามเป้า จากสถานี 0 เมตร ถึงอาคารยาคูลท์",
+            "recruitmentContactChannel": "E-mail: people@playtorium.co.th",
+            "openingDetailContactChannel": "E-mail: people@playtorium.co.th",
+            "startDate": "2026-06-01T17:00:00.000Z",
+            "endDate": "2026-07-30T17:00:00.000Z",
+            "isPublished": true,
+            "isAcceptingApplication": true,
+            "inStudentDraftCount": 0,
+            "isBookmarked": false
+        },
+        {
+            "openingId": 1695,
+            "sessionId": 4,
+            "company": {
+                "companyId": 91,
+                "companyNameTh": "บริษัท ทรานสคอสมอส (ไทยแลนด์) จำกัด",
+                "companyNameEn": "Transcosmos (Thailand) Co., Ltd.",
+                "logoUrl": "https://cedtintern.cp.eng.chula.ac.th/api/common/files/company/logo/b6de2499-8f1e-4831-b67f-d05ae897f596?v=1731394648346",
+                "website": "https://www.trans-cosmos.co.th/home",
+                "facebook": "https://www.facebook.com/transcosmos.th/",
+                "line": ""
+            },
+            "title": " Innovation Solution",
+            "description": "<ul><li>Perform data analysis, data cleaning, and data preparation to support AI and Digital Solution Implementation.</li><li>Design, configure, and implement a structured Conversational AI Flow (Rule-based &amp; AI based) on Omni-channel platforms, including decision trees and logic mapping.</li><li>Explore, evaluate, and support implementation of Technology Solutions such as AI Chatbot, Automation tools, CRM systems, and Microsoft Power Platform (Power Apps, Power Automate, Power BI).</li><li>Support development of applications and workflows, and dashboards using low-code/no code platforms to enhance business operations and reporting.</li><li>Assist in prompt engineering, system testing, performance evaluation, and solution optimization (accuracy improvement, error reduction, usability enhancement).</li><li>Collaborate closely with Tech, Data, and Operations teams throughout the Solution Development Lifecycle.</li></ul><p><strong><u>Qualifications:</u></strong></p><ul><li>Current college student or recent graduate in Computer Science, Data Science, AI, Business Tech, Engineering, or related fields.</li><li>Strong interest in AI, Automation, Digital Platforms, and Solution Development.</li><li>Basic understanding of AI tools (e.g., ChatGPT, Prompt engineering, Automation Platforms) or a low-code/no-code platform is an advantage.</li><li>Strong logical thinking and structured problem-solving skills.</li><li>Proactive, willing to learn, and able to work collaboratively in a team environment.</li><li>Good command of Thai and English.</li><li>Able to handle confidential information responsibly.&nbsp;</li></ul><p><br></p>",
+            "quota": 1,
+            "openForCooperativeInternship": false,
+            "compensationAmount": 450,
+            "compensationType": {
+                "compensationTypeId": 1,
+                "compensationType": "บาท/วัน"
+            },
+            "workingCondition": "On-Site",
+            "requirements": null,
+            "tags": [],
+            "officeName": "อาคารภคินทร์พระราม 9 ",
+            "officeAddressLine1": "9 ถ. รัชดาภิเษก แขวงดินแดง เขตดินแดง กรุงเทพมหานคร 10400",
+            "officeAddressLine2": "อาคารอยู่ติดกับอาคารฟอร์ทจูน สามารถเดินทางผ่าน MRT ลงสถานีพระราม 9 ทางออก 1 เดินประมาณ400-500เมตรจะถึงอาคาร",
+            "recruitmentContactChannel": "academy@trans-cosmos.co.th \nka.sunisa@trans-cosmos.co.th",
+            "openingDetailContactChannel": "academy@trans-cosmos.co.th \nka.sunisa@trans-cosmos.co.th",
+            "startDate": "2026-04-30T17:00:00.000Z",
+            "endDate": "2026-07-30T17:00:00.000Z",
+            "isPublished": true,
+            "isAcceptingApplication": true,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         }
     ],
     "meta": {
-        "totalItem": 191,
-        "itemCount": 191,
+        "totalItem": 200,
+        "itemCount": 200,
         "itemsPerPage": 1000,
         "totalPage": 1,
         "currentPage": 1

@@ -52,10 +52,7 @@ async function loadJSON(fileName) {
             originalJobList = data.fullContent ? data.fullContent.items : [];
         }
 
-        // ---------- เพิ่มบรรทัดนี้ ----------
-        // กรองเอาเฉพาะข้อมูลที่ quota มีค่ามากกว่า 0
-        originalJobList = originalJobList.filter(job => job.quota && job.quota > 0);
-        // ---------------------------------
+        originalJobList = originalJobList.filter(job => job.quota && job.quota > 0 && job.isAcceptingApplication);
 
         populateTagOptions(originalJobList);
         populateWorkingOptions(originalJobList);
