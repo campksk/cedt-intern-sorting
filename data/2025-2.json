@@ -669,7 +669,7 @@
                 "compensationTypeId": 1,
                 "compensationType": "บาท/วัน"
             },
-            "workingCondition": "Work From Home",
+            "workingCondition": "On-Site",
             "requirements": null,
             "tags": [
                 {
@@ -698,7 +698,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 0,
+            "inStudentDraftCount": 1,
             "isBookmarked": false
         },
         {
@@ -1042,7 +1042,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 0,
+            "inStudentDraftCount": 1,
             "isBookmarked": true
         },
         {
@@ -2617,7 +2617,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 1,
+            "inStudentDraftCount": 2,
             "isBookmarked": false
         },
         {
@@ -3023,7 +3023,7 @@
             "startDate": null,
             "endDate": null,
             "isPublished": true,
-            "isAcceptingApplication": true,
+            "isAcceptingApplication": false,
             "inStudentDraftCount": 0,
             "isBookmarked": true
         },
@@ -3623,7 +3623,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 2,
+            "inStudentDraftCount": 4,
             "isBookmarked": true
         },
         {
@@ -4366,7 +4366,7 @@
             "endDate": "2026-12-29T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 0,
+            "inStudentDraftCount": 1,
             "isBookmarked": false
         },
         {
@@ -4886,7 +4886,7 @@
             "endDate": "2026-12-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 0,
+            "inStudentDraftCount": 2,
             "isBookmarked": false
         },
         {
@@ -4935,7 +4935,7 @@
             "endDate": "2026-12-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 0,
+            "inStudentDraftCount": 2,
             "isBookmarked": false
         },
         {
@@ -4980,7 +4980,7 @@
             "endDate": "2026-08-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 0,
+            "inStudentDraftCount": 1,
             "isBookmarked": true
         },
         {
@@ -5651,7 +5651,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 0,
+            "inStudentDraftCount": 1,
             "isBookmarked": false
         },
         {
@@ -6179,7 +6179,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 2,
+            "inStudentDraftCount": 3,
             "isBookmarked": true
         },
         {
@@ -6353,7 +6353,7 @@
                 "companyId": 137,
                 "companyNameTh": "บริษัท เวแอม จำกัด ",
                 "companyNameEn": "vaam co.,ltd.",
-                "logoUrl": null,
+                "logoUrl": "https://cedtintern.cp.eng.chula.ac.th/api/common/files/company/logo/017eeb43-f0ca-4aba-9968-a87742780e81?v=1772037003330",
                 "website": null,
                 "facebook": null,
                 "line": null
@@ -6468,7 +6468,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 0,
+            "inStudentDraftCount": 1,
             "isBookmarked": false
         },
         {
@@ -6859,7 +6859,7 @@
             "startDate": null,
             "endDate": null,
             "isPublished": true,
-            "isAcceptingApplication": true,
+            "isAcceptingApplication": false,
             "inStudentDraftCount": 0,
             "isBookmarked": false
         },
@@ -7028,7 +7028,7 @@
             "startDate": null,
             "endDate": null,
             "isPublished": true,
-            "isAcceptingApplication": true,
+            "isAcceptingApplication": false,
             "inStudentDraftCount": 0,
             "isBookmarked": false
         },
@@ -7457,7 +7457,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 0,
+            "inStudentDraftCount": 2,
             "isBookmarked": false
         },
         {
@@ -7730,7 +7730,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 1,
+            "inStudentDraftCount": 2,
             "isBookmarked": true
         },
         {
@@ -7890,7 +7890,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 1,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -8616,7 +8616,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 0,
+            "inStudentDraftCount": 1,
             "isBookmarked": true
         },
         {
@@ -8709,7 +8709,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 4,
+            "inStudentDraftCount": 5,
             "isBookmarked": true
         },
         {
@@ -8806,7 +8806,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 0,
+            "inStudentDraftCount": 1,
             "isBookmarked": true
         },
         {
@@ -9665,7 +9665,7 @@
             "endDate": "2026-10-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 0,
+            "inStudentDraftCount": 1,
             "isBookmarked": false
         },
         {
@@ -9710,7 +9710,7 @@
             "endDate": "2026-10-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 0,
+            "inStudentDraftCount": 1,
             "isBookmarked": false
         },
         {
@@ -9829,7 +9829,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 0,
+            "inStudentDraftCount": 1,
             "isBookmarked": false
         },
         {
@@ -10140,7 +10140,7 @@
             "description": "<p>- ทำงานด้านเก็บข้อมูล วิเคราะห์ข้อมูล รวมถึงการทำ Dashboard Development ให้กับลูกค้า</p><p>- นำข้อมูลของบริษัท หรือข้อมูลของลูกค้าที่ได้รับการอนุญาตมาวิเคราะห์ (Data Analytic, Machine Learning) เพื่อต่อยอดให้เกิดประโยชน์สูงสุด</p><p>- เป็น Staff ในการทำ Workshop กับลูกค้าเพื่อให้ความรู้ด้าน Data Analytic รวมถึงช่วยเตรียมงาน ตามที่ได้รับมอบหมาย</p><p>- ดึงข้อมูลจากระบบต่าง ๆ เพื่อจัดทำ Report สรุปผลและรายงานปัญหาต่าง ๆ ที่เกิดขึ้นในการทำงานเพื่อปรับปรุงแก้ไข</p><p>- ทดสอบ Data Solution ตามที่ได้รับมอบหมาย</p>",
             "quota": 1,
             "openForCooperativeInternship": false,
-            "compensationAmount": null,
+            "compensationAmount": 500,
             "compensationType": null,
             "workingCondition": "Hybrid",
             "requirements": null,
@@ -10510,7 +10510,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 0,
+            "inStudentDraftCount": 1,
             "isBookmarked": false
         },
         {
@@ -11775,7 +11775,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 0,
+            "inStudentDraftCount": 1,
             "isBookmarked": false
         },
         {
@@ -11813,11 +11813,207 @@
             "isAcceptingApplication": true,
             "inStudentDraftCount": 0,
             "isBookmarked": false
+        },
+        {
+            "openingId": 1704,
+            "sessionId": 4,
+            "company": {
+                "companyId": 6,
+                "companyNameTh": "ธนาคาร กรุงไทย จำกัด (มหาชน)",
+                "companyNameEn": "KTB",
+                "logoUrl": "https://cedtintern.cp.eng.chula.ac.th/api/common/files/company/logo/f08f48d7-b822-4c15-9c72-027e8598b354?v=1700541103414",
+                "website": "https://krungthai.com/th/personal",
+                "facebook": "https://www.facebook.com/krungthaibank/?locale=th_TH",
+                "line": ""
+            },
+            "title": "Krungthai Internship Program 2026",
+            "description": "<p><span style=\"background-color: transparent;\">Start with One Meaningful Step — Join Krungthai Internship Program 2026! 🌟</span></p><p><span style=\"background-color: transparent;\">Are you ready to explore a world of possibilities?</span></p><p><span style=\"background-color: transparent;\">Krungthai Bank invites university students to gain hands-on experience, learn from experts, and grow with real impact through Krungthai Internship Program 2026.</span></p><p><br></p><p><br></p><p><span style=\"background-color: transparent;\">📅 Application Period: Until 6 March 2026</span></p><p><span style=\"background-color: transparent;\">📝 Assessment &amp; Interview: March 2026</span></p><p><span style=\"background-color: transparent;\">📣 Announcement: April 2026</span></p><p><span style=\"background-color: transparent;\">🌟 Start Program: June 2026&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p><ul><li><span style=\"background-color: transparent;\">Project-based Internship</span></li><li><span style=\"background-color: transparent;\">Internship Camp</span></li><li><span style=\"background-color: transparent;\">Training Programs</span></li><li><span style=\"background-color: transparent;\">Certification</span></li><li><span style=\"background-color: transparent;\">etc...</span></li></ul><p><span style=\"background-color: transparent;\">&nbsp;&nbsp;* Please note the time might be changed.</span></p><p><br></p><p><span style=\"background-color: transparent;\">👉 Apply now and explore a world of possibilities! 👉 Via google form </span></p><p><a rel=\"noopener noreferrer\" href=\"https://forms.gle/zKoP5NqdsvhcFMbq6\"><strong>https://forms.gle/zKoP5NqdsvhcFMbq6</strong></a></p>",
+            "quota": 2,
+            "openForCooperativeInternship": false,
+            "compensationAmount": 600,
+            "compensationType": {
+                "compensationTypeId": 1,
+                "compensationType": "บาท/วัน"
+            },
+            "workingCondition": "Hybrid",
+            "requirements": "<p>นิสิตต้องเข้าปฏิบัติงานและเข้าร่วมกิจกรรมต่าง ๆ ของโครงการ ไม่น้อยกว่า 80% ของระยะเวลาโครงการทั้งหมด</p>",
+            "tags": [
+                {
+                    "tagId": 2,
+                    "tagName": "UX/UI"
+                },
+                {
+                    "tagId": 4,
+                    "tagName": "Intern"
+                },
+                {
+                    "tagId": 13,
+                    "tagName": "Frontend"
+                },
+                {
+                    "tagId": 53,
+                    "tagName": "Data Engineer"
+                },
+                {
+                    "tagId": 58,
+                    "tagName": "web application"
+                },
+                {
+                    "tagId": 59,
+                    "tagName": "dashboard"
+                },
+                {
+                    "tagId": 76,
+                    "tagName": "Database"
+                },
+                {
+                    "tagId": 86,
+                    "tagName": "AI"
+                },
+                {
+                    "tagId": 110,
+                    "tagName": "IT"
+                },
+                {
+                    "tagId": 249,
+                    "tagName": "Project Coordinator"
+                },
+                {
+                    "tagId": 315,
+                    "tagName": "mobile application"
+                },
+                {
+                    "tagId": 733,
+                    "tagName": "legal"
+                },
+                {
+                    "tagId": 734,
+                    "tagName": "finance"
+                },
+                {
+                    "tagId": 735,
+                    "tagName": "wealth"
+                },
+                {
+                    "tagId": 736,
+                    "tagName": "ESG"
+                }
+            ],
+            "officeName": "Krungthai Bank",
+            "officeAddressLine1": "อาคาร สำนักงานใหญ่ (อาคาร 1) เลขที่ 35 ถนน สุขุมวิท แขวง วัฒนา เขต คลองเตยเหนือ จังหวัด กรุงเทพฯ  10110 \n  ",
+            "officeAddressLine2": "",
+            "recruitmentContactChannel": "",
+            "openingDetailContactChannel": "",
+            "startDate": "2026-05-31T17:00:00.000Z",
+            "endDate": "2026-07-30T17:00:00.000Z",
+            "isPublished": true,
+            "isAcceptingApplication": true,
+            "inStudentDraftCount": 8,
+            "isBookmarked": false
+        },
+        {
+            "openingId": 1707,
+            "sessionId": 4,
+            "company": {
+                "companyId": 137,
+                "companyNameTh": "บริษัท เวแอม จำกัด ",
+                "companyNameEn": "vaam co.,ltd.",
+                "logoUrl": "https://cedtintern.cp.eng.chula.ac.th/api/common/files/company/logo/017eeb43-f0ca-4aba-9968-a87742780e81?v=1772037003330",
+                "website": null,
+                "facebook": null,
+                "line": null
+            },
+            "title": "IoT HW engineer",
+            "description": "<p>พัฒนาอุปกรณ์ IoT </p><ul><li>พัฒนา firmware ในส่วน application บน ต้นแบบ Arduino เช่นการเชื่อมต่อเซนเซอร์ Thermometer, PM2.5, CO2 เป็นต้น</li><li>จะได้รับมอบหมาย 2 เซนเซอร์ ในช่วงฝึกงาน</li><li>Hardware ของบริษัท มีทั้งส่วนที่เป็น RP2350 และ ESP32</li></ul>",
+            "quota": 3,
+            "openForCooperativeInternship": false,
+            "compensationAmount": null,
+            "compensationType": null,
+            "workingCondition": "Hybrid",
+            "requirements": "<p>ต้องนำส่งงานตามที่ได้รับมอบหมายตามเวลา </p><p><br></p>",
+            "tags": [],
+            "officeName": "ใกล้สามย่านมิตรทาวด์ หรือ อ่อนนุช",
+            "officeAddressLine1": "ใกล้สามย่านมิตรทาวด์ ",
+            "officeAddressLine2": "",
+            "recruitmentContactChannel": "",
+            "openingDetailContactChannel": "",
+            "startDate": null,
+            "endDate": null,
+            "isPublished": true,
+            "isAcceptingApplication": true,
+            "inStudentDraftCount": 0,
+            "isBookmarked": false
+        },
+        {
+            "openingId": 1708,
+            "sessionId": 4,
+            "company": {
+                "companyId": 137,
+                "companyNameTh": "บริษัท เวแอม จำกัด ",
+                "companyNameEn": "vaam co.,ltd.",
+                "logoUrl": "https://cedtintern.cp.eng.chula.ac.th/api/common/files/company/logo/017eeb43-f0ca-4aba-9968-a87742780e81?v=1772037003330",
+                "website": null,
+                "facebook": null,
+                "line": null
+            },
+            "title": "IoT Firmware engineer",
+            "description": "<p>พัฒนาอุปกรณ์ IoT</p><ul><li>พัฒนา Firmware ในส่วนการ Integration เข้ากับ Backend</li><li>เชื่อมต่อ อุปกรณ์ IoT เข้ากับ การส่งข้อมูล เช่น UDP, TCP, MQTT, REST</li><li>เชื่อมต่อ ระบบฐานข้อมูล เช่น Influx, MongoDB, SQL, Google Drive</li><li>แสดงผล เช่น Grafana</li></ul>",
+            "quota": 1,
+            "openForCooperativeInternship": false,
+            "compensationAmount": null,
+            "compensationType": null,
+            "workingCondition": "Hybrid",
+            "requirements": null,
+            "tags": [],
+            "officeName": "ใกล้สามย่านมิตรทาวด์ หรือ อ่อนนุช",
+            "officeAddressLine1": "ใกล้สามย่านมิตรทาวด์\n\n",
+            "officeAddressLine2": "",
+            "recruitmentContactChannel": "",
+            "openingDetailContactChannel": "",
+            "startDate": null,
+            "endDate": null,
+            "isPublished": true,
+            "isAcceptingApplication": true,
+            "inStudentDraftCount": 0,
+            "isBookmarked": false
+        },
+        {
+            "openingId": 1715,
+            "sessionId": 4,
+            "company": {
+                "companyId": 138,
+                "companyNameTh": "บริษัท สวีทสเปกตรัม จำกัด ",
+                "companyNameEn": "SweetSpectrum co.,ltd.",
+                "logoUrl": "https://cedtintern.cp.eng.chula.ac.th/api/common/files/company/logo/59da6b57-7a05-42de-8e9f-6588c5ef3bf1?v=1772040170905",
+                "website": "http://www.sweet-spectrum.com/ss/",
+                "facebook": "",
+                "line": ""
+            },
+            "title": "เก็บข้อมูลสำหรับ AI, cooking",
+            "description": "<p>เก็บข้อมูลสำหรับการสร้างโมเดล AI ในการทำอาหาร</p><ul><li>ทำ Labelling ข้อมูลที่ได้</li><li>ติดตั้งกล้อง</li><li>มีความชอบ เกี่ยวกับอาหาร ทำอาหารเป็น</li></ul><p><br></p>",
+            "quota": 4,
+            "openForCooperativeInternship": false,
+            "compensationAmount": null,
+            "compensationType": null,
+            "workingCondition": "Hybrid",
+            "requirements": "<p>ต้องนำส่งงานตามที่ได้รับมอบหมายตามเวลา</p><p><br></p><p>ทำอาหารเป็น เช่น ย่างเนื้อ ผัดกระเพราะ</p><p>สามารถทำความสะอาดพื้นที่ทำอาหารและล้างจานได้</p>",
+            "tags": [],
+            "officeName": "ใกล้สามย่านมิตรทาวด์",
+            "officeAddressLine1": "ใกล้สามย่านมิตรทาวด์",
+            "officeAddressLine2": "",
+            "recruitmentContactChannel": "",
+            "openingDetailContactChannel": "",
+            "startDate": null,
+            "endDate": null,
+            "isPublished": true,
+            "isAcceptingApplication": true,
+            "inStudentDraftCount": 0,
+            "isBookmarked": false
         }
     ],
     "meta": {
-        "totalItem": 200,
-        "itemCount": 200,
+        "totalItem": 204,
+        "itemCount": 204,
         "itemsPerPage": 1000,
         "totalPage": 1,
         "currentPage": 1
