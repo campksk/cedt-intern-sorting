@@ -1299,7 +1299,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 1,
+            "inStudentDraftCount": 0,
             "isBookmarked": false
         },
         {
@@ -8867,7 +8867,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 2,
+            "inStudentDraftCount": 3,
             "isBookmarked": false
         },
         {
@@ -9829,7 +9829,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 4,
+            "inStudentDraftCount": 3,
             "isBookmarked": false
         },
         {
@@ -10085,7 +10085,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 2,
+            "inStudentDraftCount": 3,
             "isBookmarked": true
         },
         {
@@ -10714,7 +10714,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 5,
+            "inStudentDraftCount": 6,
             "isBookmarked": false
         },
         {
@@ -11847,7 +11847,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 0,
+            "inStudentDraftCount": 1,
             "isBookmarked": false
         },
         {
@@ -11883,7 +11883,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 1,
+            "inStudentDraftCount": 2,
             "isBookmarked": false
         },
         {
@@ -12186,7 +12186,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 2,
+            "inStudentDraftCount": 3,
             "isBookmarked": false
         },
         {
@@ -12411,7 +12411,7 @@
             "endDate": null,
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 0,
+            "inStudentDraftCount": 1,
             "isBookmarked": false
         },
         {
@@ -12698,7 +12698,7 @@
             "endDate": "2026-07-30T17:00:00.000Z",
             "isPublished": true,
             "isAcceptingApplication": true,
-            "inStudentDraftCount": 0,
+            "inStudentDraftCount": 1,
             "isBookmarked": false
         },
         {
