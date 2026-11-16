@@ -54,6 +54,9 @@ function normalize(raw) {
     .map((t) => String(t.tagName || '').trim())
     .filter((t) => t && !seen.has(t.toLowerCase()) && seen.add(t.toLowerCase()));
 
+  const rawLogo = raw.company?.logoUrl || '';
+  const logo = rawLogo ? `/api/logo?url=${encodeURIComponent(rawLogo)}` : '';
+
   const quota = Number(raw.quota) || 0;
   return {
     id: `${raw.openingId}-${raw.sessionId}`,
@@ -64,7 +67,7 @@ function normalize(raw) {
       id: raw.company?.companyId ?? null,
       th: String(raw.company?.companyNameTh || '').trim(),
       en: String(raw.company?.companyNameEn || '').trim(),
-      logo: raw.company?.logoUrl || '',
+      logo,
       website: raw.company?.website || '',
     },
     quota,

@@ -174,7 +174,8 @@
   function logo(it) {
     const initial = (it._coName.replace(/^(บริษัท|บจก\.?|ธนาคาร)\s*/, '')[0] || '?').toUpperCase();
     const fallback = () => el('div', { class: 'logo', 'aria-hidden': 'true' }, initial);
-    const src = safeUrl(it.company.logo);
+    const raw = it.company.logo || '';
+    const src = raw.startsWith('/api/logo?') ? raw : safeUrl(raw);
     if (!src) return fallback();
     const img = el('img', { class: 'logo', src, alt: '', loading: 'lazy', referrerpolicy: 'no-referrer' });
     img.addEventListener('error', () => img.replaceWith(fallback()));
