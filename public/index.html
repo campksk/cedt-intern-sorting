@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CEDT Intern — ตำแหน่งฝึกงาน</title>
+  <meta name="description" content="ค้นหาและเรียงตำแหน่งฝึกงาน CEDT จุฬาฯ ตามเงิน จำนวนรับ และคนแย่ง">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <h1>ตำแหน่งฝึกงาน CEDT</h1>
+      <p class="sub" id="status" aria-live="polite">กำลังโหลดข้อมูล…</p>
+    </div>
+  </header>
+
+  <section class="toolbar" aria-label="ค้นหาและตัวกรอง">
+    <div class="wrap">
+      <div class="row">
+        <label class="search">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 21l-4.3-4.3M10.5 18a7.5 7.5 0 110-15 7.5 7.5 0 010 15z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <input id="q" type="search" autocomplete="off" spellcheck="false"
+                 placeholder="ค้นหา เช่น  react  กสิกร  data engineer   (กด / เพื่อค้นหา)">
+        </label>
+        <select id="sem" aria-label="รอบฝึกงาน"></select>
+        <select id="sort" aria-label="เรียงตาม"></select>
+      </div>
+
+      <div class="row filters">
+        <div class="group" id="modes" role="group" aria-label="รูปแบบการทำงาน"></div>
+        <label class="check"><input type="checkbox" id="openOnly" checked> เฉพาะที่ยังเปิดรับ</label>
+        <label class="check"><input type="checkbox" id="paidOnly"> มีค่าตอบแทน</label>
+        <label class="check"><input type="checkbox" id="coop"> สหกิจ</label>
+        <details class="tagbox" id="tagbox">
+          <summary>แท็ก<span id="tagCount"></span></summary>
+          <div class="panel">
+            <input id="tagq" type="search" placeholder="ค้นหาแท็ก…" autocomplete="off">
+            <div class="chips" id="tagList"></div>
+          </div>
+        </details>
+        <button type="button" class="link" id="reset" hidden>ล้างตัวกรอง</button>
+      </div>
+      <div class="chips selected" id="selectedTags"></div>
+    </div>
+  </section>
+
+  <main class="wrap">
+    <p class="count" id="count" aria-live="polite"></p>
+    <div id="list" class="grid"></div>
+    <p class="note">ข้อมูลได้จากการดึงจากเว็บ CEDT อาจคลาดเคลื่อนหรือล้าหลัง โปรดตรวจสอบที่
+      <a href="https://cedtintern.cp.eng.chula.ac.th" target="_blank" rel="noopener">cedtintern.cp.eng.chula.ac.th</a>
+      ก่อนสมัครทุกครั้ง</p>
+  </main>
+
+  <dialog id="dlg"></dialog>
+  <script src="app.js"></script>
+</body>
+</html>

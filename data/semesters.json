@@ -1,0 +1,4 @@
+[
+  { "id": "2025-1", "label": "2025/1", "file": "2025-1.json" },
+  { "id": "2025-2", "label": "2025/2", "file": "2025-2.json", "isDefault": true }
+]
