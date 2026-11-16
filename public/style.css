@@ -11,8 +11,8 @@
   }
 }
 * { box-sizing: border-box; }
-html { color-scheme: light dark; }
-body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.5 'Sarabun', system-ui, sans-serif; }
+html { color-scheme: light dark; overflow-x: hidden; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.5 'Sarabun', system-ui, sans-serif; overflow-x: hidden; }
 a { color: var(--accent); }
 .wrap { max-width: 1180px; margin: 0 auto; padding: 0 16px; }
 .top { padding: 28px 0 14px; }
@@ -59,14 +59,15 @@ select { cursor: pointer; }
 
 .count { color: var(--muted); font-size: .9rem; margin: 16px 0 10px; }
 .grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); }
-.card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; display: flex; flex-direction: column; gap: 10px; box-shadow: var(--shadow); }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; display: flex; flex-direction: column; gap: 10px; box-shadow: var(--shadow); min-width: 0; }
 .card.closed { opacity: .6; }
-.head { display: flex; gap: 12px; align-items: flex-start; }
+.head { display: flex; gap: 12px; align-items: flex-start; min-width: 0; }
+.head > div { min-width: 0; flex: 1; }
 .logo { flex: none; width: 44px; height: 44px; border-radius: 10px; border: 1px solid var(--line); background: #fff; object-fit: contain; display: grid; place-items: center; font-weight: 700; color: var(--muted); overflow: hidden; }
-.card-title { all: unset; cursor: pointer; font-weight: 600; font-size: 1.05rem; line-height: 1.35; display: block; }
+.card-title { all: unset; cursor: pointer; font-weight: 600; font-size: 1.05rem; line-height: 1.35; display: block; word-break: break-word; }
 .card-title:hover { color: var(--accent); }
-.company { color: var(--muted); font-size: .92rem; }
-.office { color: var(--muted); font-size: .85rem; }
+.company { color: var(--muted); font-size: .92rem; word-break: break-word; }
+.office { color: var(--muted); font-size: .85rem; word-break: break-word; }
 mark { background: var(--mark); color: inherit; border-radius: 3px; padding: 0 1px; }
 .meta { display: flex; flex-wrap: wrap; gap: 6px; }
 .pill { display: inline-block; font-size: .8rem; padding: 2px 9px; border-radius: 999px; background: var(--bg); border: 1px solid var(--line); color: var(--muted); white-space: nowrap; }
@@ -90,12 +91,47 @@ mark { background: var(--mark); color: inherit; border-radius: 3px; padding: 0 1
 dialog { width: min(720px, 94vw); max-height: 88vh; border: 1px solid var(--line); border-radius: 16px; padding: 0; background: var(--card); color: var(--text); }
 dialog::backdrop { background: rgba(0,0,0,.45); }
 .dlg-body { padding: 22px; overflow: auto; max-height: 88vh; display: flex; flex-direction: column; gap: 14px; }
-.dlg-body h2 { margin: 0; font-size: 1.3rem; line-height: 1.3; }
+.dlg-body h2 { margin: 0; font-size: 1.3rem; line-height: 1.3; word-break: break-word; }
 .dlg-body h3 { margin: 0 0 4px; font-size: .95rem; color: var(--muted); }
 .text { white-space: pre-wrap; word-break: break-word; font-size: .95rem; }
 .actions { display: flex; gap: 10px; flex-wrap: wrap; }
-.btn { font: inherit; text-decoration: none; padding: 9px 16px; border-radius: 10px; border: 1px solid var(--line); background: var(--card); color: var(--text); cursor: pointer; }
+.btn { font: inherit; text-decoration: none; padding: 9px 16px; border-radius: 10px; border: 1px solid var(--line); background: var(--card); color: var(--text); cursor: pointer; text-align: center; }
 .btn.primary { background: var(--accent); color: #fff; border-color: var(--accent); }
 @media (prefers-color-scheme: dark) { .btn.primary { color: #0b1220; } }
-@media (max-width: 560px) { .row > select { flex: 1 1 45%; } }
+
+/* ========== Mobile Enhancements ========== */
+@media (max-width: 640px) {
+  .wrap { padding: 0 12px; }
+  .top { padding: 18px 0 10px; }
+  .sub .pill { display: inline-block; margin: 4px 0 0; }
+
+  /* Unstick toolbar on small screens so filters don't cover half the viewport */
+  .toolbar { position: static; padding: 8px 0 12px; }
+  .search { flex: 1 1 100%; }
+  .row > select { flex: 1 1 calc(50% - 4px); min-width: 0; font-size: .9rem; padding: 8px 10px; }
+
+  /* Make filter chips and checkboxes comfortable to tap without cramping */
+  .filters { gap: 6px 10px; font-size: .88rem; }
+  .chip, .group button, .tagbox summary { padding: 5px 10px; font-size: .84rem; min-height: 34px; }
+  .check { padding: 4px 2px; }
+
+  /* Center tag dropdown panel on mobile so it never overflows off-screen */
+  .tagbox { position: static; }
+  .toolbar .wrap { position: relative; }
+  .tagbox .panel { left: 12px; right: 12px; width: auto; max-height: 55vh; }
+
+  /* Compact card padding */
+  .grid { gap: 10px; }
+  .card { padding: 14px; gap: 8px; }
+  .logo { width: 40px; height: 40px; }
+  .card-title { font-size: 1rem; }
+
+  /* Full-width action buttons inside detail dialog for easy thumb tapping */
+  dialog { width: calc(100vw - 20px); max-height: 90vh; border-radius: 14px; }
+  .dlg-body { padding: 16px; gap: 12px; max-height: 90vh; }
+  .dlg-body h2 { font-size: 1.15rem; }
+  .actions { flex-direction: column; gap: 8px; }
+  .actions .btn { width: 100%; padding: 11px 16px; }
+}
+
 @media (prefers-reduced-motion: reduce) { .skeleton { animation: none; } }
