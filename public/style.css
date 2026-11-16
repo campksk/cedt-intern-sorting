@@ -62,7 +62,7 @@ select { cursor: pointer; }
 .card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; display: flex; flex-direction: column; gap: 10px; box-shadow: var(--shadow); min-width: 0; }
 .card.closed { opacity: .6; }
 .head { display: flex; gap: 12px; align-items: flex-start; min-width: 0; }
-.head > div { min-width: 0; flex: 1; }
+.head > div:not(.logo) { min-width: 0; flex: 1; }
 .logo { flex: none; width: 44px; height: 44px; border-radius: 10px; border: 1px solid var(--line); background: #fff; object-fit: contain; display: grid; place-items: center; font-weight: 700; color: var(--muted); overflow: hidden; }
 .card-title { all: unset; cursor: pointer; font-weight: 600; font-size: 1.05rem; line-height: 1.35; display: block; word-break: break-word; }
 .card-title:hover { color: var(--accent); }
