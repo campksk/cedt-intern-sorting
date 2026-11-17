@@ -112,18 +112,28 @@ function loadArchive(sem) {
   return mem.get(key).items;
 }
 
+const FAIL_BACKOFF_MS = 60 * 1000; // after a failed live fetch, don't hit upstream again for a minute
+const PUBLIC_UPSTREAM_ERROR = 'upstream unavailable';
+
 async function loadLive() {
   const hit = mem.get('live');
   if (hit && Date.now() - hit.at < TTL * 1000) return { ...hit, source: 'live' };
+  const failedAt = mem.get('liveFail');
+  if (failedAt && Date.now() - failedAt < FAIL_BACKOFF_MS) {
+    if (hit) return { ...hit, source: 'stale', upstreamError: PUBLIC_UPSTREAM_ERROR };
+    return { source: 'failed', upstreamError: PUBLIC_UPSTREAM_ERROR };
+  }
   try {
     const { items } = await fetchLive();
     const entry = { at: Date.now(), items: prepare(items) };
     mem.set('live', entry);
+    mem.delete('liveFail');
     return { ...entry, source: 'live' };
   } catch (err) {
     console.error('[jobs] live fetch failed:', err);
-    if (hit) return { ...hit, source: 'stale', upstreamError: err.message }; // last good copy
-    return { source: 'failed', upstreamError: err.message };
+    mem.set('liveFail', Date.now());
+    if (hit) return { ...hit, source: 'stale', upstreamError: PUBLIC_UPSTREAM_ERROR }; // last good copy
+    return { source: 'failed', upstreamError: PUBLIC_UPSTREAM_ERROR };
   }
 }
 
@@ -150,7 +160,7 @@ module.exports = async (req, res) => {
       const r = await loadLive();
       ({ at = null, source, upstreamError = null } = r);
       if (r.source === 'failed') {
-        if (!fallbackArchive) throw new Error(r.upstreamError);
+        if (!fallbackArchive) throw new Error('live fetch failed and no archive available');
         items = loadArchive(fallbackArchive);
         source = 'archive';
         fallback = { id: fallbackArchive.id, label: fallbackArchive.label || fallbackArchive.id };
