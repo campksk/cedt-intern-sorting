@@ -6,6 +6,26 @@ const INTERNAL_ORIGIN = 'https://cedtintern.cp.eng.chula.ac.th';
 const TIMEOUT_MS = 8000;
 const MAX_BYTES = 2 * 1024 * 1024; // 2 MB
 const MAX_REDIRECTS = 3;
+const CACHE_TTL_MS = 24 * 60 * 60 * 1000;
+const CACHE_MAX_BYTES = 48 * 1024 * 1024; // total size of cached images
+const cache = new Map(); // targetUrl -> { at, type, buffer }  (insertion order = oldest first)
+let cacheBytes = 0;
+function cacheGet(key) {
+  const e = cache.get(key);
+  if (!e) return null;
+  if (Date.now() - e.at > CACHE_TTL_MS) { cache.delete(key); cacheBytes -= e.buffer.length; return null; }
+  return e;
+}
+function cacheSet(key, type, buffer) {
+  if (cache.has(key)) cacheBytes -= cache.get(key).buffer.length;
+  cache.set(key, { at: Date.now(), type, buffer });
+  cacheBytes += buffer.length;
+  while (cacheBytes > CACHE_MAX_BYTES && cache.size) {
+    const oldest = cache.keys().next().value;
+    cacheBytes -= cache.get(oldest).buffer.length;
+    cache.delete(oldest);
+  }
+}
 // SVG is excluded on purpose: it can carry script.
 const ALLOWED_TYPES = /^image\/(png|jpe?g|gif|webp|avif|x-icon|vnd\.microsoft\.icon)$/i;
 
@@ -100,6 +120,12 @@ module.exports = async (req, res) => {
   const isInternal = new URL(targetUrl).origin === INTERNAL_ORIGIN;
   const cookie = () => (isInternal ? process.env.UPSTREAM_COOKIE : undefined);
 
+  const cached = cacheGet(targetUrl);
+  if (cached) {
+    res.setHeader('Cache-Control', 'public, max-age=86400');
+    return send(res, 200, cached.buffer, cached.type);
+  }
+
   try {
     let imgRes = await fetchImage(targetUrl, cookie());
 
@@ -115,7 +141,8 @@ module.exports = async (req, res) => {
     if (!ALLOWED_TYPES.test(contentType)) return send(res, 415, 'Not an allowed image type');
 
     const buffer = await readCapped(imgRes);
-    res.setHeader('Cache-Control', 'public, s-maxage=86400, stale-while-revalidate=43200');
+    cacheSet(targetUrl, contentType, buffer);
+    res.setHeader('Cache-Control', 'public, max-age=86400, s-maxage=86400, stale-while-revalidate=43200');
     return send(res, 200, buffer, contentType);
   } catch (err) {
     console.error('[Logo Proxy] Error:', err.message);

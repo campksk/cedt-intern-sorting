@@ -1,0 +1,27 @@
+[Unit]
+Description=CEDT Intern web app
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=cedt
+Group=cedt
+WorkingDirectory=/opt/cedt-intern
+ExecStart=/usr/bin/node scripts/server.js
+Restart=on-failure
+RestartSec=5
+Environment=NODE_ENV=production
+Environment=HOST=127.0.0.1
+Environment=PORT=3000
+Environment=CHROMIUM_PATH=/usr/bin/chromium
+
+# Hardening (the app only needs to write its own folder: the refreshed cookie goes to .env)
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+ProtectHome=true
+ReadWritePaths=/opt/cedt-intern
+
+[Install]
+WantedBy=multi-user.target

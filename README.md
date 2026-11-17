@@ -1,93 +1,99 @@
-# CEDT Intern — ตำแหน่งฝึกงาน (v2)
+# รันบน Raspberry Pi + Cloudflare Tunnel
 
-หน้าเว็บค้นหา/กรอง/เรียงตำแหน่งฝึกงาน CEDT ไม่มี build step: หน้าเว็บ static + Vercel Serverless Function 1 ตัว
+ภาพรวม: Pi รัน `scripts/server.js` ที่ `127.0.0.1:3000` (ไม่เปิดพอร์ตออกอินเทอร์เน็ต)
+แล้วให้ `cloudflared` เชื่อมต่อออกไปหา Cloudflare เพื่อเปิดเว็บให้คนทั่วไปเข้าผ่านโดเมนของคุณ
 
+## 0. สิ่งที่ต้องมี
+- Raspberry Pi 4/5 (RAM ≥ 2 GB) ลง Raspberry Pi OS **64-bit** (เช็กด้วย `uname -m` ต้องได้ `aarch64`)
+- บัญชี Cloudflare (ฟรี) และโดเมนที่ใช้ DNS ของ Cloudflare ถ้าอยากได้ URL ถาวร
+  (ไม่มีโดเมน: ใช้ quick tunnel ในข้อ 7 ได้ แต่ URL จะสุ่มและเปลี่ยนทุกครั้ง)
+
+## 1. ติดตั้งโปรแกรม
+```bash
+sudo apt update && sudo apt install -y git chromium
+# Node.js 22 (Debian bookworm มี Node 18 ซึ่งเก่าเกินไป: โปรเจกต์ต้องการ >= 20)
+curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
+sudo apt install -y nodejs
 ```
-api/jobs.js          รวมข้อมูล → normalize → cache → fallback
-lib/upstream.js      ดึงข้อมูลสดจาก API ต้นทาง (วนดึงครบทุกหน้า)
-public/              index.html, app.js, style.css
-data/semesters.json  รายการรอบที่เก็บถาวร (แก้ไฟล์นี้เพื่อเพิ่ม/ลบรอบ ไม่ต้องแก้โค้ด)
-data/<รอบ>.json      ข้อมูลของแต่ละรอบ
-scripts/             dev-server.js, snapshot.js, test-api.js, load-env.js
-```
+ถ้า `chromium` ไม่พบแพ็กเกจ ให้ลอง `chromium-browser` แล้วแก้ `CHROMIUM_PATH` ให้ตรง (`which chromium chromium-browser`)
 
-## เริ่มใช้งานในเครื่อง (Windows/Mac/Linux)
-
-ต้องมี Node.js 20+
-
-```powershell
-copy .env.example .env      # แล้วแก้ .env
-npm test                    # ทดสอบ API (ไม่ใช้เน็ต)
-npm run dev                 # เปิด http://localhost:3000
-```
-
-ไม่มี `UPSTREAM_URL` ก็ใช้ได้ แต่จะมีเฉพาะรอบที่เก็บถาวรใน `data/`
-
-## ตัวเลือกรอบ (semester)
-
-- **Live** — ข้อมูลปัจจุบันจาก API (แสดงเมื่อตั้ง `UPSTREAM_URL` และเป็นค่าเริ่มต้น)
-- **รอบอื่น ๆ** — อ่านจาก `data/semesters.json` ซึ่งชี้ไปที่ไฟล์ JSON แต่ละรอบ (เรียงใหม่สุดก่อนในเมนู)
-
-```json
-[
-  { "id": "2025-1", "label": "2025/1", "file": "2025-1.json" },
-  { "id": "2025-2", "label": "2025/2", "file": "2025-2.json", "isDefault": true }
-]
+## 2. ดึงโค้ด + ติดตั้ง
+```bash
+sudo useradd --system --create-home --shell /usr/sbin/nologin cedt
+sudo mkdir -p /opt/cedt-intern && sudo chown cedt:cedt /opt/cedt-intern
+sudo -u cedt git clone https://github.com/campksk/cedt-intern-sorting.git /opt/cedt-intern
+cd /opt/cedt-intern
+# apply patch สำหรับ Pi (patch ความปลอดภัยอยู่ใน main แล้ว ไม่ต้อง apply ซ้ำ)
+# หรือจะ commit patch นี้ขึ้น GitHub ก่อนแล้วค่อย git pull ก็ได้
+sudo -u cedt git apply /path/to/pi-selfhost.patch
+sudo -u cedt npm ci --omit=dev --ignore-scripts
 ```
 
-`isDefault` คือรอบที่ใช้เป็นค่าเริ่มต้นเมื่อไม่มี Live และเป็นรอบที่แสดงแทนเมื่อดึง Live ไม่สำเร็จ
-(ถ้าไม่ระบุ ใช้รอบสุดท้ายในไฟล์) รอบที่ไฟล์ข้อมูลหายจะไม่ปรากฏในเมนู
-
-**เก็บรอบที่จบแล้ว** (ดึงครบทุกหน้า เขียนไฟล์ข้อมูล และเพิ่มรายการใน `semesters.json` ให้เอง):
-
+## 3. ตั้งค่า `.env`
+```bash
+sudo -u cedt cp .env.example .env
+sudo -u cedt nano .env      # ใส่ UPSTREAM_URL, MCV_USERNAME, MCV_PASSWORD
+sudo chmod 600 /opt/cedt-intern/.env
 ```
-node scripts/snapshot.js 2026-1 "2026/1"
+แนะนำให้ตั้ง `CACHE_TTL_SEC=21600` (6 ชั่วโมง) เพื่อให้ดึงข้อมูลสดน้อยลง
+และควรใช้บัญชีที่สิทธิ์ต่ำที่สุดเท่าที่ทำได้ เพราะรหัสผ่านจะเก็บอยู่บน Pi เครื่องนี้
+
+## 4. ทดสอบก่อน
+```bash
+sudo -u cedt env CHROMIUM_PATH=/usr/bin/chromium node scripts/server.js
+# เปิดอีก terminal
+curl localhost:3000/healthz            # ต้องได้ ok
+curl -s localhost:3000/api/jobs | head -c 300   # ครั้งแรกจะ login ด้วย Chromium อาจใช้ 30-60 วินาทีบน Pi
+```
+ถ้า login ไม่ผ่าน ดู log ในหน้าจอที่รัน server
+
+## 5. รันเป็นบริการ (เปิดเองเมื่อบูต)
+```bash
+sudo cp deploy/cedt-intern.service /etc/systemd/system/
+sudo systemctl daemon-reload
+sudo systemctl enable --now cedt-intern
+sudo systemctl status cedt-intern
+journalctl -u cedt-intern -f           # ดู log
 ```
 
-แล้ว commit `data/` ขึ้น GitHub
+## 6. Cloudflare Tunnel (URL ถาวร)
+ติดตั้ง `cloudflared`:
+```bash
+sudo mkdir -p --mode=0755 /usr/share/keyrings
+curl -fsSL https://pkg.cloudflare.com/cloudflare-main.gpg | sudo tee /usr/share/keyrings/cloudflare-main.gpg >/dev/null
+echo "deb [signed-by=/usr/share/keyrings/cloudflare-main.gpg] https://pkg.cloudflare.com/cloudflared any main" | sudo tee /etc/apt/sources.list.d/cloudflared.list
+sudo apt-get update && sudo apt-get install cloudflared
+```
+จากนั้นที่ Cloudflare Dashboard ไปที่ **Networking → Tunnels → Create Tunnel** (ชื่อเมนูอาจเปลี่ยนได้)
+1. ตั้งชื่อ (เช่น `pi-cedt`) เลือก Linux และสถาปัตยกรรม `arm64`
+2. คัดลอกคำสั่ง `sudo cloudflared service install <token>` ไปรันบน Pi
+   (token คือความลับ ห้ามแชร์หรือ commit)
+3. เพิ่ม **Public hostname**: เลือกโดเมน/ซับโดเมน แล้วตั้ง Service เป็น `HTTP` → `localhost:3000`
 
-## ตั้งค่า API ต้นทาง
+## 7. ไม่มีโดเมน: quick tunnel (ชั่วคราว)
+```bash
+cloudflared tunnel --url http://localhost:3000
+```
+จะได้ URL แบบ `https://xxxx.trycloudflare.com` ที่เปลี่ยนทุกครั้งที่รันใหม่ เหมาะกับทดลองเท่านั้น
 
-ใน `.env` (ในเครื่อง) หรือ Vercel → Settings → Environment Variables (ตอน deploy; Vercel ไม่อ่านไฟล์ `.env`)
+## 8. ตั้งค่าป้องกันที่ Cloudflare (แนะนำ)
+- WAF → Rate limiting rules: จำกัด `/api/*` (เช่น 60 ครั้ง/นาที/IP) ตัวเว็บเองมี rate limit อยู่แล้ว
+  แต่ปล่อยให้ Cloudflare กันก่อนถึง Pi จะดีกว่า
+- เปิด Bot Fight Mode และ SSL/TLS = Full, เปิด "Always Use HTTPS"
+- (ไม่บังคับ) Cache Rule สำหรับ `/api/logo*` ให้ cache ตาม origin เพื่อลดงานของ Pi
 
-| ตัวแปร | ความหมาย |
-|---|---|
-| `UPSTREAM_URL` | URL ของ API รายการตำแหน่ง ตอบเป็น `{ "items": [...], "meta": {...} }` |
-| `UPSTREAM_TOKEN` | (ถ้าต้อง login) ส่งเป็น `Authorization: Bearer …` ใส่เฉพาะส่วนหลัง `Bearer ` |
-| `UPSTREAM_COOKIE` | (ถ้า login แบบ cookie) ส่งเป็นหัว `Cookie` ใช้แทน TOKEN |
-| `UPSTREAM_PAGE_PARAM` | (ไม่บังคับ) ชื่อพารามิเตอร์เลขหน้า ถ้าตรวจจับเองไม่ได้ |
-| `CACHE_TTL_SEC` | (ไม่บังคับ) อายุแคชของ Live ค่าเริ่มต้น 3600 วินาที |
+## 9. ความปลอดภัยของ Pi
+- SSH ใช้ key เท่านั้น ปิด password login และอย่าทำ port forwarding บนเราเตอร์ (ไม่จำเป็น)
+- เปิด `unattended-upgrades` และอัปเดต `cloudflared` กับ Chromium เป็นระยะ
+- ทุกอย่างเข้าถึงเว็บได้ผ่าน Cloudflare เท่านั้น (server ฟังเฉพาะ 127.0.0.1)
+- ถ้าสงสัยว่า Pi ถูกเจาะ: เปลี่ยนรหัสผ่าน MCV และ revoke tunnel token ที่ Cloudflare ทันที
 
-หา URL/token: เปิดเว็บ CEDT ตอน login → F12 → Network → Fetch/XHR → เลือก request ที่ตอบ JSON มี `items`
-→ ดู Request URL และ Request Headers (`Authorization` หรือ `Cookie`)
+## 10. เลิกใช้ Vercel
+ลบ Environment Variables ใน Vercel (โดยเฉพาะรหัสผ่านและคุกกี้) และปิดหรือลบโปรเจกต์ เพื่อไม่ให้มี function ทำงานเพิ่ม
+แล้วชี้โดเมนมาที่ tunnel แทน
 
-### Pagination
-
-API คืนทีละ 100 รายการ ระบบจะอ่าน `meta.totalItem/totalPage` แล้วดึงหน้าที่เหลือให้ครบเอง
-โดยลองชื่อพารามิเตอร์ `page`, `currentPage`, `pageNo`, `pageNumber` ตามลำดับ ถ้าดึงไม่ครบจะ **ไม่แสดงข้อมูลไม่ครบ**
-แต่ถือว่าล้มเหลวและแสดงสาเหตุ (ป้องกันการจัดอันดับจากข้อมูลที่ขาด)
-
-ถ้า API รองรับ ใส่พารามิเตอร์ขนาดหน้าใน URL จะได้ครบในคำขอเดียว เช่น
-`UPSTREAM_URL=https://…/openings?limit=1000` (ถ้า URL มี `?` อยู่แล้วให้ต่อด้วย `&limit=1000`)
-ชื่อพารามิเตอร์ที่ถูกต้องดูได้จาก Network tab ของเว็บต้นทาง
-
-## การ cache
-
-1. หน่วยความจำของ function (TTL ตาม `CACHE_TTL_SEC`)
-2. Vercel CDN — Live: `s-maxage=TTL`; รอบเก็บถาวร: 1 วัน; ผลที่ fallback/stale: 2 นาที (ลองใหม่เร็ว)
-3. localStorage ของผู้ใช้ — เปิดครั้งถัดไปเห็นข้อมูลทันที แล้วตรวจข้อมูลใหม่เงียบ ๆ
-
-ถ้าดึง Live ไม่สำเร็จ: ใช้ข้อมูลล่าสุดที่เคยดึงได้ → ไม่มีก็แสดงรอบเก็บถาวรเริ่มต้น และบอกสาเหตุที่หัวหน้าเว็บ
-(เช่น `upstream HTTP 401 — likely needs login…`) ส่วนในเบราว์เซอร์ ถ้ามีข้อมูล Live ที่แคชไว้ จะไม่ถูกทับด้วยข้อมูลเก็บถาวร
-
-## Deploy บน Vercel
-
-push ขึ้น GitHub → vercel.com → Add New Project → Framework Preset: **Other** → ตั้ง Environment Variables → Deploy
-(ห้าม commit `.env`; token/cookie ที่ได้จากการ login มักหมดอายุ ถ้าไม่อยากดูแล ให้รัน `snapshot.js` เองเป็นระยะแล้ว commit)
-
-## ข้อควรรู้
-
-- **ค่าตอบแทนเรียงเป็นต่อวัน**: บาท/เดือน ÷ 22 วันทำการ เหมาจ่าย/ไม่ระบุหน่วยเทียบไม่ได้จึงอยู่ท้ายเสมอ
-- **"คนสนใจ/คนแย่ง"** มาจาก `inStudentDraftCount` ÷ จำนวนรับ (ตีความจากชื่อฟิลด์) ใช้เป็นตัวชี้นำคร่าว ๆ
-- "ใหม่ล่าสุด" เรียงตาม `openingId`
-- ข้อมูลถูกแปลงเป็นข้อความล้วนก่อนแสดงผล (กัน HTML/สคริปต์แปลกปลอมจากต้นทาง)
+## คำสั่งที่ใช้บ่อย
+```bash
+sudo systemctl restart cedt-intern        # รีสตาร์ตแอป
+sudo -u cedt git -C /opt/cedt-intern pull && sudo -u cedt npm ci --omit=dev --ignore-scripts && sudo systemctl restart cedt-intern   # อัปเดต
+```

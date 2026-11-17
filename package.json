@@ -4,6 +4,7 @@
   "private": true,
   "description": "CEDT internship openings browser — search, filter, sort, cached",
   "scripts": {
+    "start": "node scripts/server.js",
     "dev": "node scripts/dev-server.js",
     "dev:vercel": "vercel dev",
     "test": "node scripts/test-api.js",

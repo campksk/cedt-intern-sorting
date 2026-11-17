@@ -1,0 +1,387 @@
+From 46c95f300a80df287e939b8ece8ef9ab61ed4875 Mon Sep 17 00:00:00 2001
+From: review <review@example.com>
+Date: Tue, 17 Nov 2026 19:24:17 +0000
+Subject: [PATCH] Self-hosting: production server with headers and rate limit,
+ system Chromium support, logo cache, systemd unit and Pi/Cloudflare Tunnel
+ guide
+
+---
+ .env.example               |  9 +++-
+ api/logo.js                | 29 ++++++++++-
+ deploy/README.md           | 99 ++++++++++++++++++++++++++++++++++++++
+ deploy/cedt-intern.service | 27 +++++++++++
+ lib/auth.js                |  7 +++
+ package.json               |  1 +
+ scripts/dev-server.js      | 31 +-----------
+ scripts/server.js          | 80 ++++++++++++++++++++++++++++++
+ 8 files changed, 251 insertions(+), 32 deletions(-)
+ create mode 100644 deploy/README.md
+ create mode 100644 deploy/cedt-intern.service
+ create mode 100644 scripts/server.js
+
+diff --git a/.env.example b/.env.example
+index 890bbcc..af42f10 100644
+--- a/.env.example
++++ b/.env.example
+@@ -20,4 +20,11 @@ CACHE_TTL_SEC=3600
+ 
+ # MCV credentials for login (only if UPSTREAM_TOKEN or UPSTREAM_COOKIE is empty)
+ MCV_USERNAME=
+-MCV_PASSWORD=
+\ No newline at end of file
++MCV_PASSWORD=
++
++# --- Self-hosting (Raspberry Pi) ---
++# Path of the system Chromium used for auto-login (apt install chromium)
++# CHROMIUM_PATH=/usr/bin/chromium
++# Listen address/port. Keep 127.0.0.1 and put Cloudflare Tunnel in front of it.
++# HOST=127.0.0.1
++# PORT=3000
+diff --git a/api/logo.js b/api/logo.js
+index 1c4abd4..f93fe93 100644
+--- a/api/logo.js
++++ b/api/logo.js
+@@ -6,6 +6,26 @@ const INTERNAL_ORIGIN = 'https://cedtintern.cp.eng.chula.ac.th';
+ const TIMEOUT_MS = 8000;
+ const MAX_BYTES = 2 * 1024 * 1024; // 2 MB
+ const MAX_REDIRECTS = 3;
++const CACHE_TTL_MS = 24 * 60 * 60 * 1000;
++const CACHE_MAX_BYTES = 48 * 1024 * 1024; // total size of cached images
++const cache = new Map(); // targetUrl -> { at, type, buffer }  (insertion order = oldest first)
++let cacheBytes = 0;
++function cacheGet(key) {
++  const e = cache.get(key);
++  if (!e) return null;
++  if (Date.now() - e.at > CACHE_TTL_MS) { cache.delete(key); cacheBytes -= e.buffer.length; return null; }
++  return e;
++}
++function cacheSet(key, type, buffer) {
++  if (cache.has(key)) cacheBytes -= cache.get(key).buffer.length;
++  cache.set(key, { at: Date.now(), type, buffer });
++  cacheBytes += buffer.length;
++  while (cacheBytes > CACHE_MAX_BYTES && cache.size) {
++    const oldest = cache.keys().next().value;
++    cacheBytes -= cache.get(oldest).buffer.length;
++    cache.delete(oldest);
++  }
++}
+ // SVG is excluded on purpose: it can carry script.
+ const ALLOWED_TYPES = /^image\/(png|jpe?g|gif|webp|avif|x-icon|vnd\.microsoft\.icon)$/i;
+ 
+@@ -100,6 +120,12 @@ module.exports = async (req, res) => {
+   const isInternal = new URL(targetUrl).origin === INTERNAL_ORIGIN;
+   const cookie = () => (isInternal ? process.env.UPSTREAM_COOKIE : undefined);
+ 
++  const cached = cacheGet(targetUrl);
++  if (cached) {
++    res.setHeader('Cache-Control', 'public, max-age=86400');
++    return send(res, 200, cached.buffer, cached.type);
++  }
++
+   try {
+     let imgRes = await fetchImage(targetUrl, cookie());
+ 
+@@ -115,7 +141,8 @@ module.exports = async (req, res) => {
+     if (!ALLOWED_TYPES.test(contentType)) return send(res, 415, 'Not an allowed image type');
+ 
+     const buffer = await readCapped(imgRes);
+-    res.setHeader('Cache-Control', 'public, s-maxage=86400, stale-while-revalidate=43200');
++    cacheSet(targetUrl, contentType, buffer);
++    res.setHeader('Cache-Control', 'public, max-age=86400, s-maxage=86400, stale-while-revalidate=43200');
+     return send(res, 200, buffer, contentType);
+   } catch (err) {
+     console.error('[Logo Proxy] Error:', err.message);
+diff --git a/deploy/README.md b/deploy/README.md
+new file mode 100644
+index 0000000..9c616fe
+--- /dev/null
++++ b/deploy/README.md
+@@ -0,0 +1,99 @@
++# รันบน Raspberry Pi + Cloudflare Tunnel
++
++ภาพรวม: Pi รัน `scripts/server.js` ที่ `127.0.0.1:3000` (ไม่เปิดพอร์ตออกอินเทอร์เน็ต)
++แล้วให้ `cloudflared` เชื่อมต่อออกไปหา Cloudflare เพื่อเปิดเว็บให้คนทั่วไปเข้าผ่านโดเมนของคุณ
++
++## 0. สิ่งที่ต้องมี
++- Raspberry Pi 4/5 (RAM ≥ 2 GB) ลง Raspberry Pi OS **64-bit** (เช็กด้วย `uname -m` ต้องได้ `aarch64`)
++- บัญชี Cloudflare (ฟรี) และโดเมนที่ใช้ DNS ของ Cloudflare ถ้าอยากได้ URL ถาวร
++  (ไม่มีโดเมน: ใช้ quick tunnel ในข้อ 7 ได้ แต่ URL จะสุ่มและเปลี่ยนทุกครั้ง)
++
++## 1. ติดตั้งโปรแกรม
++```bash
++sudo apt update && sudo apt install -y git chromium
++# Node.js 22 (Debian bookworm มี Node 18 ซึ่งเก่าเกินไป: โปรเจกต์ต้องการ >= 20)
++curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
++sudo apt install -y nodejs
++```
++ถ้า `chromium` ไม่พบแพ็กเกจ ให้ลอง `chromium-browser` แล้วแก้ `CHROMIUM_PATH` ให้ตรง (`which chromium chromium-browser`)
++
++## 2. ดึงโค้ด + ติดตั้ง
++```bash
++sudo useradd --system --create-home --shell /usr/sbin/nologin cedt
++sudo mkdir -p /opt/cedt-intern && sudo chown cedt:cedt /opt/cedt-intern
++sudo -u cedt git clone https://github.com/campksk/cedt-intern-sorting.git /opt/cedt-intern
++cd /opt/cedt-intern
++# apply patch สำหรับ Pi (patch ความปลอดภัยอยู่ใน main แล้ว ไม่ต้อง apply ซ้ำ)
++# หรือจะ commit patch นี้ขึ้น GitHub ก่อนแล้วค่อย git pull ก็ได้
++sudo -u cedt git apply /path/to/pi-selfhost.patch
++sudo -u cedt npm ci --omit=dev --ignore-scripts
++```
++
++## 3. ตั้งค่า `.env`
++```bash
++sudo -u cedt cp .env.example .env
++sudo -u cedt nano .env      # ใส่ UPSTREAM_URL, MCV_USERNAME, MCV_PASSWORD
++sudo chmod 600 /opt/cedt-intern/.env
++```
++แนะนำให้ตั้ง `CACHE_TTL_SEC=21600` (6 ชั่วโมง) เพื่อให้ดึงข้อมูลสดน้อยลง
++และควรใช้บัญชีที่สิทธิ์ต่ำที่สุดเท่าที่ทำได้ เพราะรหัสผ่านจะเก็บอยู่บน Pi เครื่องนี้
++
++## 4. ทดสอบก่อน
++```bash
++sudo -u cedt env CHROMIUM_PATH=/usr/bin/chromium node scripts/server.js
++# เปิดอีก terminal
++curl localhost:3000/healthz            # ต้องได้ ok
++curl -s localhost:3000/api/jobs | head -c 300   # ครั้งแรกจะ login ด้วย Chromium อาจใช้ 30-60 วินาทีบน Pi
++```
++ถ้า login ไม่ผ่าน ดู log ในหน้าจอที่รัน server
++
++## 5. รันเป็นบริการ (เปิดเองเมื่อบูต)
++```bash
++sudo cp deploy/cedt-intern.service /etc/systemd/system/
++sudo systemctl daemon-reload
++sudo systemctl enable --now cedt-intern
++sudo systemctl status cedt-intern
++journalctl -u cedt-intern -f           # ดู log
++```
++
++## 6. Cloudflare Tunnel (URL ถาวร)
++ติดตั้ง `cloudflared`:
++```bash
++sudo mkdir -p --mode=0755 /usr/share/keyrings
++curl -fsSL https://pkg.cloudflare.com/cloudflare-main.gpg | sudo tee /usr/share/keyrings/cloudflare-main.gpg >/dev/null
++echo "deb [signed-by=/usr/share/keyrings/cloudflare-main.gpg] https://pkg.cloudflare.com/cloudflared any main" | sudo tee /etc/apt/sources.list.d/cloudflared.list
++sudo apt-get update && sudo apt-get install cloudflared
++```
++จากนั้นที่ Cloudflare Dashboard ไปที่ **Networking → Tunnels → Create Tunnel** (ชื่อเมนูอาจเปลี่ยนได้)
++1. ตั้งชื่อ (เช่น `pi-cedt`) เลือก Linux และสถาปัตยกรรม `arm64`
++2. คัดลอกคำสั่ง `sudo cloudflared service install <token>` ไปรันบน Pi
++   (token คือความลับ ห้ามแชร์หรือ commit)
++3. เพิ่ม **Public hostname**: เลือกโดเมน/ซับโดเมน แล้วตั้ง Service เป็น `HTTP` → `localhost:3000`
++
++## 7. ไม่มีโดเมน: quick tunnel (ชั่วคราว)
++```bash
++cloudflared tunnel --url http://localhost:3000
++```
++จะได้ URL แบบ `https://xxxx.trycloudflare.com` ที่เปลี่ยนทุกครั้งที่รันใหม่ เหมาะกับทดลองเท่านั้น
++
++## 8. ตั้งค่าป้องกันที่ Cloudflare (แนะนำ)
++- WAF → Rate limiting rules: จำกัด `/api/*` (เช่น 60 ครั้ง/นาที/IP) ตัวเว็บเองมี rate limit อยู่แล้ว
++  แต่ปล่อยให้ Cloudflare กันก่อนถึง Pi จะดีกว่า
++- เปิด Bot Fight Mode และ SSL/TLS = Full, เปิด "Always Use HTTPS"
++- (ไม่บังคับ) Cache Rule สำหรับ `/api/logo*` ให้ cache ตาม origin เพื่อลดงานของ Pi
++
++## 9. ความปลอดภัยของ Pi
++- SSH ใช้ key เท่านั้น ปิด password login และอย่าทำ port forwarding บนเราเตอร์ (ไม่จำเป็น)
++- เปิด `unattended-upgrades` และอัปเดต `cloudflared` กับ Chromium เป็นระยะ
++- ทุกอย่างเข้าถึงเว็บได้ผ่าน Cloudflare เท่านั้น (server ฟังเฉพาะ 127.0.0.1)
++- ถ้าสงสัยว่า Pi ถูกเจาะ: เปลี่ยนรหัสผ่าน MCV และ revoke tunnel token ที่ Cloudflare ทันที
++
++## 10. เลิกใช้ Vercel
++ลบ Environment Variables ใน Vercel (โดยเฉพาะรหัสผ่านและคุกกี้) และปิดหรือลบโปรเจกต์ เพื่อไม่ให้มี function ทำงานเพิ่ม
++แล้วชี้โดเมนมาที่ tunnel แทน
++
++## คำสั่งที่ใช้บ่อย
++```bash
++sudo systemctl restart cedt-intern        # รีสตาร์ตแอป
++sudo -u cedt git -C /opt/cedt-intern pull && sudo -u cedt npm ci --omit=dev --ignore-scripts && sudo systemctl restart cedt-intern   # อัปเดต
++```
+diff --git a/deploy/cedt-intern.service b/deploy/cedt-intern.service
+new file mode 100644
+index 0000000..686634a
+--- /dev/null
++++ b/deploy/cedt-intern.service
+@@ -0,0 +1,27 @@
++[Unit]
++Description=CEDT Intern web app
++After=network-online.target
++Wants=network-online.target
++
++[Service]
++Type=simple
++User=cedt
++Group=cedt
++WorkingDirectory=/opt/cedt-intern
++ExecStart=/usr/bin/node scripts/server.js
++Restart=on-failure
++RestartSec=5
++Environment=NODE_ENV=production
++Environment=HOST=127.0.0.1
++Environment=PORT=3000
++Environment=CHROMIUM_PATH=/usr/bin/chromium
++
++# Hardening (the app only needs to write its own folder: the refreshed cookie goes to .env)
++NoNewPrivileges=true
++PrivateTmp=true
++ProtectSystem=full
++ProtectHome=true
++ReadWritePaths=/opt/cedt-intern
++
++[Install]
++WantedBy=multi-user.target
+diff --git a/lib/auth.js b/lib/auth.js
+index 30f54eb..9c38dfd 100644
+--- a/lib/auth.js
++++ b/lib/auth.js
+@@ -32,6 +32,13 @@ async function refreshCookie() {
+         executablePath: await chromiumPack.executablePath(),
+         headless: true,
+       };
++    } else if (process.env.CHROMIUM_PATH) {
++      // Self-hosting (e.g. Raspberry Pi): use the system Chromium, e.g. CHROMIUM_PATH=/usr/bin/chromium
++      launchOptions = {
++        headless: true,
++        executablePath: process.env.CHROMIUM_PATH,
++        args: ['--disable-dev-shm-usage', '--disable-gpu'], // small /dev/shm on Raspberry Pi OS
++      };
+     } else {
+       launchOptions = {
+         headless: true,
+diff --git a/package.json b/package.json
+index f4ee088..1a01eca 100644
+--- a/package.json
++++ b/package.json
+@@ -4,6 +4,7 @@
+   "private": true,
+   "description": "CEDT internship openings browser — search, filter, sort, cached",
+   "scripts": {
++    "start": "node scripts/server.js",
+     "dev": "node scripts/dev-server.js",
+     "dev:vercel": "vercel dev",
+     "test": "node scripts/test-api.js",
+diff --git a/scripts/dev-server.js b/scripts/dev-server.js
+index c18d7ff..c6cb4ef 100644
+--- a/scripts/dev-server.js
++++ b/scripts/dev-server.js
+@@ -1,31 +1,2 @@
+ // Local dev server (no Vercel account needed). Run from the project root:  node scripts/dev-server.js
+-require('./load-env');
+-const http = require('http');
+-const fs = require('fs');
+-const path = require('path');
+-const handler = require('../api/jobs.js');
+-const logoHandler = require('../api/logo');
+-
+-const root = path.join(__dirname, '..', 'public');
+-const types = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8' };
+-const port = process.env.PORT || 3000;
+-
+-http.createServer((req, res) => {
+-  const url = new URL(req.url, 'http://localhost');
+-  if (url.pathname === '/api/jobs') {
+-    req.query = Object.fromEntries(url.searchParams);
+-    res.status = (c) => { res.statusCode = c; return res; };
+-    res.json = (b) => { res.setHeader('Content-Type', 'application/json'); res.end(JSON.stringify(b)); };
+-    return handler(req, res);
+-  }
+-  if (url.pathname === '/api/logo') {
+-    return logoHandler(req, res); // 2. เพิ่ม Route /api/logo
+-  }
+-  const file = path.join(root, url.pathname === '/' ? 'index.html' : url.pathname);
+-  if (!file.startsWith(root) || !fs.existsSync(file) || fs.statSync(file).isDirectory()) {
+-    res.statusCode = 404;
+-    return res.end('Not found');
+-  }
+-  res.setHeader('Content-Type', types[path.extname(file)] || 'application/octet-stream');
+-  fs.createReadStream(file).pipe(res);
+-}).listen(port, process.env.HOST || '127.0.0.1', () => console.log(`http://localhost:${port}`));
++require('./server');
+diff --git a/scripts/server.js b/scripts/server.js
+new file mode 100644
+index 0000000..f79780a
+--- /dev/null
++++ b/scripts/server.js
+@@ -0,0 +1,80 @@
++// Self-hosted server (Raspberry Pi / any Linux box). Run from the project root:  node scripts/server.js
++// Binds to 127.0.0.1 by default: put Cloudflare Tunnel (or a reverse proxy) in front of it.
++require('./load-env');
++const http = require('http');
++const fs = require('fs');
++const path = require('path');
++const jobsHandler = require('../api/jobs.js');
++const logoHandler = require('../api/logo');
++
++const root = path.join(__dirname, '..', 'public');
++const port = Number(process.env.PORT) || 3000;
++const host = process.env.HOST || '127.0.0.1';
++
++const types = {
++  '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8',
++  '.json': 'application/json; charset=utf-8', '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg',
++  '.ico': 'image/x-icon', '.webp': 'image/webp', '.txt': 'text/plain; charset=utf-8',
++};
++
++// Same policy as vercel.json (Vercel headers do not apply when self-hosting).
++const securityHeaders = {
++  'X-Content-Type-Options': 'nosniff',
++  'Referrer-Policy': 'strict-origin-when-cross-origin',
++  'X-Frame-Options': 'DENY',
++  'Permissions-Policy': 'camera=(), microphone=(), geolocation=()',
++  'Content-Security-Policy':
++    "default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self'; frame-ancestors 'none'",
++};
++
++// --- tiny per-IP rate limiter (fixed window, in memory) ---
++const LIMITS = { '/api/logo': 300, '/api/jobs': 60 }; // requests per minute per IP
++const hits = new Map();
++setInterval(() => hits.clear(), 60 * 1000).unref();
++function clientIp(req) {
++  const remote = req.socket.remoteAddress || '';
++  const viaLocalProxy = remote === '127.0.0.1' || remote === '::1' || remote === '::ffff:127.0.0.1';
++  // Only trust the Cloudflare header when the connection comes from the local tunnel process.
++  return (viaLocalProxy && req.headers['cf-connecting-ip']) || remote;
++}
++function limited(req, pathname) {
++  const max = LIMITS[pathname];
++  if (!max) return false;
++  const key = `${pathname}|${clientIp(req)}`;
++  const n = (hits.get(key) || 0) + 1;
++  hits.set(key, n);
++  return n > max;
++}
++
++http.createServer((req, res) => {
++  for (const [k, v] of Object.entries(securityHeaders)) res.setHeader(k, v);
++  if (req.method !== 'GET' && req.method !== 'HEAD') { res.statusCode = 405; return res.end('Method not allowed'); }
++
++  let url;
++  try { url = new URL(req.url, 'http://localhost'); } catch { res.statusCode = 400; return res.end('Bad request'); }
++
++  if (url.pathname === '/healthz') { res.setHeader('Content-Type', 'text/plain'); return res.end('ok'); }
++
++  if (url.pathname === '/api/jobs' || url.pathname === '/api/logo') {
++    if (limited(req, url.pathname)) {
++      res.statusCode = 429; res.setHeader('Retry-After', '60'); return res.end('Too many requests');
++    }
++    req.query = Object.fromEntries(url.searchParams);
++    res.status = (c) => { res.statusCode = c; return res; };
++    res.json = (b) => { res.setHeader('Content-Type', 'application/json'); res.end(JSON.stringify(b)); };
++    res.send = (b) => res.end(b);
++    return (url.pathname === '/api/jobs' ? jobsHandler : logoHandler)(req, res);
++  }
++
++  let rel;
++  try { rel = decodeURIComponent(url.pathname); } catch { res.statusCode = 400; return res.end('Bad request'); }
++  const file = path.join(root, rel === '/' ? 'index.html' : rel);
++  if (!file.startsWith(root + path.sep) || !fs.existsSync(file) || fs.statSync(file).isDirectory()) {
++    res.statusCode = 404;
++    return res.end('Not found');
++  }
++  const ext = path.extname(file);
++  res.setHeader('Content-Type', types[ext] || 'application/octet-stream');
++  res.setHeader('Cache-Control', ext === '.js' || ext === '.css' || ext === '.html' ? 'public, max-age=0, must-revalidate' : 'public, max-age=86400');
++  fs.createReadStream(file).pipe(res);
++}).listen(port, host, () => console.log(`listening on http://${host}:${port}`));
+-- 
+2.43.0
+
