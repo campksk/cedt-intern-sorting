@@ -34,8 +34,15 @@ setInterval(() => hits.clear(), 60 * 1000).unref();
 function clientIp(req) {
   const remote = req.socket.remoteAddress || '';
   const viaLocalProxy = remote === '127.0.0.1' || remote === '::1' || remote === '::ffff:127.0.0.1';
-  // Only trust the Cloudflare header when the connection comes from the local tunnel process.
-  return (viaLocalProxy && req.headers['cf-connecting-ip']) || remote;
+  // Forwarded headers are only trusted when the connection comes from a proxy on this machine
+  // (cloudflared, tailscaled, Caddy...). Direct connections from elsewhere are keyed by their own address.
+  if (!viaLocalProxy) return remote;
+  const cf = req.headers['cf-connecting-ip'];
+  if (cf) return String(cf);
+  const xff = req.headers['x-forwarded-for'];
+  // Use the LAST entry: that is the one our own proxy appended, so a client cannot spoof it.
+  if (xff) return String(xff).split(',').pop().trim() || remote;
+  return remote;
 }
 function limited(req, pathname) {
   const max = LIMITS[pathname];

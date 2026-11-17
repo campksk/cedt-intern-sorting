@@ -70,6 +70,24 @@ sudo apt-get update && sudo apt-get install cloudflared
    (token คือความลับ ห้ามแชร์หรือ commit)
 3. เพิ่ม **Public hostname**: เลือกโดเมน/ซับโดเมน แล้วตั้ง Service เป็น `HTTP` → `localhost:3000`
 
+## 6B. ไม่มีโดเมน แต่ใช้ Tailscale อยู่แล้ว: Tailscale Funnel
+Funnel เปิดเว็บบน Pi ให้คนทั่วไปเข้าได้ผ่านชื่อ `https://<ชื่อเครื่อง>.<ชื่อ tailnet>.ts.net` ฟรี ไม่ต้องมีโดเมนและไม่ต้องเปิดพอร์ตบนเราเตอร์
+(ถ้าอยากให้เฉพาะอุปกรณ์ใน tailnet ของคุณเข้าได้ ให้ใช้ `tailscale serve` แทน `funnel`)
+
+ข้อกำหนดที่เอกสารระบุ: Tailscale เวอร์ชัน 1.38.3 ขึ้นไป, เปิด MagicDNS และ HTTPS ใน tailnet, และ node attribute `funnel`
+ในไฟล์ policy (ACL) ของคุณ Funnel ใช้ได้เฉพาะพอร์ต 443, 8443 และ 10000
+```bash
+# ถ้า Pi ยังไม่มี Tailscale
+curl -fsSL https://tailscale.com/install.sh | sh
+sudo tailscale up
+# เปิดเว็บ (ฟัง localhost:3000) ให้สาธารณะ แล้วรันเป็นพื้นหลัง
+sudo tailscale funnel --bg 3000
+tailscale funnel status                 # ดู URL ที่ได้
+```
+ถ้าคำสั่งแจ้งว่ายังไม่ได้เปิด HTTPS/Funnel ให้ทำตามลิงก์ที่มันแสดง (หน้า DNS และหน้า Access controls ใน admin console)
+หมายเหตุ: ผมยังไม่ได้ตรวจเงื่อนไขและข้อจำกัดแบนด์วิดท์ล่าสุดจากเอกสารทางการของ Tailscale ควรอ่านหน้า Funnel ก่อนใช้งานจริง
+และหลังเปิดแล้วให้ทดสอบ rate limit ว่าแยก IP ผู้ใช้ถูกต้อง (server อ่านจาก `X-Forwarded-For` ที่ tailscaled ส่งมา)
+
 ## 7. ไม่มีโดเมน: quick tunnel (ชั่วคราว)
 ```bash
 cloudflared tunnel --url http://localhost:3000
