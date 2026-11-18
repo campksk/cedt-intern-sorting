@@ -6,6 +6,26 @@ const INTERNAL_ORIGIN = 'https://cedtintern.cp.eng.chula.ac.th';
 const TIMEOUT_MS = 8000;
 const MAX_BYTES = 2 * 1024 * 1024; // 2 MB
 const MAX_REDIRECTS = 3;
+const CACHE_TTL_MS = 24 * 60 * 60 * 1000;
+const CACHE_MAX_BYTES = 48 * 1024 * 1024; // total size of cached images
+const cache = new Map(); // targetUrl -> { at, type, buffer }  (insertion order = oldest first)
+let cacheBytes = 0;
+function cacheGet(key) {
+  const e = cache.get(key);
+  if (!e) return null;
+  if (Date.now() - e.at > CACHE_TTL_MS) { cache.delete(key); cacheBytes -= e.buffer.length; return null; }
+  return e;
+}
+function cacheSet(key, type, buffer) {
+  if (cache.has(key)) cacheBytes -= cache.get(key).buffer.length;
+  cache.set(key, { at: Date.now(), type, buffer });
+  cacheBytes += buffer.length;
+  while (cacheBytes > CACHE_MAX_BYTES && cache.size) {
+    const oldest = cache.keys().next().value;
+    cacheBytes -= cache.get(oldest).buffer.length;
+    cache.delete(oldest);
+  }
+}
 // SVG is excluded on purpose: it can carry script.
 const ALLOWED_TYPES = /^image\/(png|jpe?g|gif|webp|avif|x-icon|vnd\.microsoft\.icon)$/i;
 
@@ -82,45 +102,59 @@ async function readCapped(r) {
   return Buffer.concat(chunks);
 }
 
-module.exports = async (req, res) => {
-  // Support both Vercel (req.query) and native Node http server (req.url)
-  const rawUrl = req.query?.url ?? new URL(req.url, 'http://localhost').searchParams.get('url');
+/**
+ * Resolve, fetch and validate one logo (SSRF-guarded; see assertPublicHttps / fetchImage).
+ * Used by the /api/logo handler and by the Pi publisher.
+ * @returns {Promise<{type: string, buffer: Buffer}>}  Throws errors that may carry a .status.
+ */
+async function loadLogo(rawUrl) {
   if (!rawUrl || typeof rawUrl !== 'string' || rawUrl.length > 2048) {
-    return send(res, 400, 'Missing or invalid url parameter');
+    throw Object.assign(new Error('Missing or invalid url parameter'), { status: 400 });
   }
-
   let targetUrl;
   try {
     targetUrl = /^https?:\/\//i.test(rawUrl)
       ? new URL(rawUrl).toString()
       : new URL(rawUrl, `${INTERNAL_ORIGIN}/`).toString();
   } catch {
-    return send(res, 400, 'Invalid url');
+    throw Object.assign(new Error('Invalid url'), { status: 400 });
   }
   const isInternal = new URL(targetUrl).origin === INTERNAL_ORIGIN;
   const cookie = () => (isInternal ? process.env.UPSTREAM_COOKIE : undefined);
 
+  const cached = cacheGet(targetUrl);
+  if (cached) return { type: cached.type, buffer: cached.buffer };
+
+  let imgRes = await fetchImage(targetUrl, cookie());
+
+  // Auto-refresh cookie and retry once if session expired (401, 403, or 409)
+  if (isInternal && [401, 403, 409].includes(imgRes.status) && process.env.MCV_USERNAME) {
+    await refreshCookie();
+    imgRes = await fetchImage(targetUrl, cookie());
+  }
+
+  if (!imgRes.ok) throw Object.assign(new Error('Failed to fetch logo'), { status: 502 });
+
+  const type = (imgRes.headers.get('content-type') || '').split(';')[0].trim().toLowerCase();
+  if (!ALLOWED_TYPES.test(type)) throw Object.assign(new Error('Not an allowed image type'), { status: 415 });
+
+  const buffer = await readCapped(imgRes);
+  cacheSet(targetUrl, type, buffer);
+  return { type, buffer };
+}
+
+module.exports = async (req, res) => {
+  // Support both Vercel (req.query) and native Node http server (req.url)
+  const rawUrl = req.query?.url ?? new URL(req.url, 'http://localhost').searchParams.get('url');
   try {
-    let imgRes = await fetchImage(targetUrl, cookie());
-
-    // Auto-refresh cookie and retry once if session expired (401, 403, or 409)
-    if (isInternal && [401, 403, 409].includes(imgRes.status) && process.env.MCV_USERNAME) {
-      await refreshCookie();
-      imgRes = await fetchImage(targetUrl, cookie());
-    }
-
-    if (!imgRes.ok) return send(res, 502, 'Failed to fetch logo');
-
-    const contentType = (imgRes.headers.get('content-type') || '').split(';')[0].trim();
-    if (!ALLOWED_TYPES.test(contentType)) return send(res, 415, 'Not an allowed image type');
-
-    const buffer = await readCapped(imgRes);
-    res.setHeader('Cache-Control', 'public, s-maxage=86400, stale-while-revalidate=43200');
-    return send(res, 200, buffer, contentType);
+    const { type, buffer } = await loadLogo(rawUrl);
+    res.setHeader('Cache-Control', 'public, max-age=86400, s-maxage=86400, stale-while-revalidate=43200');
+    return send(res, 200, buffer, type);
   } catch (err) {
-    console.error('[Logo Proxy] Error:', err.message);
+    if (!err.status) console.error('[Logo Proxy] Error:', err.message);
     return send(res, err.status || 502, err.status ? err.message : 'Error proxying image');
   }
 };
 
 module.exports.isPrivateIp = isPrivateIp;
+module.exports.loadLogo = loadLogo;

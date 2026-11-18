@@ -2,6 +2,9 @@
   'use strict';
 
   const SITE = 'https://cedtintern.cp.eng.chula.ac.th';
+  // Where /api/jobs and /logos/* live. '' = same origin (Vercel / local dev). For a static deployment
+  // whose data comes from a Raspberry Pi, scripts/build-static.js writes the Pi's URL into config.js.
+  const API = String((window.APP_CONFIG && window.APP_CONFIG.apiBase) || '').replace(/\/+$/, '');
   const CACHE_PREFIX = 'cedt:v2:';
   const CACHE_MAX_AGE = 7 * 24 * 3600 * 1000;
   const collator = new Intl.Collator('th');
@@ -175,7 +178,7 @@
     const initial = (it._coName.replace(/^(บริษัท|บจก\.?|ธนาคาร)\s*/, '')[0] || '?').toUpperCase();
     const fallback = () => el('div', { class: 'logo', 'aria-hidden': 'true' }, initial);
     const raw = it.company.logo || '';
-    const src = raw.startsWith('/api/logo?') ? raw : safeUrl(raw);
+    const src = raw.startsWith('/api/logo?') || raw.startsWith('/logos/') ? API + raw : safeUrl(raw);
     if (!src) return fallback();
     const img = el('img', { class: 'logo', src, alt: '', loading: 'lazy', referrerpolicy: 'no-referrer' });
     img.addEventListener('error', () => img.replaceWith(fallback()));
@@ -345,7 +348,7 @@
     if (cached) apply(cached, true);
     else $('list').replaceChildren(...Array.from({ length: 6 }, () => el('div', { class: 'skeleton' })));
     try {
-      const res = await fetch(`/api/jobs${sem ? `?semester=${encodeURIComponent(sem)}` : ''}`, { headers: { accept: 'application/json' } });
+      const res = await fetch(`${API}/api/jobs${sem ? `?semester=${encodeURIComponent(sem)}` : ''}`, { headers: { accept: 'application/json' } });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const data = await res.json();
       if (data.fallback && cached) { // keep the better cached copy instead of replacing it with an archive

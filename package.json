@@ -5,6 +5,9 @@
   "description": "CEDT internship openings browser — search, filter, sort, cached",
   "scripts": {
     "dev": "node scripts/dev-server.js",
+    "pi": "node scripts/pi-server.js",
+    "pi:refresh": "node scripts/pi-refresh.js",
+    "build:static": "node scripts/build-static.js",
     "dev:vercel": "vercel dev",
     "test": "node scripts/test-api.js",
     "snapshot": "node scripts/snapshot.js"

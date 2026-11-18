@@ -18,6 +18,10 @@ const { fetchLive, extractItems } = require('../lib/upstream');
 
 const DATA_DIR = path.join(process.cwd(), 'data');
 const TTL = Number(process.env.CACHE_TTL_SEC) || 3600;
+// LIVE_SOURCE=file: never contact the upstream while serving a request. Live data comes from
+// LIVE_DIR/live.json, written in the background by lib/publisher.js (Raspberry Pi mode).
+const LIVE_DIR = process.env.LIVE_DIR || path.join(process.cwd(), 'data-live');
+const STALE_MS = (Number(process.env.STALE_HOURS) || 24) * 3600 * 1000;
 const WORKDAYS_PER_MONTH = 22;
 const LIVE = { id: 'live', label: 'Live', live: true };
 const mem = new Map(); // "live" -> { at, items }; "archive:<id>" -> { items }
@@ -40,7 +44,7 @@ function htmlToText(html) {
 
 const UNIT = { 'บาท/วัน': 'day', 'บาท/เดือน': 'month', 'บาท (เหมาจ่าย)': 'lump', 'ไม่มีค่าตอบแทน': 'none' };
 
-function normalize(raw) {
+function normalize(raw, logoMap = null) {
   const label = raw.compensationType?.compensationType || '';
   const amount = Number(raw.compensationAmount) > 0 ? Number(raw.compensationAmount) : null;
   const unit = UNIT[label] || (amount ? 'other' : 'none');
@@ -55,7 +59,10 @@ function normalize(raw) {
     .filter((t) => t && !seen.has(t.toLowerCase()) && seen.add(t.toLowerCase()));
 
   const rawLogo = raw.company?.logoUrl || '';
-  const logo = rawLogo ? `/api/logo?url=${encodeURIComponent(rawLogo)}` : '';
+  // logoMap (file mode): pre-downloaded logos served from /logos/<file>; otherwise proxied on demand.
+  const logo = !rawLogo ? ''
+    : logoMap ? (logoMap[rawLogo] ? `/logos/${logoMap[rawLogo]}` : '')
+    : `/api/logo?url=${encodeURIComponent(rawLogo)}`;
 
   const quota = Number(raw.quota) || 0;
   return {
@@ -87,7 +94,7 @@ function normalize(raw) {
   };
 }
 
-const prepare = (rawItems) => rawItems.filter((r) => r.isPublished !== false).map(normalize);
+const prepare = (rawItems, logoMap = null) => rawItems.filter((r) => r.isPublished !== false).map((r) => normalize(r, logoMap));
 
 /** Archived semesters from data/semesters.json (oldest -> newest); entries whose file is missing are skipped. */
 function readArchives() {
@@ -103,11 +110,28 @@ function readArchives() {
     .filter((s) => fs.existsSync(path.join(DATA_DIR, s.file)));
 }
 
+/** File mode: the publisher's logo map ({ logoUrl: file }) and its version (live.json mtime), else null. */
+function fileLogos() {
+  if (process.env.LIVE_SOURCE !== 'file') return null;
+  try {
+    const file = path.join(LIVE_DIR, 'live.json');
+    const st = fs.statSync(file);
+    const hit = mem.get('fileLogos');
+    if (hit && hit.mtimeMs === st.mtimeMs) return hit;
+    const entry = { mtimeMs: st.mtimeMs, map: JSON.parse(fs.readFileSync(file, 'utf8')).logos || {} };
+    mem.set('fileLogos', entry);
+    return entry;
+  } catch {
+    return { mtimeMs: 0, map: {} }; // no logos downloaded yet: show initials instead of broken images
+  }
+}
+
 function loadArchive(sem) {
-  const key = `archive:${sem.id}`;
+  const logos = fileLogos();
+  const key = `archive:${sem.id}:${logos ? logos.mtimeMs : 'proxy'}`;
   if (!mem.has(key)) {
     const json = JSON.parse(fs.readFileSync(path.join(DATA_DIR, sem.file), 'utf8'));
-    mem.set(key, { items: prepare(extractItems(json)) });
+    mem.set(key, { items: prepare(extractItems(json), logos ? logos.map : null) });
   }
   return mem.get(key).items;
 }
@@ -115,7 +139,27 @@ function loadArchive(sem) {
 const FAIL_BACKOFF_MS = 60 * 1000; // after a failed live fetch, don't hit upstream again for a minute
 const PUBLIC_UPSTREAM_ERROR = 'upstream unavailable';
 
+function loadLiveFromFile() {
+  try {
+    const file = path.join(LIVE_DIR, 'live.json');
+    const st = fs.statSync(file);
+    const hit = mem.get('liveFile');
+    let entry = hit && hit.mtimeMs === st.mtimeMs ? hit.entry : null;
+    if (!entry) {
+      const j = JSON.parse(fs.readFileSync(file, 'utf8'));
+      entry = { at: j.at, items: prepare(j.items, j.logos || {}) };
+      mem.set('liveFile', { mtimeMs: st.mtimeMs, entry });
+    }
+    if (Date.now() - entry.at > STALE_MS) return { ...entry, source: 'stale', upstreamError: PUBLIC_UPSTREAM_ERROR };
+    return { ...entry, source: 'live' };
+  } catch (err) {
+    if (err.code !== 'ENOENT') console.error('[jobs] cannot read live.json:', err.message);
+    return { source: 'failed', upstreamError: PUBLIC_UPSTREAM_ERROR };
+  }
+}
+
 async function loadLive() {
+  if (process.env.LIVE_SOURCE === 'file') return loadLiveFromFile();
   const hit = mem.get('live');
   if (hit && Date.now() - hit.at < TTL * 1000) return { ...hit, source: 'live' };
   const failedAt = mem.get('liveFail');
@@ -140,7 +184,8 @@ async function loadLive() {
 module.exports = async (req, res) => {
   try {
     const archives = readArchives();
-    const liveOn = !!process.env.UPSTREAM_URL;
+    const liveOn = !!process.env.UPSTREAM_URL ||
+      (process.env.LIVE_SOURCE === 'file' && fs.existsSync(path.join(LIVE_DIR, 'live.json')));
     const fallbackArchive = archives.find((a) => a.isDefault) || archives[archives.length - 1];
     const wanted = req.query?.semester;
     const selected =
@@ -171,7 +216,8 @@ module.exports = async (req, res) => {
 
     // Live data is CDN-cached for TTL; archives are static per deployment; fallback/stale retry soon.
     const maxAge = source === 'live' ? TTL : source === 'archive' && !fallback ? 86400 : 120;
-    res.setHeader('Cache-Control', `public, s-maxage=${maxAge}, stale-while-revalidate=86400`);
+    const browserAge = Number(process.env.BROWSER_MAX_AGE_SEC) || 0; // optional: let browsers reuse the response
+    res.setHeader('Cache-Control', `public, ${browserAge ? `max-age=${browserAge}, ` : ''}s-maxage=${maxAge}, stale-while-revalidate=86400`);
     res.setHeader('X-Data-Source', fallback ? 'fallback' : source);
     res.status(200).json({
       semester: selected,

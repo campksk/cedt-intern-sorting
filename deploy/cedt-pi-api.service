@@ -1,0 +1,29 @@
+# แก้ User, WorkingDirectory และ ReadWritePaths ให้ตรงกับเครื่องของคุณ (ตัวอย่างนี้ใช้ user "camp")
+# ถ้า `which node` ไม่ใช่ /usr/bin/node (เช่นติดตั้งผ่าน nvm) ให้แก้ ExecStart ด้วย
+[Unit]
+Description=CEDT Intern data API (Raspberry Pi)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=camp
+Group=camp
+WorkingDirectory=/home/camp/cedt-intern-sorting
+ExecStart=/usr/bin/node scripts/pi-server.js
+Restart=on-failure
+RestartSec=5
+Environment=NODE_ENV=production
+Environment=HOST=127.0.0.1
+Environment=PORT=3000
+Environment=CHROMIUM_PATH=/usr/bin/chromium
+
+# Hardening: the app only writes inside its own folder (.env cookie, data-live/)
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+ProtectHome=read-only
+ReadWritePaths=/home/camp/cedt-intern-sorting
+
+[Install]
+WantedBy=multi-user.target
